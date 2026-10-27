@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cronologia della Casa</title>
+<meta name="description" content="Linea del tempo interattiva di Household fino alla fine della Saga della Fragile Pace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='9' r='6' fill='none' stroke='%235E2B74' stroke-width='3'/%3E%3Crect x='18.5' y='14' width='3' height='22' fill='%235E2B74'/%3E%3Crect x='21' y='28' width='6' height='3' fill='%235E2B74'/%3E%3Crect x='21' y='33' width='4' height='3' fill='%235E2B74'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="testata">
+  <div class="testata-testi">
+    <h1 id="titolo-sito">Cronologia della Casa</h1>
+    <p id="sottotitolo-sito"></p>
+  </div>
+  <nav class="testata-azioni" aria-label="Indici">
+    <button type="button" class="bottone" data-indice="personaggi">Personalità</button>
+    <button type="button" class="bottone" data-indice="luoghi">Luoghi</button>
+  </nav>
+</header>
+
+<div id="avvisi" class="avvisi" hidden></div>
+
+<section class="linea" aria-label="Linea del tempo">
+  <button type="button" class="scorri scorri-sx" aria-label="Scorri indietro">‹</button>
+  <div class="linea-scorrevole" id="linea-scorrevole" tabindex="-1">
+    <div class="linea-interno" id="linea-interno" role="listbox" aria-label="Eventi"></div>
+  </div>
+  <button type="button" class="scorri scorri-dx" aria-label="Scorri avanti">›</button>
+</section>
+
+<main id="dettaglio" class="dettaglio" aria-live="polite">
+  <p class="caricamento">Sto aprendo gli archivi…</p>
+</main>
+
+<aside id="cassetto" class="cassetto" aria-hidden="true">
+  <div class="cassetto-velo" data-chiudi></div>
+  <div class="cassetto-pannello" role="dialog" aria-modal="true" aria-labelledby="cassetto-titolo">
+    <button type="button" class="chiudi" data-chiudi aria-label="Chiudi">×</button>
+    <div id="cassetto-contenuto"></div>
+  </div>
+</aside>
+
+<footer class="piede">
+  <p>Testi riassunti dagli appassionati a partire da <em>Household</em> e <em>La Saga della Fragile Pace</em> © Two Little Mice. Sito non ufficiale per uso al tavolo.</p>
+  <p id="link-modifica"></p>
+</footer>
+
+<script src="vendor/js-yaml.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

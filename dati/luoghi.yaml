@@ -1,0 +1,301 @@
+# ─────────────────────────────────────────────────────────────
+#  LUOGHI DELLA CASA
+# ─────────────────────────────────────────────────────────────
+#  • id: usato negli altri file (es. luoghi: [wallford]).
+#  • nazione: Reame, Focolare, Liberi Domini, Orda,
+#    Domini Comuni, Fuori dalla Casa… (decide il colore).
+#  • dove: la Stanza o il punto della Casa.
+#  • immagine: percorso di un'immagine (facoltativo).
+# ─────────────────────────────────────────────────────────────
+
+# ── NAZIONI ────────────────────────────────────────────────
+
+- id: reame
+  nome: Il Reame
+  tipo: Nazione
+  nazione: Reame
+  dove: Sala da Pranzo, Credenza, Pianoforte
+  descrizione: |
+    La nazione delle Fate, fondata da [[oberon]] dopo la caduta di Déndronaos. Città di vetro e cristallo, ricchezza, ordine e il motto "Proteggere e Conquistare". Governato dalla Zarina [[arcadia]], difeso dal Grande Esercito Imperiale e dalle Schiene Dorate.
+
+- id: focolare
+  nome: Il Focolare
+  tipo: Nazione
+  nazione: Focolare
+  dove: Salone, Camino, Sottoscala
+  descrizione: |
+    La terra dei Boggart, tornati nella Casa con il Patto di Restaurazione. Fattorie, covi di cacciatori, la capitale Wallford e il Fuoco del Camino custodito dai Cavalieri Cinerei. È governato da [[furiospino]].
+
+- id: liberi-domini
+  nome: I Liberi Domini
+  tipo: Nazione
+  nazione: Liberi Domini
+  dove: Primo Piano
+  descrizione: |
+    La nazione degli Sprighi, costruita sul Primo Piano da [[paracelso]]. Università, commerci, banche e un Simposio che governa. Le sue leggi non prevedono l'estradizione, perciò molti fuggitivi vi trovano rifugio.
+
+- id: orda
+  nome: L'Orda
+  tipo: Nazione
+  nazione: Orda
+  dove: Cantina
+  descrizione: |
+    La nazione degli Sluagh, giunti da Oltrelontano attraverso le Tubature nel giorno di Samhain. Regna sulla Cantina con Califfi, Emiri e Sceicchi, i Giannizzeri e la Milizia.
+
+- id: domini-esterni
+  nome: I Domini Esterni
+  tipo: Fuori dalla Casa
+  nazione: Fuori dalla Casa
+  dove: Il Giardino, oltre le mura
+  descrizione: |
+    Il mondo fuori dalla Casa. Qui sorgeva Déndronaos, l'albero delle Fate, qui furono esiliati i Boggart, e qui vivono da quasi cent'anni le Fate Selvagge che nel X A.C. invadono Faeriyev.
+
+# ── FOCOLARE ───────────────────────────────────────────────
+
+- id: salone
+  nome: Il Salone
+  tipo: Stanza
+  nazione: Focolare
+  dove: Pianterreno
+  descrizione: |
+    La terra natia dei Boggart: le praterie del Tappeto, l'Albero di Yule, il Camino. Pericolosa di notte e infestata dai briganti di [[duncan-rox]].
+
+- id: wallford
+  nome: Wallford
+  tipo: Città
+  nazione: Focolare
+  dove: Salone
+  descrizione: |
+    La capitale del Focolare, piena di botteghe, covi di cacciatori e tresche criminali. Qui vivono [[gwen]], [[sienna]] ed [[earnest]], e da qui [[ferguson-fole]] tira le fila della malavita.
+
+- id: chesterfield
+  nome: Chesterfield by-the-fire
+  tipo: Città
+  nazione: Focolare
+  dove: Salone
+  descrizione: |
+    Cittadina universitaria in rapida espansione, piena di case graziose e laboratori. Qui nascono movimenti studenteschi come l'Unione. Il sindaco è il professor [[flanagan]].
+
+- id: pinewood
+  nome: Pinewood
+  tipo: Foresta
+  nazione: Focolare
+  dove: Albero di Yule, Salone
+  descrizione: |
+    La foresta di Agolungo dentro l'Albero di Yule: rami tutti uguali, funghi, ragni e scolopendre. Verso la finestra diventa Agomorto, avvolta da una nebbia tossica.
+
+- id: bookshire
+  nome: Bookshire
+  tipo: Città
+  nazione: Focolare
+  dove: Sopra lo Scaffale, Salone
+  descrizione: |
+    Cittadina bucolica in cima allo Scaffale, raggiungibile da una scalinata di Libri del Padrone. Patria della faida tra Lockwood e Flammel.
+
+- id: cinderhall
+  nome: Cinderhall
+  tipo: Città
+  nazione: Focolare
+  dove: Camino
+  descrizione: |
+    Città coperta di cenere ai piedi del Camino, dove i Boggart portano le offerte al Fuoco. Oltre il Cancello di Ghisa vivono i Cavalieri Cinerei di [[edward-ashworth]].
+
+- id: sottoscala
+  nome: Il Sottoscala
+  tipo: Territorio
+  nazione: Focolare
+  dove: Ai piedi della Grande Scala
+  descrizione: |
+    Ranch e fattorie di allevatori di topi, il paesaggio più fotografato del Focolare. Zona di frontiera presidiata anche dagli eserciti di Reame e Orda. Qui sorge la Taverna del Ratto Blu.
+
+# ── DOMINI COMUNI ──────────────────────────────────────────
+
+- id: grande-scala
+  nome: La Grande Scala
+  tipo: Montagna
+  nazione: Domini Comuni
+  dove: Tra Pianterreno e Primo Piano
+  descrizione: |
+    La catena montuosa più alta della Casa, battuta da cacciatori e piena di Intercapedini. Qui cadde [[big-ben]]. La Carovana del Corrimano permetteva di risalirla comodamente, prima dell'attentato. Al Settimo Gradino si nasconde lo studio di [[argo]].
+
+- id: sottogradino
+  nome: Sottogradino
+  tipo: Città
+  nazione: Domini Comuni
+  dove: Primi Gradini della Grande Scala
+  descrizione: |
+    Tappa obbligata per chiunque viaggi tra i Piani. Le taverne sono piene di cacciatori ed esploratori in attesa di essere ingaggiati come guide.
+
+- id: lungo-corridoio
+  nome: Il Lungo Corridoio
+  tipo: Territorio
+  nazione: Domini Comuni
+  dove: Pianterreno
+  descrizione: |
+    Una distesa desolata e polverosa da attraversare in quattro o cinque giorni, tra boschetti di funghi, vespe e briganti. Collega la frontiera dell'Orda al resto della Casa.
+
+# ── REAME ──────────────────────────────────────────────────
+
+- id: sala-da-pranzo
+  nome: La Sala da Pranzo
+  tipo: Stanza
+  nazione: Reame
+  dove: Pianterreno
+  descrizione: |
+    Il cuore del Reame: il Tavolo con Astraviya, il Lampadario, la Grande Finestra con Faeriyev e la Culla di Cera, riserva di caccia di alveari abbandonati.
+
+- id: astraviya
+  nome: Astraviya
+  tipo: Capitale
+  nazione: Reame
+  dove: Tavolo e Lampadario, Sala da Pranzo
+  descrizione: |
+    La Città di Cristallo, capitale del Reame. Sottoluce si estende sul Tavolo, ricca e pulitissima; Altaluce è il Lampadario, dove ha sede la corte della Zarina e si sale solo in bolla di sapone. Qui sorge il Giardino Zoologico di [[protopopolov]].
+
+- id: faeriyev
+  nome: Faeriyev
+  tipo: Città
+  nazione: Reame
+  dove: Davanzale della Grande Finestra, Sala da Pranzo
+  descrizione: |
+    La Città delle Stelle, primo insediamento delle Fate, sul davanzale della Grande Finestra. Un tempo baluardo militare, poi simbolo di pace. Il 21 ottobre X A.C. le sue vetrate di zucchero vanno in frantumi.
+
+- id: la-ruelle
+  nome: La Ruelle
+  tipo: Città
+  nazione: Reame
+  dove: Sotto la Porta della Sala da Pranzo
+  descrizione: |
+    La frontiera del Reame: dogane ordinate, colori brillanti e la scritta "Proteggere e Conquistare". Anche i bassifondi sono ben tenuti. A meno di un giorno di cammino c'è la Culla di Cera.
+
+- id: tournoire
+  nome: Tournoire
+  tipo: Città
+  nazione: Reame
+  dove: Castello d'Ebano, in cima al Pianoforte
+  descrizione: |
+    Cittadella nobile, lugubre e decadente, ancora segnata dalla battaglia contro i Tristellati. Dimora di [[tristan-des-larmes]] e sede del Gran Ballo di Yule.
+
+- id: mont-guignol
+  nome: Mont Guignol
+  tipo: Città
+  nazione: Reame
+  dove: Interno del Pianoforte
+  descrizione: |
+    Città di archi di mogano e spartiti, piena di musicisti e botteghe. Qui iniziò la rivolta dei Tristellati dopo l'Editto "Fratelli!".
+
+- id: unter
+  nome: Unter
+  tipo: Città
+  nazione: Reame
+  dove: Ripiano inferiore della Credenza
+  descrizione: |
+    L'insediamento più povero del Reame, un vecchio porto caduto in disuso. Tre signori del crimine se ne contendono il controllo.
+
+- id: glasburg
+  nome: Glasburg
+  tipo: Città
+  nazione: Reame
+  dove: Parte vetrata della Credenza
+  descrizione: |
+    La Città Vetrata, su tre livelli. Ospita l'Accademia Militare del Grande Esercito Imperiale.
+
+# ── LIBERI DOMINI ──────────────────────────────────────────
+
+- id: beddingham
+  nome: Beddingham
+  tipo: Capitale
+  nazione: Liberi Domini
+  dove: Sotto il Letto, Primo Piano
+  descrizione: |
+    La città più grande della Casa e una delle più antiche, unica illuminata da luci artificiali inventate da [[paracelso]]. Un enorme bazar dove si incontrano tutti i Popoli, con il Teatro Reale.
+
+- id: clockminster
+  nome: Clockminster
+  tipo: Città
+  nazione: Liberi Domini
+  dove: Sotto l'Orologio a Pendolo, Primo Piano
+  descrizione: |
+    Distretto di studenti e professori attorno alla Libera Università, la prima della Casa, fondata da Paracelso. Qui lavorava il Burocrate [[argo]].
+
+- id: rosevault
+  nome: Rosevault
+  tipo: Città
+  nazione: Liberi Domini
+  dove: Dentro la Specchiera, Primo Piano
+  descrizione: |
+    La città più ricca e sorvegliata del Primo Piano, con la Banca Centrale Domestica e la Zecca. Teatro del Colpo del Secolo.
+
+- id: vascherdam
+  nome: Vascherdam
+  tipo: Città
+  nazione: Liberi Domini
+  dove: Bordo della Vasca, Primo Piano
+  descrizione: |
+    La Città sul Bordo, il porto più indaffarato della Casa: casette colorate, università di medicina, tresche e gendarmi. Qui lavorano [[ira]] e [[cesar-de-la-cuve]].
+
+# ── ORDA ───────────────────────────────────────────────────
+
+- id: cantina
+  nome: La Cantina
+  tipo: Stanza
+  nazione: Orda
+  dove: Sotto il Pianterreno
+  descrizione: |
+    Il territorio dell'Orda: calda, secca, attraversata da ruggine e segatura, con la Fornace del Falso Fuoco in fondo.
+
+- id: el-paso-de-umbral
+  nome: El Paso de Umbral
+  tipo: Città
+  nazione: Orda
+  dove: Ultimi gradini della Scala Tremante
+  descrizione: |
+    La frontiera dell'Orda: città chiara e assolata, famosa per la corrida dei ratadores. La vecchia villa dei Vilar è oggi un'ambasciata del Reame.
+
+- id: vilezia
+  nome: Vilezia
+  tipo: Città
+  nazione: Orda
+  dove: Golfo della Mirandola, Cantina
+  descrizione: |
+    La Splendidissima, un'oasi intorno a una pozza d'acqua. Sede della più antica Accademia di Scherma dell'Orda e governata dalla Calcamorte [[verana]].
+
+- id: al-sehir
+  nome: Al Sehir
+  tipo: Capitale
+  nazione: Orda
+  dove: Sul Banco, Cantina
+  descrizione: |
+    La Città di Ruggine, capitale dell'Orda e insediamento più popoloso della Casa: folla, spezie, bazar. Governata dal Califfo [[laio]].
+
+- id: samaracna
+  nome: Samaracna
+  tipo: Città
+  nazione: Orda
+  dove: Soffitto della Cantina
+  descrizione: |
+    La città capovolta, raggiungibile solo lungo la Via della Seta trainati da un ragno lupo. Qui il Califfo custodisce i suoi aracnidi.
+
+- id: utu-bathur
+  nome: Utu Bathur
+  tipo: Città
+  nazione: Orda
+  dove: Intercapedini presso il Largo Tubo, Cantina
+  descrizione: |
+    Città verticale nelle Intercapedini, ai margini del deserto: gioco d'azzardo, armi e covi di cacciatori. Governata dal Sultano Balthazar Bashan.
+
+- id: deserto-kashab
+  nome: Il Deserto del Kashab
+  tipo: Territorio
+  nazione: Orda
+  dove: Davanti alla Fornace, Cantina
+  descrizione: |
+    Dune di segatura arse dal Falso Fuoco, infestate da lucertole, ragni e scolopendre. Patria dei nomadi e di [[qamar]]. Al Tramonto vive [[xerxes]].
+
+- id: penjara
+  nome: Penjara e Pozzoprofondo
+  tipo: Città e prigione
+  nazione: Orda
+  dove: Cantina
+  descrizione: |
+    Città di allevatori di bombi costruita attorno alla montagna di ferro di Pozzoprofondo, la prigione più temuta della Casa, divisa in anelli sempre più stretti.

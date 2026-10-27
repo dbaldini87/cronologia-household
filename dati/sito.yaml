@@ -1,0 +1,10 @@
+# Impostazioni generali del sito
+titolo: Cronologia della Casa
+sottotitolo: Dalla Scomparsa del Padrone alla Caduta di Faeriyev, come la ricostruisce il nostro Club degli Storiografi.
+
+# Evento selezionato all'apertura del sito (id da cronologia.yaml)
+evento_iniziale: apertura-frontiere
+
+# Se pubblichi il sito su GitHub, scrivi qui "utente/nome-repository"
+# (es. dbaldini/cronologia-household): comparirà un link per modificare i dati.
+repository: dbaldini87/cronologia-household
