@@ -299,7 +299,8 @@ strong { font-weight: 700; }
 [data-nazione="liberi-domini"] .punto, .punto[data-nazione="liberi-domini"] { background: var(--n-liberi-domini); }
 [data-nazione="orda"] .punto, .punto[data-nazione="orda"] { background: var(--n-orda); }
 [data-nazione="domini-comuni"] .punto, .punto[data-nazione="domini-comuni"] { background: var(--n-domini-comuni); }
-[data-nazione="fuori-dalla-casa"] .punto, .punto[data-nazione="fuori-dalla-casa"] { background: var(--n-fuori); }
+[data-nazione="fuori-dalla-casa"] .punto, .punto[data-nazione="fuori-dalla-casa"],
+[data-nazione="giardino"] .punto, .punto[data-nazione="giardino"] { background: var(--n-fuori); }
 
 .legenda { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .88rem; color: var(--inchiostro-tenue); }
 .legenda span { display: inline-flex; align-items: center; gap: .35rem; }
@@ -354,6 +355,59 @@ strong { font-weight: 700; }
 .c-data { font-size: .9rem; color: var(--ottone); white-space: nowrap; }
 .indice-gruppo { margin-bottom: 1.5rem; }
 .indice-gruppo .elenco { display: flex; flex-wrap: wrap; gap: .4rem; }
+
+/* ── Sezioni (linguette) ───────────────────────────────── */
+[hidden] { display: none !important; }
+.viste {
+  display: flex; flex-wrap: wrap; gap: .2rem 1.6rem;
+  padding: 0 clamp(1rem, 4vw, 3.5rem);
+  margin-bottom: .6rem;
+  border-bottom: 1px solid var(--filo);
+}
+.vista {
+  background: none; border: 0; cursor: pointer;
+  padding: .5rem 0 .55rem;
+  font-family: var(--maiuscoletto); font-size: 1.12rem;
+  color: var(--inchiostro-tenue);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+.vista:hover { color: var(--viola); }
+.vista[aria-pressed="true"] { color: var(--viola); border-bottom-color: var(--viola); }
+
+/* ── Pagine del mondo ───────────────────────────────────── */
+.mondo {
+  max-width: 1180px; margin: 0 auto;
+  padding: 1.5rem clamp(1rem, 4vw, 3.5rem) 3rem;
+}
+.mondo-testata h2 {
+  font-family: var(--maiuscoletto); font-weight: 700;
+  font-size: clamp(2rem, 4.4vw, 2.9rem); line-height: 1.05;
+  color: var(--viola); margin: 0;
+}
+.mondo-sottotitolo { margin: .3rem 0 1.4rem; color: var(--ottone); font-style: italic; }
+.mondo-intro { font-size: 1.15rem; line-height: 1.6; }
+.mondo-gruppo { margin-top: 2.6rem; }
+.mondo-gruppo > h3 {
+  font-family: var(--maiuscoletto); font-weight: 500;
+  font-size: 1.3rem; color: var(--inchiostro-tenue);
+  margin: 0 0 .4rem;
+}
+.voci {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0 2.2rem;
+}
+.voce {
+  display: flex; flex-direction: column; gap: .15rem;
+  text-align: left; cursor: pointer;
+  background: none; border: 0; border-top: 1px solid var(--filo);
+  padding: .9rem 0 1.1rem;
+}
+.voce-nome { font-family: var(--maiuscoletto); font-weight: 700; font-size: 1.35rem; color: var(--viola); line-height: 1.1; }
+.voce-motto { font-style: italic; color: var(--ottone); font-size: .98rem; }
+.voce-breve { color: var(--inchiostro); font-size: 1rem; line-height: 1.4; margin-top: .2rem; }
+.voce:hover .voce-nome { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 
 /* ── Piede ──────────────────────────────────────────────── */
 .piede { padding: 1.5rem clamp(1rem, 4vw, 3.5rem) 2.5rem; font-size: .9rem; color: var(--inchiostro-tenue); border-top: 1px solid var(--filo); }

@@ -1,0 +1,331 @@
+# ─────────────────────────────────────────────────────────────
+#  IL MONDO — Popoli e Nazioni della Casa e del Giardino
+# ─────────────────────────────────────────────────────────────
+#  Ogni "sezione" diventa una pagina del sito (pulsanti in alto).
+#  Ogni sezione ha dei "gruppi" (es. I Popoli, Le Nazioni),
+#  e ogni gruppo delle "voci".
+#
+#  Campi di una voce:
+#  • nome, motto (facoltativo), breve: una riga di presentazione
+#  • dati: coppie "Etichetta: valore" mostrate come scheda
+#  • descrizione: il testo completo (puoi usare [[id]])
+#  • collegamenti: personaggi o luoghi da mostrare in fondo
+#  • luoghi_della_nazione: mostra in automatico tutti i luoghi
+#    di luoghi.yaml con quella "nazione"
+# ─────────────────────────────────────────────────────────────
+
+sezioni:
+
+  # ══ LA CASA ═════════════════════════════════════════════
+
+  - id: casa
+    titolo: La Casa
+    sottotitolo: I Popoli e le Nazioni che abitano le Stanze del Padrone
+    introduzione: |
+      Le leggende raccontano che, quando la Casa fu costruita, esisteva un unico Piccolo Popolo. Alcuni vollero entrare e servire il Padrone, altri preferirono restare fuori: il Popolo si divise e ogni gruppo strinse un **Contratto** con una Forza diversa per sopravvivere. Così nacquero i quattro Popoli della Casa. Ognuno ha un dono, e ognuno un vincolo da rispettare per non incorrere in Brutte Brutte Cose.
+
+      Dopo la Scomparsa del Padrone ogni Popolo si è preso le sue Stanze, e dalla Prima Guerra Domiciliare le quattro Nazioni sono legate dal Trattato di Astraviya e governate insieme dall'**Alto Consiglio**. Un vecchio proverbio dice: *fidati di uno sprigo se lo paghi, di un boggart se ti dà la sua parola, di una fata se appone la sua firma, di uno sluagh se ti dice "non ti fidare di me"*.
+    gruppi:
+
+      - titolo: I Popoli
+        voci:
+          - id: fate
+            nome: Le Fate
+            motto: Figlie delle Stelle
+            breve: Eleganti, alate, legate a un rigidissimo galateo.
+            dati:
+              Contratto ereditario: Figli delle Stelle
+              Dono: ali per librarsi e volare
+              Vincolo: la Firma, rispettare ogni accordo scritto che firmano
+              Lingua: Fae
+              Popolazione: meno di un quarto della Casa
+              Nazione: Il Reame
+            descrizione: |
+              Il Popolo dei Fae è entrato nella Casa dalla Grande Finestra dopo la caduta dell'Albero Déndronaos, guidato da [[oberon]]. Le Fate sono slanciate, dalla pelle luminosa e dai lineamenti perfetti, con ali traslucide simili a quelle di una libellula. Il loro sangue è giallo-arancio: per questo si dicono "a sangue caldo". Per una fata il colore dei propri occhi va descritto con precisione: "occhi blu" è quasi un'offesa.
+
+              La loro cultura ricerca tutto ciò che è bello e piacevole, ed è regolata da un galateo pieno di obblighi e divieti. Sono beneducate e accoglienti, ma raramente calorose. Molte case delle Fate non hanno scale: l'ingresso è al terzo o quarto piano. Lavorano soprattutto in politica, nell'esercito e nelle arti.
+            collegamenti: [reame, faeriyev, arcadia]
+
+          - id: boggart
+            nome: I Boggart
+            motto: Cari al Focolare
+            breve: Grandi, forti e fedeli al Padrone, di poche parole e molti fatti.
+            dati:
+              Contratto ereditario: Caro al Focolare
+              Dono: forza senza eguali e lo Sbrocco, per crescere di dimensioni
+              Vincolo: la Parola d'Onore, mantenere ogni promessa data
+              Lingua: Focolarino
+              Popolazione: circa un decimo della Casa, il Popolo meno numeroso
+              Nazione: Il Focolare
+            descrizione: |
+              I Boggart, un tempo chiamati Brownies, furono i primi a varcare la soglia della Casa, quando il Padrone c'era ancora: tenevano lontani gli insetti e proteggevano la Famiglia in cambio del calore del Focolare. Sono alti e nerboruti, con mascella squadrata, naso schiacciato e capelli folti dai colori della terra; gli occhi chiari sono considerati una grande fortuna.
+
+              Danno più valore ai fatti che alle parole, lavorano senza sosta e risolvono il resto a tavola, davanti a una torta di castagne e a una birra di fungo. Molti credono ancora nel ritorno del Padrone e a Imbolc portano offerte al Fuoco di Cinderhall. Hanno fama di guerrieri temibili: in tutta la Casa sono ricercati come guardie del corpo.
+            collegamenti: [focolare, cinderhall, big-ben]
+
+          - id: sprighi
+            nome: Gli Sprighi
+            motto: Nati dalle Forze Domestiche
+            breve: Mercanti, eruditi e inventori, divisi in Silfidi, Ondini e Soladini.
+            dati:
+              Contratto ereditario: Nato dallo Spiffero, dallo Scolo o dalla Scintilla
+              Vincolo: il Soldo, rispettare ogni accordo per cui hanno accettato un compenso
+              Lingua: Sprigaelico
+              Popolazione: più di un quarto della Casa
+              Nazione: I Liberi Domini
+            descrizione: |
+              Gli Sprighi abitano la Casa da tempi immemorabili; per scherzo si dice che siano entrati un giorno dopo il primo Boggart. Sono un unico Popolo, con la stessa cultura e le stesse feste, ma ognuno è legato a una Forza Domestica diversa:
+
+              **Silfidi**, nati dallo Spiffero: alti, esili, con ossa cave e capelli vaporosi, sangue verde-azzurro. Leggerissimi e portati per le arti, hanno il dono dell'Aerofagia. Si dice che abbiano sempre la testa tra le nuvole.
+
+              **Ondini**, nati dallo Scolo: bassi, tozzi e muscolosi, pelle e sangue bluastri, capelli chiari come schiuma. Hanno il dono della Ritenzione Idrica. Laboriosi e schietti fino alla maleducazione.
+
+              **Soladini**, nati dalla Scintilla: pelle e capelli dai colori caldi, occhi sfaccettati e spesso gli occhiali. Hanno il dono dell'Illuminazione e brillano nella scienza e nell'amministrazione.
+
+              Più della metà delle famiglie di sprighi possiede un'attività commerciale.
+            collegamenti: [liberi-domini, beddingham, paracelso]
+
+          - id: sluagh
+            nome: Gli Sluagh
+            motto: Ritornati da Oltrelontano
+            breve: Il Popolo più numeroso e più vario, dal sangue nero che rigenera.
+            dati:
+              Contratto ereditario: Ritornato da Oltrelontano
+              Dono: il Sangue Nero, che rigenera anche le ferite mortali e resiste a veleni e malattie
+              Vincolo: il Debito, onorare ogni scommessa persa
+              Lingua: Slugan, in oltre cento dialetti
+              Popolazione: circa metà della Casa
+              Nazione: L'Orda
+            descrizione: |
+              Gli Sluagh sono arrivati nella Casa da Oltrelontano nella notte di Samhain del 51 s.P., risalendo dalle Tubature in 27 tribù. È difficile descriverli, perché ciò che li accomuna è la diversità: possono essere alti la metà di una fata o più di un boggart, con pelle che va dal bianco al nero passando per il verde e il viola, e lunghe orecchie a punta. Tutti hanno il sangue nero e appiccicoso.
+
+              Le loro culture sono innumerevoli: i nomadi del Kashab, i passionali vileziani, gli ospitali abitanti di Umbral, i mercanti di Al Sehir. Molti venerano ancora gli idoli di Oltrelontano, come il Ragno, lo Scorpione e il Serpente. Per secoli sono stati vittime di pregiudizi, e ancora oggi c'è chi li usa come spauracchio per i bambini.
+            collegamenti: [orda, al-sehir, cantina]
+
+      - titolo: Le Nazioni
+        voci:
+          - id: n-reame
+            nome: Il Reame
+            motto: Custodire et Capere (Proteggere e Conquistare)
+            breve: La monarchia delle Fate, culla delle arti e dell'eleganza.
+            dati:
+              Territori: Sala da Pranzo e Cucina
+              Capitale: Astraviya, la Città di Cristallo
+              Governo: monarchia ereditaria
+              Sovrana: la Zarina Arcadia Oberonovna
+              Emblema: la Stella a Otto Punte
+              Forze armate: Regia Gendarmeria, Grande Esercito Imperiale, Schiene Dorate
+            descrizione: |
+              Fondato da [[oberon]] dopo l'Esodo delle Fate, per decenni è stato il cuore dell'Impero e ha protetto i suoi territori dagli orrori della guerra. Oggi è considerato la culla della cultura e delle arti. Le corti sono piene di intrighi e regole: scegliere il vestito giusto è un'arma per sopravvivere. Tra i nobili di Altaluce e i poveri di Unter c'è un abisso.
+
+              Il **Grande Esercito Imperiale**, per volere dell'Alto Consiglio, pattuglia tutta la Casa ed è al di sopra degli eserciti nazionali. La sua élite sono le **Schiene Dorate**, che volano in battaglia con armature di moscon d'oro. La Gendarmeria veste giubbe verdi e stivali con la punta all'insù.
+            luoghi_della_nazione: Reame
+            collegamenti: [arcadia, ludmillen]
+
+          - id: n-focolare
+            nome: Il Focolare
+            motto: Keep the Hearth Burning! (Mantieni viva la Fiamma!)
+            breve: La repubblica militare dei Boggart, fatta di campagne, caccia e tradizioni.
+            dati:
+              Territori: Salone e gran parte del Sottoscala
+              Capitale: Wallford, la Tana
+              Centro spirituale: Cinderhall, nel Camino
+              Governo: repubblica militare, guidata dagli eredi di Big Ben
+              Governatore: William "Furiospino" Hearthworth Jr.
+              Emblema: la Fiamma del Camino con le forbici incrociate
+              Forze armate: Esercito del Focolare, Cavalieri dell'Ordine Cinereo
+            descrizione: |
+              Big Ben fondò il Focolare per preservare la Casa in attesa del ritorno del Padrone. È una nazione pacifica di pianure, fattorie e della grande foresta di Pinewood, con pochi insediamenti piccoli e rurali. Non ci sono grandi ricchi né grandi poveri, ma la reputazione conta moltissimo. L'Università di Chesterfield by-the-fire cresce ogni anno.
+
+              Il motto non ufficiale, caro a Furiospino, è *Poiché il Padrone è Grande, e queste sono piccole faccende*. I soldati in città vestono d'azzurro, quelli di frontiera di blu. Il corpo d'élite sono i pochi **Cavalieri Cinerei** di Cinderhall, guidati dal Tristo Cavaliere [[edward-ashworth]]. L'ospitalità è proverbiale, ma gli stranieri sono più graditi come ospiti che come vicini.
+            luoghi_della_nazione: Focolare
+            collegamenti: [furiospino, edward-ashworth]
+
+          - id: n-liberi-domini
+            nome: I Liberi Domini
+            motto: E Pluribus Unum (Da molti, uno)
+            breve: La confederazione degli Sprighi, aperta, commerciale e piena di università.
+            dati:
+              Territori: Primo Piano (Camera Padronale, Bagno, Piccola Camera)
+              Capitale: Beddingham; il centro politico è Vascherdam
+              Governo: il Simposio, una cerchia di eruditi
+              Rettore: il professor Werner Reinhardt
+              Emblema: tre chiavi incrociate, per Silfidi, Ondini e Soladini
+              Forze armate: Gendarmeria, Esercito di Porcellana, Fanteria di Porcellana
+            descrizione: |
+              Fondati da [[paracelso]] sul principio dell'uguaglianza tra i Popoli, i Liberi Domini sono il posto dove ogni Popolo si incontra. Mercati, porti e università (Clockminster, Bedside, Vascherdam) attirano gente da tutta la Casa; da Rosevault esce gran parte delle banconote. Il Trattato di Astraviya vieta quasi ogni nuova costruzione, e la disoccupazione cresce.
+
+              Non esiste l'**estradizione**: per questo molti fuggitivi, politici e non, vi cercano rifugio. La Gendarmeria veste di rosso e bianco; l'Esercito di Porcellana, con le corazze smaltate della Grande Tazza, non ha mai perso un assedio. Qui agiscono anche i **Liberissimi**, che vogliono l'indipendenza del Primo Piano dall'Alto Consiglio.
+            luoghi_della_nazione: Liberi Domini
+            collegamenti: [paracelso]
+
+          - id: n-orda
+            nome: L'Orda della Grande Lama
+            motto: Gloria alla Grande Lama! Gloria al Khan!
+            breve: Il khanato degli Sluagh, sovrappopolato, ricchissimo e pieno di culture diverse.
+            dati:
+              Territori: Scala Tremante e tutta la Cantina
+              Capitale: Al Sehir, la Città di Ruggine
+              Governo: khanato
+              Sovrano: il Khan Rodomonte
+              Emblema: la lama dentata
+              Forze armate: Milizia, Esercito dell'Orda, Giannizzeri, i 27 Calcamorte
+            descrizione: |
+              Kubalai Khan riunì le 27 tribù arrivate a Samhain sotto un'unica bandiera. Oggi l'Orda è lontana dalle altre nazioni, oltre il Lungo Corridoio, e da lì arriva gran parte dell'artigianato e delle materie prime della Casa. Le grandi città sono sovraffollate e il crimine è quotidiano: ad Al Sehir la Legge dell'Alba concede ogni giorno l'amnistia per i reati non risolti.
+
+              I figli dei Don di Umbral, dei Patrizi della Pozza e degli Sceicchi crescono tra ori e tutori; i poveri finiscono nell'esercito o nell'arena dei ratadores. A Vilezia la **viltà** è considerata una virtù. Come nei Liberi Domini, non c'è estradizione. A capo dell'esercito ci sono i 27 **Calcamorte**, eredi delle tribù originarie.
+            luoghi_della_nazione: Orda
+            collegamenti: [rodomonte]
+
+      - titolo: Poteri e fazioni
+        voci:
+          - id: alto-consiglio-voce
+            nome: L'Alto Consiglio
+            breve: Il governo comune della Casa, nato alla fine della Prima Guerra Domiciliare.
+            dati:
+              Fondato: 91 s.P. / 0 A.C.
+              Imperatrice Reggente: Arcadia Oberonovna
+              Membri: un rappresentante per Popolo
+            descrizione: |
+              Istituito da [[arcadia]] dopo la guerra, riunisce un rappresentante per ogni Popolo: Paracelso per gli Sprighi, Furiospino per i Boggart, il Capitano Rodomonte per gli Sluagh. Il Trattato di Astraviya ne regola i poteri: il Grande Esercito Imperiale pattuglia l'intera Casa e le nuove costruzioni sono quasi vietate.
+            collegamenti: [arcadia, paracelso, furiospino, rodomonte]
+
+          - id: tristellati
+            nome: I Tristellati
+            breve: Fate nazionaliste che rifiutano l'Editto "Fratelli!".
+            descrizione: |
+              Soldati del Grande Esercito Imperiale che non accettarono l'idea che tutti gli omini fossero un'unica stirpe. Nell'87 s.P. occuparono il Pianoforte perseguitando chi non era Fata, finché [[tristan-des-larmes]] non li sconfisse. Durante la Fragile Pace sono tornati a tramare nell'ombra, infiltrati nell'esercito, nella nobiltà e nelle gendarmerie.
+            collegamenti: [tristan-des-larmes]
+
+          - id: liberissimi
+            nome: I Liberissimi
+            breve: Veterani che combattono per l'indipendenza del Primo Piano.
+            descrizione: |
+              Ex soldati dell'Esercito di Porcellana che non hanno mai accettato il Trattato di Astraviya. Si fanno conoscere nel VII A.C. facendo precipitare la Carovana del Corrimano. Usano la violenza contro il Reame e l'Alto Consiglio.
+            collegamenti: [liberi-domini]
+
+          - id: medjay
+            nome: L'Ordine dei Medjay
+            breve: Antica setta di sicari sluagh legata al Falso Fuoco.
+            descrizione: |
+              Considerato l'ordine di assassini più pericoloso della Casa. Si dice che i Medjay servano il Falso Fuoco che brucia nella Fornace, in fondo al Deserto del Kashab, e che cerchino le pagine del Diario del Burocrate [[argo]].
+            collegamenti: [rosa, deserto-kashab]
+
+          - id: cavalieri-cinerei
+            nome: I Cavalieri Cinerei
+            breve: L'élite del Focolare, custodi del Fuoco del Camino.
+            descrizione: |
+              Pochi e leggendari, indossano armature di cenere e vivono a Cinderhall, oltre il Cancello di Ghisa. Non fanno parte dell'esercito regolare, ma sono stati decisivi nei conflitti più duri. Il loro Gran Maestro è il Tristo Cavaliere [[edward-ashworth]].
+            collegamenti: [edward-ashworth, cinderhall]
+
+  # ══ IL GIARDINO ═════════════════════════════════════════
+
+  - id: giardino
+    titolo: Il Giardino
+    sottotitolo: I Popoli e le Fazioni dei Domini Esterni
+    introduzione: |
+      Oltre la Prima Soglia e il vecchio Porticato si stende il Giardino, che c'è chi chiama Domini Esterni e chi il Vasto Verde: verde e sconfinato in primavera, rosso in autunno, bianco d'inverno. Lì fuori tutto è immensamente grande. Scoiattoli, passeri, poiane e rospi considerano gli omini uno spuntino, e perfino i Boggart più grossi fanno fatica a sopravvivere senza pazienza e cautela.
+
+      La gente della Casa chiama gli abitanti del Giardino **Fuorestieri**, perché vengono da fuori; loro chiamano quelli della Casa **Tappi**, da "tappati in Casa". Fino alla Caduta di Faeriyev pochi in Casa sapevano davvero cosa ci fosse là fuori.
+
+      Il Giardino si divide in due: il **Giardino Davanti**, selvaggio e rigoglioso, attraversato dalla Strada Madre fino alla Fontana, e il **Giardino sul Retro**, silenzioso e ombroso, regno dello Shogunato. Sotto entrambi corre il **Sottosuolo**, un labirinto di cunicoli e tane abitato da cacciatori ciechi e insetti guerrieri. Oltre la Staccionata comincia **Lontano**.
+    gruppi:
+
+      - titolo: I Popoli del Giardino
+        voci:
+          - id: barghest
+            nome: I Barghest
+            motto: Lontano dal Focolare
+            breve: Boggart rimasti fuori dalla Casa, duri come la corteccia.
+            dati:
+              Popolo: Boggart
+              Contratto ereditario: Lontano dal Focolare
+              Dono: Sclerare, raddoppiare di dimensioni e diventare pelosi come un topo arrabbiato
+              Vincolo: la Stretta di Mano, onorare ogni promessa suggellata così
+              Dove vivono: la Città di Rovi
+            descrizione: |
+              Quando i Boggart furono esiliati, seguirono William "Vecchia Noce" Hearthworth fino alla Città di Rovi. Dopo il Patto di Restaurazione, chi si rifiutò di inginocchiarsi a Oberon per tornare in Casa restò fuori: sono i Barghest, gli omini più instancabili e resistenti della Casa e dei Domini Esterni.
+
+              Un tempo considerati una colonia remota del Focolare, oggi molti di loro si sentono ribelli e seguono un condottiero misterioso, il **Cavaliere di Spine**.
+            collegamenti: [citta-di-rovi]
+
+          - id: genomini
+            nome: I Genomini
+            motto: Nati dal Selciato
+            breve: Sprighi della terra, laboriosi, saggi e legati alle Stagioni.
+            dati:
+              Popolo: Sprighi
+              Contratto ereditario: Nati dal Selciato
+              Dono: la Calcificazione, diventare una statua di pietra indistruttibile
+              Vincolo: il Baratto, rispettare ogni impegno preso in cambio di qualcosa di materiale
+              Dove vivono: il Giardino e la Cittadella
+            descrizione: |
+              Secondo il mito sono Sprighi che, quando la Casa era in costruzione, scelsero di vivere sottoterra all'ombra del Padrone. Sono minuti, con pelle e capelli dai colori caldi dell'estate e dell'autunno e una scintilla di saggia spensieratezza negli occhi. Guardano con sospetto i "tappi" della Casa.
+
+              Non hanno mai reclamato territori, convinti che il Giardino non appartenga a nessuno. Per difendersi dal colonialismo di Oberon formarono un esercito, i **Redcap** (Berretti Rossi), oggi sciolto. D'inverno molti si ritirano nella Cittadella, dove vive il Saggio Cagliostro, che secondo alcuni è più vecchio perfino di Paracelso.
+            collegamenti: [cittadella]
+
+          - id: fae
+            nome: I Fae
+            motto: Prediletti delle Stelle
+            breve: Le "Fate Selvagge", rimaste a custodire il Ceppo di Déndronaos.
+            dati:
+              Popolo: Fate
+              Contratto ereditario: Prediletti delle Stelle
+              Dono: ali colorate e il Vero Volo, come le Schiene Dorate
+              Vincolo: rispettare gli accordi firmati e anche quelli ereditati dai genitori
+              Dove vivono: il Ceppo di Déndronaos
+            descrizione: |
+              Quando l'Albero Déndronaos cadde, la maggior parte dei Fae seguì [[oberon]] nella Casa. Alcuni invece restarono a custodire i resti dell'Albero. Sono più alti e robusti delle Fate domestiche, con chiome scure e ali dai colori accesi, e hanno un grande rispetto per la famiglia e per gli anziani.
+
+              Per quasi cent'anni la Casa ha ignorato la loro esistenza, finché nel X A.C. hanno sfondato le Vetrate della Grande Finestra.
+            collegamenti: [dendronaos, morgana-astralta, oberon-astralta]
+
+          - id: shinigami
+            nome: Gli Shinigami
+            motto: Eco di Oltrelontano
+            breve: Sluagh custodi delle tradizioni più antiche di Oltrelontano.
+            dati:
+              Popolo: Sluagh
+              Contratto ereditario: il Sangue Nero degli Sluagh
+              Vincolo: i Debiti di Vita
+              Dove vivono: il Giardino sul Retro
+            descrizione: |
+              Il più antico dei Popoli di Oltrelontano: omini dagli occhi affilati, saggi e battaglieri. Quando la Caccia Selvaggia entrò nella Casa, lo shinigami Yōkai Akuma guidò i suoi samurai fino al Giardino sul Retro, strinse un Contratto con il serpente d'argento Occhi-di-Pietra e fondò lo Shogunato. Hanno conservato le tradizioni di Oltrelontano che gli altri Sluagh hanno perso.
+            collegamenti: [canneto]
+
+      - titolo: Le Fazioni del Giardino
+        voci:
+          - id: ribelli-rovi
+            nome: I Ribelli dei Rovi
+            breve: I Barghest che non riconoscono l'autorità di Furiospino.
+            descrizione: |
+              Probabilmente la maggioranza degli abitanti della Città di Rovi. Per il Trattato di Astraviya la città appartiene al Focolare, ma i ribelli sono apertamente ostili ai Boggart che si sono inginocchiati a Oberon pur di tornare in Casa. Seguono il misterioso **Cavaliere di Spine** e non smetteranno finché [[furiospino]] non disconoscerà la Zarina.
+            collegamenti: [citta-di-rovi, furiospino]
+
+          - id: seelie
+            nome: La Corte dei Seelie
+            breve: I Fae che difendono il Ceppo di Déndronaos e si oppongono ad Arcadia.
+            descrizione: |
+              Detta anche "la Corte" o "il Seelie", non è riconosciuta come Nazione dalla Casa, e fino alla Caduta di Faeriyev pochissimi ne conoscevano l'esistenza. Il suo esercito è diviso in Legioni: la V Legione Ribelle Nova Scorpio è comandata dalla Generale [[morgana-astralta]].
+
+              Con la Caduta di Faeriyev si è saputo chi la guida: **Titania Biancaluce**, moglie di Oberon e madre di Arcadia, che tutti credevano morta con l'Albero. Era sopravvissuta, chiusa in una goccia di resina, e i Fae l'hanno liberata. Per lei Oberon era un usurpatore, e le Fate domestiche dovrebbero tornare al Ceppo.
+            collegamenti: [dendronaos, morgana-astralta, arcadia]
+
+          - id: cittadella-voce
+            nome: La Cittadella
+            breve: La città sotterranea e neutrale dei Genomini.
+            descrizione: |
+              Fin da quando la Casa era in costruzione, i Genomini si rifugiano in questa città fatta di cerchi concentrici e tunnel labirintici. È diventata una Nazione autosufficiente, riconosciuta dal Trattato di Astraviya, che non è mai entrata in conflitto con nessuno. Accoglie chiunque abbia bisogno di un rifugio.
+            collegamenti: [cittadella]
+
+          - id: shogunato
+            nome: Lo Shogunato della Lama d'Argento
+            breve: Lo Stato degli Shinigami sul Retro, formalmente parte dell'Orda.
+            descrizione: |
+              Fondato da Yōkai Akuma nel Canneto, prima ancora che Kubalai Khan unificasse l'Orda. In seguito sua figlia Yōkai Jorōgumo, diventata una dei primi Calcamorte al fianco di Kubalai Khan, tornò nel Giardino per deporre il padre e diventare Shogun. Sulla carta lo Shogunato è una provincia dell'Orda, ma da sempre agisce in totale indipendenza e non si immischia negli affari della Casa.
+            collegamenti: [canneto, orda]
+
+      - titolo: Luoghi del Giardino
+        # mostra in automatico i luoghi di luoghi.yaml con nazione: Giardino
+        luoghi_della_nazione: Giardino

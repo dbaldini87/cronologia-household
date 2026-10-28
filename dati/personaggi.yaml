@@ -1,82 +1,23 @@
 # ─────────────────────────────────────────────────────────────
-#  PERSONALITÀ — protagonisti e figure storiche
+#  PERSONALITÀ — protagonisti e figure della Casa
 # ─────────────────────────────────────────────────────────────
 #  • id: breve, minuscolo, senza spazi. È il nome usato
-#    negli altri file (es. personaggi: [gwen]).
-#  • gruppo: "Personaggi degni di Nota" oppure "Figure della Casa"
-#    (puoi inventarne altri: compariranno come nuove sezioni).
+#    negli altri file (es. protagonisti: [gwen]).
+#  • gruppo: decide in quale sezione compare il personaggio
+#    ("I Protagonisti", "Figure della nostra Saga",
+#    "Figure della Casa"…). Puoi inventarne altri.
 #  • ritratto: percorso di un'immagine (facoltativo),
 #    es. ritratti/gwen.webp
 #  • luoghi: luoghi legati al personaggio (id di luoghi.yaml).
-#  • campagna: note su come è andata nella vostra Saga.
+#  • campagna: come è cambiato il personaggio nella nostra Saga.
+#    Le righe che iniziano con # non vengono mostrate.
 # ─────────────────────────────────────────────────────────────
 
-# ── PERSONAGGI DEGNI DI NOTA ───────────────────────────────
-
-- id: dimitri
-  nome: Dimitri Sokov
-  nome_completo: Dimitri Vladenovich Sokov
-  gruppo: Personaggi degni di Nota
-  popolo: Fata
-  nazione: Reame
-  mestiere: Soldato · Cadetto
-  eta: 27
-  breve: Guardia d'onore di Altaluce, bello come una stella e innamorato di Yuliya.
-  luoghi: [faeriyev, astraviya, glasburg]
-  profilo: |
-    Secondogenito di una famiglia agiata di Faeriyev, è cresciuto tra balli e teatri, lontano dal fronte della Guerra Domiciliare. Dopo l'Accademia Militare di Glasburg l'influenza dei genitori lo ha sempre tenuto al sicuro, fino al posto di guardia d'onore nel palazzo di Altaluce: più un'attrazione per i visitatori che un soldato, e a lui va benissimo così. Sogna di sposare una nobildonna, ma ha perso la testa per il Sergente [[yuliya]] Dragomirov, che a stento si accorge di lui.
-
-- id: ira
-  nome: Ira Poole
-  gruppo: Personaggi degni di Nota
-  popolo: Sprigo (Ondino)
-  nazione: Liberi Domini
-  mestiere: Soldato · Gendarme
-  eta: 38
-  breve: Gendarme di Vascherdam che sa stare in equilibrio tra legge e tresche.
-  luoghi: [vascherdam]
-  profilo: |
-    Si pronuncia "Aira". Cresciuto in un quartiere di Vascherdam sovraffollato di profughi e governato dalle tresche, ha imparato presto che in città valgono altre leggi. Ha combattuto per anni nell'Esercito di Porcellana, anche sotto il Comandante [[kirkland]], e la guerra lo ha reso diffidente verso gli Sluagh. Oggi è gendarme: manda in galera chi se lo merita e lascia al loro posto i criminali "ragionevoli", come [[micah]]. Nel suo quartiere non succede nulla senza che lui lo sappia.
-
-- id: jemma
-  nome: Jemma Reed
-  gruppo: Personaggi degni di Nota
-  popolo: Boggart
-  nazione: Focolare
-  mestiere: Soldato · Mercenario
-  eta: 28
-  breve: Mercenaria disertrice, scorta i viaggiatori tra Umbral e il Sottoscala.
-  luoghi: [el-paso-de-umbral, sottoscala, lungo-corridoio]
-  profilo: |
-    Nata nei Domini Esterni, da ragazza è sopravvissuta al saccheggio di Doorkeep vagando per settimane nelle Intercapedini, finché lo zio Duncan non l'ha ritrovata disertando per cercarla. "Ogni cicatrice segna una volta in cui ci hanno sottovalutati." Richiamata nel Grande Esercito Imperiale, ha disertato a sua volta: non perdona alle Fate di aver abbandonato i Boggart durante la guerra. Vive come mercenaria e riscossore di crediti, e il Ratto Blu è la cosa più simile a una casa che abbia.
-
-- id: tubo
-  nome: Tubo
-  gruppo: Personaggi degni di Nota
-  popolo: Sluagh
-  nazione: Orda
-  mestiere: Soldato · Guardiano
-  eta: 19
-  breve: Gigante dal cuore d'oro, ex Straccio di un Emiro, inseparabile da Litha.
-  luoghi: [penjara, grande-scala]
-  profilo: |
-    Ceduto da bambino a un Emiro di Penjara per pagare i debiti della famiglia, è cresciuto come Straccio, uno schiavo addestrato a combattere. Docile e buono, è stato costretto per anni a battersi contro avversari sempre più forti. Quando l'Emiro è morto in un agguato nel Lungo Corridoio, davanti alla Grande Scala Tubo ha scelto di essere libero. Poco dopo ha conosciuto [[litha]], la sua prima e migliore amica.
-
-- id: aidan
-  nome: Aidan Mackenna
-  gruppo: Personaggi degni di Nota
-  popolo: Sprigo (Soladino)
-  nazione: Liberi Domini
-  mestiere: Erudito · Investigatore
-  eta: 24
-  breve: Giovane investigatore forense, timido e curiosissimo.
-  luoghi: [rosevault, vascherdam]
-  profilo: |
-    Figlio di un commissario di Rosevault e di una scrittrice filantropa, era un bambino timido che si rifugiava in biblioteca tra le leggende di Paracelso e di [[argo]]. Lì ha conosciuto [[siobhan]], che lo difendeva dai bulli: da allora sono come fratello e sorella e hanno giurato di risolvere insieme tutti i misteri della Casa. È tra i primi laureati della nuova facoltà di Scienza Forense.
+# ── I PROTAGONISTI ─────────────────────────────────────────
 
 - id: gwen
   nome: Gwen Summers
-  gruppo: Personaggi degni di Nota
+  gruppo: I Protagonisti
   popolo: Boggart
   nazione: Focolare
   mestiere: Erudito · Ricercatore
@@ -85,35 +26,12 @@
   luoghi: [wallford, beddingham]
   profilo: |
     Nipote di boggart che si erano inginocchiati a Oberon pur di restare in Casa, è cresciuta a Beddingham nel banco dei pegni di famiglia, tra oggetti di ogni epoca e popolo. Lì è nata la sua grande ossessione: gli studi del Burocrate [[argo]], che avrebbe imbrigliato il potere dei Contratti. Dopo la guerra ha studiato Storia, Filosofia e Cartografia a Wallford, dove lavora come bibliotecaria. Impacciata, estroversa, curiosa e un po' ingenua.
-
-- id: malaika
-  nome: Malaika Kumari
-  gruppo: Personaggi degni di Nota
-  popolo: Sluagh
-  nazione: Orda
-  mestiere: Erudito · Dottore
-  eta: 28
-  breve: Dottoressa razionale cresciuta in povertà, sorella acquisita di Zehra.
-  luoghi: [penjara, al-sehir, vascherdam]
-  profilo: |
-    Figlia della guaritrice Lainey Kumari e di un ufficiale soladino che non ha mai conosciuto, è cresciuta povera a Penjara aiutando la madre a curare i bisognosi. Dopo aver salvato lo Sceicco Ören dal veleno di un ragno, è stata accolta nella sua villa ad Al Sehir come una sorella per [[zehra]]. Il suo sogno è una medicina comune a tutti i Popoli; per questo parte per studiare all'Università di Vascherdam, nella terra di suo padre.
-
-- id: pierre
-  nome: Pierre Delacroyance
-  nome_completo: Pierre Armand Delacroyance
-  gruppo: Personaggi degni di Nota
-  popolo: Fata
-  nazione: Reame
-  mestiere: Erudito · Diplomatico
-  eta: 41
-  breve: Tutore raffinato e snob, diplomatico abilissimo ma ingenuo.
-  luoghi: [mont-guignol, tournoire, la-ruelle]
-  profilo: |
-    Discendente minore di servitori di Oberon, è cresciuto tra Mont Guignol e Tournoire, nel lusso del Pianoforte. Laureato in Diplomazia, Galateo e Arte Amatoria, è riuscito a evitare sia la leva sia la guerra, e un caso fortunato lo ha portato lontano dal Pianoforte quattro giorni prima della rivolta dei Tristellati. Tutore ricercatissimo, ora si occupa del giovane Gaston Lemiel. Si fida ciecamente del segretario [[gunther]].
+  campagna: |
+    # Scrivi qui come è cambiata Gwen nella vostra Saga.
 
 - id: humphrey
   nome: Humphrey Lockwood
-  gruppo: Personaggi degni di Nota
+  gruppo: I Protagonisti
   popolo: Boggart
   nazione: Focolare
   mestiere: Cacciatore · Solitario
@@ -121,135 +39,14 @@
   breve: Cacciatore silenzioso che non si immischia negli affari altrui.
   luoghi: [bookshire, pinewood, wallford]
   profilo: |
-    Ultimo di cinque fratelli di una famiglia di cacciatori di Bookshire, in faida con i Flammel. Da ragazzo ha stretto un'amicizia segreta con [[litha]] Flammel; la sera in cui dovevano fuggire insieme lei non si è presentata e lui è partito da solo. Da tre anni fa la spola tra Pinewood e Wallford, vende le sue prede senza contrattare e non porta i colori di nessun Covo.
-
-- id: icarus
-  nome: Icarus König
-  gruppo: Personaggi degni di Nota
-  popolo: Fata
-  nazione: Reame
-  mestiere: Cacciatore · Sentinella
-  eta: 22
-  breve: Sentinella del Grande Esercito Imperiale, figlio dei vicoli di Unter.
-  luoghi: [unter, glasburg, la-ruelle]
-  profilo: |
-    Cresciuto povero a Unter, da bambino faceva mille lavori per pagare le cure della sorellina Thalia, morta il giorno in cui finì la guerra. Con quei risparmi i genitori gli hanno pagato l'Accademia Militare di Glasburg, dove il Sergente Ludwig Teelöffel è stato per lui un secondo padre. Ora è di stanza a La Ruelle, in attesa di partire per il Lungo Corridoio.
-
-- id: litha
-  nome: Litha Flammel
-  gruppo: Personaggi degni di Nota
-  popolo: Sprigo (Soladina)
-  nazione: Focolare
-  mestiere: Cacciatore · Guida
-  eta: 21
-  breve: Guida della Grande Scala, sorridente anche nei guai.
-  luoghi: [bookshire, grande-scala, sottogradino]
-  profilo: |
-    Unica famiglia di sprighi in una città di boggart, i Flammel di Bookshire erano in faida con i Lockwood. Litha voleva fuggire con [[humphrey]], ma la notte della fuga suo padre si sentì male e lei rimase. Un anno dopo è partita per fare la guida ai viaggiatori diretti ai Liberi Domini e ha conosciuto [[tubo]], suo inseparabile compagno.
-
-- id: qamar
-  nome: Qamar Halabi
-  gruppo: Personaggi degni di Nota
-  popolo: Sluagh
-  nazione: Orda
-  mestiere: Cacciatore · Cacciatore di Taglie
-  eta: 25
-  breve: Cacciatrice del Kashab che cerca l'assassino dei suoi genitori.
-  luoghi: [deserto-kashab, utu-bathur]
-  profilo: |
-    Figlia di predoni del Kashab, da bambina ha visto un boggart con una cicatrice a croce sulla mano sinistra uccidere i suoi genitori. Sopravvissuta a Utu Bathur, ha controllato per anni le mani di ogni prigioniero boggart. Poi è stata guida nel deserto e spia per un Emiro. Con l'apertura delle frontiere può finalmente salire nei territori dei suoi nemici: per lei la guerra non è finita.
-
-- id: gunther
-  nome: Gunther Lichtmann
-  gruppo: Personaggi degni di Nota
-  popolo: Sprigo (Silfide)
-  nazione: Reame
-  mestiere: Criminale · Imbroglione
-  eta: 36
-  breve: Ex notaio di Unter, segretario servile e approfittatore di Pierre.
-  luoghi: [unter, glasburg]
-  profilo: |
-    Ultimo nato di una famiglia di truffatori di Unter, sognava di diventare un notaio onesto. Ci è riuscito, ma l'onestà non pagava: ha cominciato a ritoccare contratti e firme ed è diventato ricco. Con l'Alto Consiglio i controlli lo hanno rovinato e gli hanno tolto la licenza. Allora ha trovato l'omino più facile da abbindolare della Casa: [[pierre]] Delacroyance.
-
-- id: jocelyne
-  nome: Jocelyne Bonheur
-  gruppo: Personaggi degni di Nota
-  popolo: Fata
-  nazione: Reame
-  mestiere: Criminale · Cortigiana
-  eta: 24
-  breve: Cortigiana scaltra di Sottoluce, orfana della rivolta dei Tristellati.
-  luoghi: [mont-guignol, astraviya]
-  profilo: |
-    Rimasta orfana quando i Tristellati colpirono la madre, sposata a un ondino, è cresciuta per strada tra bari e saltimbanchi. Allegra e spregiudicata, è arrivata ad Astraviya sognando i teatri; dopo pochi provini falliti è entrata nel giro delle tresche e lavora come cortigiana a Sottoluce, specializzata in mariti infedeli da ricattare.
-
-- id: micah
-  nome: Micah Doyle
-  nome_completo: Micah Doyle (Michelagro Dole)
-  gruppo: Personaggi degni di Nota
-  popolo: Sluagh
-  nazione: Liberi Domini
-  mestiere: Criminale · Brigante
-  eta: 38
-  breve: Sicario della tresca di Lynch che sogna una vita tranquilla.
-  luoghi: [vascherdam, vilezia, bookshire]
-  profilo: |
-    Arrivato a Vascherdam da Vilezia, all'anagrafe il suo nome è stato storpiato in Micah Doyle. Scaricatore, poi marinaio, ha ucciso per sbaglio un capitano violento ed è finito in galera per 50 anni. La tresca di Lynch lo ha fatto uscire e da allora lavora per loro come picchiatore e sicario. È rispettato e temuto, ma vorrebbe solo ricominciare dove nessuno lo conosce. E ha una fortuna pessima.
-
-- id: sienna
-  nome: Sienna Blackwell
-  nome_completo: Sienna Veronica Blackwell
-  gruppo: Personaggi degni di Nota
-  popolo: Boggart
-  nazione: Focolare
-  mestiere: Criminale · Ladra
-  eta: 21
-  breve: Ladra di Wallford con una faccia tosta proverbiale.
-  luoghi: [wallford]
-  profilo: |
-    Cresciuta dalla nonna Margaret, che le ha insegnato che è meglio chiedere "scusa" che "per favore", a dieci anni era già preziosa per tutte le tresche di Wallford. Da bambina, sorpresa a rubare nella bottega dei Gilmore, convinse [[earnest]] di essere un'agente segreta della Zarina: da allora sono amici inseparabili. Lavora per tutte le tresche senza schierarsi con nessuna, e tutti hanno un conto in sospeso con lei.
-
-- id: earnest
-  nome: Earnest Gilmore
-  gruppo: Personaggi degni di Nota
-  popolo: Boggart
-  nazione: Focolare
-  mestiere: Duellante · Eroe
-  eta: 23
-  breve: Duellante di buon cuore, sempre pronto a tirare Sienna fuori dai guai.
-  luoghi: [wallford]
-  profilo: |
-    Figlio di un falegname di Wallford che ha perso in guerra il figlio maggiore, sognava di diventare un duellante come quelli delle storie. Contro il volere del padre si è diplomato all'Accademia di Scherma, ma per un duellante di umili origini il lavoro è poco: fa il riscossore di crediti gentile e il campione sostituto nei duelli d'onore. Ha giurato di proteggere [[sienna]], qualunque cosa accada.
-
-- id: santiago
-  nome: Santiago Vilar
-  nome_completo: Santiago Garcia Vilfredo Eduardo Ramirez Vilar
-  gruppo: Personaggi degni di Nota
-  popolo: Sluagh
-  nazione: Orda
-  mestiere: Duellante · Scavezzacollo
-  eta: 26
-  breve: Erede di Don Ramiro Vilar, affascinante, audace e senza un soldo.
-  luoghi: [el-paso-de-umbral, vilezia]
-  profilo: |
-    Cresciuto povero a Umbral con la madre Maria, che gli ripeteva che era figlio del grande duellante Don Ramiro Vilar. Il testamento di Don Ramiro lasciava tutto a chi si fosse diplomato con il massimo dei voti al Golfo della Mirandola: Santiago ci è riuscito per primo nella storia, ma l'eredità era già stata confiscata dalle Fate. Gli è rimasta solo la lancetta nera del padre, e la promessa di tornare dalla madre dieci volte più ricco.
-
-- id: siobhan
-  nome: Siobhan Adhair
-  gruppo: Personaggi degni di Nota
-  popolo: Sprigo (Silfide)
-  nazione: Liberi Domini
-  mestiere: Duellante · Virtuosa
-  eta: 25
-  breve: Spadaccina elegante, guardia del corpo e migliore amica di Aidan.
-  luoghi: [rosevault]
-  profilo: |
-    Orfana di guerra, era una bambina ribelle e piena di lividi finché Rebecca Morgen non la accolse nella sua tenuta, dove conobbe [[aidan]]. Grazie a lui ha imparato a leggere e a conoscere la Casa. Diventata una campionessa dell'ago da duello, ha lasciato una carriera brillante per mantenere la promessa fatta all'amico: risolvere insieme tutti i misteri della Casa.
+    Ultimo di cinque fratelli di una famiglia di cacciatori di Bookshire, in faida con i Flammel. Da ragazzo ha stretto un'amicizia segreta con Litha Flammel; la sera in cui dovevano fuggire insieme lei non si è presentata e lui è partito da solo. Da tre anni fa la spola tra Pinewood e Wallford, vende le sue prede senza contrattare e non porta i colori di nessun Covo.
+  campagna: |
+    # Scrivi qui come è cambiato Humphrey nella vostra Saga.
 
 - id: yuliya
   nome: Yuliya Dragomirov
   nome_completo: Yuliya Fedorovna Dragomirov
-  gruppo: Personaggi degni di Nota
+  gruppo: I Protagonisti
   popolo: Fata
   nazione: Reame
   mestiere: Duellante · Capitano
@@ -258,56 +55,377 @@
   luoghi: [faeriyev, astraviya]
   profilo: |
     Figlia di un Maresciallo che non le ha mai perdonato di non essere un maschio, è cresciuta a Faeriyev studiando le mappe di guerra del padre. Quando [[arcadia]] è salita al trono ha capito che nessuno poteva dirle cosa fare. Diplomata alla Scuola di Scherma del Reame, è diventata Sergente a Sottoluce. Rifiuta ogni posto a palazzo: il suo posto è sul campo.
+  campagna: |
+    # Scrivi qui come è cambiata Yuliya nella vostra Saga.
 
-- id: floyd
-  nome: Floyd Hansen
-  nome_completo: Floyd Benjamin Hansen
-  gruppo: Personaggi degni di Nota
-  popolo: Boggart
-  nazione: Focolare
-  mestiere: Allevatore · Ranchero
-  eta: 37
-  breve: Veterano e allevatore di topi del Sottoscala, buono come il pane.
-  luoghi: [sottoscala]
-  profilo: |
-    Entrato in Casa da ragazzo, ha visto con il fratello Billy il Tristo Cavaliere uscire dal Fuoco. In guerra Billy gli fece scudo e una lancia gli lasciò una cicatrice a forma di croce sulla mano; poi cadde sulla Scala Tremante. Floyd, il miglior stalliere del Sottoscala, oggi alleva topi da sella nella sua tenuta, con l'inseparabile topolino Timothy.
-
-- id: hannah
-  nome: Hannah Blaum
-  nome_completo: Hannah Arkadia Blaum
-  gruppo: Personaggi degni di Nota
+- id: icarus
+  nome: Icarus König
+  gruppo: I Protagonisti
   popolo: Fata
   nazione: Reame
-  mestiere: Allevatore · Veterinaria
+  mestiere: Cacciatore · Sentinella
   eta: 22
-  breve: Allevatrice di bombi con il sogno di lavorare per Protopopolov.
-  luoghi: [glasburg, astraviya]
+  breve: Sentinella del Grande Esercito Imperiale, figlio dei vicoli di Unter.
+  luoghi: [unter, glasburg, la-ruelle]
   profilo: |
-    Primogenita di una famiglia di allevatori di campagna, è stata presa sotto l'ala dal signor Rhoter Honig, esperto di bombi di Glasburg, che le ha regalato il piccolo Bonbon. Ora è un'eccellente allevatrice di bombi da concorso, decisa a farsi strada nell'alta società e a lavorare un giorno con il Visconte [[protopopolov]].
+    Cresciuto povero a Unter, da bambino faceva mille lavori per pagare le cure della sorellina Thalia, morta il giorno in cui finì la guerra. Con quei risparmi i genitori gli hanno pagato l'Accademia Militare di Glasburg, dove il Sergente Ludwig Teelöffel è stato per lui un secondo padre. Ora è di stanza a La Ruelle, in attesa di partire per il Lungo Corridoio.
+  campagna: |
+    # Scrivi qui come è cambiato Icarus nella vostra Saga.
 
-- id: pryscilla
-  nome: Pryscilla Urbina
-  gruppo: Personaggi degni di Nota
-  popolo: Sprigo (Ondina)
-  nazione: Liberi Domini
-  mestiere: Allevatore · Artista di strada
+- id: jocelyne
+  nome: Jocelyne Bonheur
+  gruppo: I Protagonisti
+  popolo: Fata
+  nazione: Reame
+  mestiere: Criminale · Cortigiana
+  eta: 24
+  breve: Cortigiana scaltra di Sottoluce, orfana della rivolta dei Tristellati.
+  luoghi: [mont-guignol, astraviya]
+  profilo: |
+    Rimasta orfana quando i Tristellati colpirono la madre, sposata a un ondino, è cresciuta per strada tra bari e saltimbanchi. Allegra e spregiudicata, è arrivata ad Astraviya sognando i teatri; dopo pochi provini falliti è entrata nel giro delle tresche e lavora come cortigiana a Sottoluce, specializzata in mariti infedeli da ricattare.
+  campagna: |
+    # Scrivi qui come è cambiata Jocelyne nella vostra Saga.
+
+- id: pierre
+  nome: Pierre Delacroyance
+  nome_completo: Pierre Armand Delacroyance
+  gruppo: I Protagonisti
+  popolo: Fata
+  nazione: Reame
+  mestiere: Erudito · Diplomatico
+  eta: 41
+  breve: Tutore raffinato e snob, diplomatico abilissimo ma ingenuo.
+  luoghi: [mont-guignol, tournoire, la-ruelle]
+  profilo: |
+    Discendente minore di servitori di Oberon, è cresciuto tra Mont Guignol e Tournoire, nel lusso del Pianoforte. Laureato in Diplomazia, Galateo e Arte Amatoria, è riuscito a evitare sia la leva sia la guerra, e un caso fortunato lo ha portato lontano dal Pianoforte quattro giorni prima della rivolta dei Tristellati. Tutore ricercatissimo, si fida ciecamente del suo segretario, il silfide Gunther Lichtmann.
+  campagna: |
+    # Scrivi qui come è cambiato Pierre nella vostra Saga.
+
+- id: earnest
+  nome: Earnest Gilmore
+  gruppo: I Protagonisti
+  popolo: Boggart
+  nazione: Focolare
+  mestiere: Duellante · Eroe
   eta: 23
-  breve: Musicista girovaga con il geco Zagor. "Non è rubare, se te lo sei guadagnato!"
+  breve: Duellante di buon cuore, sempre pronto a tirare Sienna fuori dai guai.
+  luoghi: [wallford]
+  profilo: |
+    Figlio di un falegname di Wallford che ha perso in guerra il figlio maggiore, sognava di diventare un duellante come quelli delle storie. Contro il volere del padre si è diplomato all'Accademia di Scherma, ma per un duellante di umili origini il lavoro è poco: fa il riscossore di crediti gentile e il campione sostituto nei duelli d'onore. Ha giurato di proteggere [[sienna]], qualunque cosa accada.
+  campagna: |
+    # Scrivi qui come è cambiato Earnest nella vostra Saga.
+
+- id: sienna
+  nome: Sienna Blackwell
+  nome_completo: Sienna Veronica Blackwell
+  gruppo: I Protagonisti
+  popolo: Boggart
+  nazione: Focolare
+  mestiere: Criminale · Ladra
+  eta: 21
+  breve: Ladra di Wallford con una faccia tosta proverbiale.
+  luoghi: [wallford]
+  profilo: |
+    Cresciuta dalla nonna Margaret, che le ha insegnato che è meglio chiedere "scusa" che "per favore", a dieci anni era già preziosa per tutte le tresche di Wallford. Da bambina, sorpresa a rubare nella bottega dei Gilmore, convinse [[earnest]] di essere un'agente segreta della Zarina: da allora sono amici inseparabili. Lavora per tutte le tresche senza schierarsi con nessuna, e tutti hanno un conto in sospeso con lei.
+  campagna: |
+    # Scrivi qui come è cambiata Sienna nella vostra Saga.
+
+# ── FIGURE DELLA NOSTRA SAGA ───────────────────────────────
+#  Personaggi incontrati nelle nostre avventure.
+#  Ho scritto solo ciò che i protagonisti sapevano all'inizio:
+#  aggiungi tu i segreti che hanno scoperto.
+
+- id: flanagan
+  nome: Noam Flanagan
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Soladino)
+  nazione: Focolare
+  breve: Erudito, sindaco e rettore di Chesterfield by-the-fire.
+  luoghi: [chesterfield]
+  profilo: |
+    Il professor Flanagan è sindaco di Chesterfield by-the-fire e rettore della sua Università. Esperto di [[argo]], possedeva la vecchia mappa che portò [[gwen]] e [[humphrey]] alla tomba nascosta di Pinewood. Quando i Tristellati fecero arrestare i compagni di Gwen, fu lui a farla fuggire in segreto.
+
+- id: korina
+  nome: Korina Chyórnaya
+  nome_completo: Korina Fyodorovna Chyórnaya
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  nazione: Reame
+  breve: Prima attrice de "La Regina e il Boggart", figlia di un colonnello del Reame.
   luoghi: [beddingham]
   profilo: |
-    Orfana, è cresciuta felice a Beddingham con lo zio fabbro e il suo compagno musicista. Lavorando in un allevamento di gechi ha conosciuto Zagor, un geco rissoso che si calmava solo con il suo flauto. Da qualche anno gira la Casa con lui facendo spettacoli di strada, guadagnandosi da vivere in modo quasi sempre onesto. È incredibilmente superstiziosa.
+    Prosperosa fata dalla chioma bionda, interpreta la Regina nell'opera che debuttò a Beddingham. Le sue doti di attrice sono discutibili, e le sue attenzioni per [[earnest]] non passarono inosservate.
 
-- id: zehra
-  nome: Zehra Ören
-  gruppo: Personaggi degni di Nota
+- id: bardon
+  nome: Bardon Havrés
+  gruppo: Figure della nostra Saga
+  popolo: Sluagh
+  breve: Attore protagonista de "La Regina e il Boggart", dal fascino rude.
+  luoghi: [beddingham]
+  profilo: |
+    Sluagh del Bathur, interpreta il Boggart dell'opera. [[earnest]] lavorò come sua controfigura nelle scene d'azione.
+
+- id: lestrade
+  nome: Gregory Lestrade
+  gruppo: Figure della nostra Saga
+  breve: Ispettore della Gendarmeria di Beddingham.
+  luoghi: [beddingham]
+  profilo: |
+    Arrivò con i rinforzi a fermare la rissa scoppiata alla prima de "La Regina e il Boggart" e portò tutti i presenti in Gendarmeria per interrogarli.
+
+- id: alisa-keeley
+  nome: Alisa Keeley
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Silfide)
+  breve: Ex circense e ladra acrobata, prigioniera a Pozzoprofondo.
+  luoghi: [penjara]
+  profilo: |
+    Silfide alta e slanciata, dai tratti ancora più eterei del solito. Fu lei a contattare i protagonisti prigionieri per organizzare la fuga da Pozzoprofondo.
+
+- id: dall-soffer
+  nome: Dall Soffer
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Silfide)
+  breve: Genio della meccanica, stanco e sconfitto dalla vita.
+  luoghi: [penjara, clockminster]
+  profilo: |
+    Silfide di mezza età, goffo e sempre spettinato, è un genio della tecnica e delle armi da fuoco. Durante la guerra fu costretto ad aiutare la rivolta dei Tristellati, e per questo finì a Pozzoprofondo. Solo lui sapeva aggirare il Grande Coperchio della prigione. Dopo la Grande Evasione tornò a Clockminster per rifarsi una vita, ma i Tristellati lo volevano morto. Fu lui a spiegare come leggere le pagine del Diario di [[argo]].
+
+- id: betris-creel
+  nome: Betris Creel
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Ondina)
+  breve: Anziana boss del terzo anello dal fondo di Pozzoprofondo.
+  luoghi: [penjara]
+  profilo: |
+    Ondina dal volto rugoso e dai modi autoritari. La sua banda di criminali violenti teneva prigioniero [[dall-soffer]]; i suoi uomini le sono fedeli più per paura che per lealtà.
+
+- id: chezlav-lazarov
+  nome: Chezlav Lazarov
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  breve: Contrabbandiere di Pozzoprofondo.
+  luoghi: [penjara]
+  profilo: |
+    Fata dai capelli rasati e dal viso pieno di cicatrici, individualista e approfittatore. In prigione può procurare armi, in cambio di favori.
+
+- id: paquita-ladrillo
+  nome: Paquita Ladrillo
+  gruppo: Figure della nostra Saga
+  popolo: Sluagh
+  breve: Detenuta che conosceva una strada segreta tra le celle vuote.
+  luoghi: [penjara, el-paso-de-umbral]
+  profilo: |
+    Sluagh dalla pelle rosso acceso con grandi lentiggini nere, due corte antenne, una cascata di capelli biondi e un temperamento focoso. Finita a Pozzoprofondo per aver avvelenato il marito ratador che la tradiva, aveva scoperto un percorso tra le celle vuote fino al Grande Coperchio.
+
+- id: desmond-colepot
+  nome: Desmond Colepot
+  gruppo: Figure della nostra Saga
+  popolo: Boggart
+  breve: Allevatore allegro, finito in prigione per aver venduto topi malati a un Emiro.
+  luoghi: [penjara]
+  profilo: |
+    Boggart robusto dal viso tondo e dai baffi ben curati. Sapeva come ammansire i pipistrelli addestrati della prigione e fuggire in volo dalla Voliera Esterna.
+
+- id: claus-corden
+  nome: Claus Corden
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Ondino)
+  breve: Capo di una banda di Liberissimi.
+  luoghi: [clockminster]
+  profilo: |
+    Ondino dai tratti rudi, sovrappeso e sboccato. Si presentò da [[dall-soffer]] con i suoi duellanti e una granata ticchettante "con i ringraziamenti dei Tristellati".
+
+- id: paul-paquette
+  nome: Paul Paquette
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Soladino)
+  breve: Famoso ingegnere, proprietario degli Occhi della Mosca.
+  luoghi: [rosevault]
+  profilo: |
+    Custodiva nella sua cassetta di sicurezza alla Banca Centrale Domestica di Rosevault gli Occhi della Mosca, un sistema di lenti colorate sovrapposte: l'unico strumento capace di leggere le pagine del Diario di [[argo]].
+
+- id: ferguson-fole
+  nome: Ferguson Fole
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Silfide)
+  nazione: Focolare
+  breve: Criminale di Wallford, vecchio socio di Sienna.
+  luoghi: [wallford, rosevault]
+  profilo: |
+    Silfide dalla carnagione blu scuro, vecchia conoscenza di [[sienna]], con cui aveva fatto qualche "lavoro" anni prima. Rispose alla sua chiamata e portò a Rosevault una decina dei suoi uomini per il Colpo del Secolo, con l'idea di arraffare ogni crì possibile.
+
+- id: oksana-diakovna
+  nome: Oksana Diakovna
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  breve: La Marescialla, a guardia della Banca di Rosevault.
+  luoghi: [rosevault]
+  profilo: |
+    Responsabile della sicurezza della Banca Centrale Domestica. Durante il Colpo del Secolo toccò a [[yuliya]] prendere contatto con lei.
+
+- id: ezra
+  nome: Ezra Filibert Lunemberg-Flaschestein
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  nazione: Reame
+  breve: Giovane barone della Credenza, abile schermidore.
+  luoghi: [tournoire, glasburg]
+  profilo: |
+    Invitato al Gran Ballo di Yule, maneggia con grande abilità la mezzaforbicina.
+
+- id: amandine-roquefort
+  nome: Amandine Roquefort
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  nazione: Reame
+  breve: Generale del Grande Esercito Imperiale.
+  luoghi: [tournoire]
+  profilo: |
+    Fata sulla quarantina, bionda platino con un taglio corto da soldato. Era al Gran Ballo di Yule perché temeva un attentato dei Tristellati, e sorvegliava di persona le mura durante la festa. Aprì le danze con il Marchese.
+
+- id: rashad-al-shakush
+  nome: Rashad al Shakush
+  gruppo: Figure della nostra Saga
   popolo: Sluagh
   nazione: Orda
-  mestiere: Allevatore · Aristocratica
-  eta: 25
-  breve: Figlia ribelle di uno Sceicco di Al Sehir, con il coleottero Kalkan.
-  luoghi: [al-sehir]
+  breve: Sceicco di Al Sehir, poeta e fine conversatore.
+  luoghi: [al-sehir, tournoire]
   profilo: |
-    Khatun, figlia dello Sceicco Ören e di una guerriera, è cresciuta nel lusso di Al Sehir mal sopportando le regole di palazzo, con una coleottera come balia e migliore amica. È cresciuta con [[malaika]] come una sorella. Grazie al Califfo [[laio]] ha potuto studiare all'università; il padre le ha regalato Kalkan, "lo scudo". Ora vuole vedere i Piani Superiori.
+    Pelle blu scuro, lunghe antenne rossastre, barba e baffi perfetti. Ospite illustre del Gran Ballo di Yule.
+
+- id: ashling-redgrave
+  nome: Ashling Redgrave
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Soladina)
+  nazione: Liberi Domini
+  breve: Stilista premiatissima, autrice dell'abito del Marchese.
+  luoghi: [tournoire]
+  profilo: |
+    Bassa di statura e di carattere focoso, capelli arancioni e una cascata di lentiggini; il suo abito stravagante nasconde dei metri da sarta. Al Gran Ballo litigò con alcuni stilisti rivali.
+
+- id: abraham-mayweather
+  nome: Abraham Mayweather
+  gruppo: Figure della nostra Saga
+  breve: Veterano rispettato dalle forze armate.
+  luoghi: [tournoire]
+  profilo: |
+    Servì sotto Jules des Larmes e lo ricorda con affetto. La sua fama di veterano lo rende un punto di riferimento per i soldati del Reame. Invitato al Gran Ballo di Yule.
+
+- id: fifi
+  nome: Fiordaliso de Fifre, detto Fifì
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  breve: Giovane attore libertino e civettuolo.
+  luoghi: [tournoire]
+  profilo: |
+    Ventenne dai capelli nerissimi, pelle pallida e ali quasi trasparenti. Al Gran Ballo di Yule cercò in tutti i modi di farsi mantenere da [[pierre]].
+
+- id: philippe
+  nome: Philippe Lunemberg-Flaschestein
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  breve: Capitano dei Tristellati, fratello di Ezra.
+  luoghi: [grande-scala]
+  profilo: |
+    Guidò i quindici Tristellati che attesero i protagonisti all'uscita del laboratorio di Argo, pretendendo il Contratto di Dominio e il Diario. Fu lui a rivelare che i suoi alleati stavano per infrangere la Finestra di Zucchero.
+
+- id: rosa
+  nome: Rosa di Umbral
+  gruppo: Figure della nostra Saga
+  popolo: Sluagh
+  breve: Medjay, infiltrata tra i Tristellati.
+  luoghi: [el-paso-de-umbral, grande-scala, faeriyev]
+  profilo: |
+    Membro dell'Ordine dei Medjay, si era camuffata tra i soldati di [[philippe]] nelle Intercapedini della Grande Scala. Era al fianco dei protagonisti nella difesa di Faeriyev.
+
+- id: athelstan-whitefyre
+  nome: Sir Athelstan Whitefyre
+  gruppo: Figure della nostra Saga
+  popolo: Boggart
+  nazione: Focolare
+  breve: Cavaliere Cinereo inviato a Chesterfield.
+  luoghi: [cinderhall, chesterfield]
+  profilo: |
+    Boggart di mezza età ma ancora molto prestante, valoroso, più volte fedele al Focolare e all'Ordine Cinereo.
+
+- id: sandon-blacksoot
+  nome: Sir Sandon Blacksoot
+  gruppo: Figure della nostra Saga
+  popolo: Boggart
+  nazione: Focolare
+  breve: Cavaliere Cinereo al comando della Gendarmeria di Chesterfield.
+  luoghi: [cinderhall, chesterfield]
+  profilo: |
+    Il più anziano dei tre Cavalieri, burbero, con baffi neri come il carbone. Perde spesso la pazienza e non trattiene la sua chiave-mazza con chi gli manca di rispetto.
+
+- id: gilford-grey
+  nome: Sir Gilford Grey
+  gruppo: Figure della nostra Saga
+  popolo: Boggart
+  nazione: Focolare
+  breve: Il più giovane dei tre Cavalieri Cinerei.
+  luoghi: [cinderhall, chesterfield]
+  profilo: |
+    Bel ragazzo dai capelli lunghi, ha un debito di vita con il Gran Maestro [[edward-ashworth]]. Si era avvicinato agli studenti in protesta a Chesterfield.
+
+- id: mary-alyanna-sighsmith
+  nome: Mary Alyanna Sighsmith
+  gruppo: Figure della nostra Saga
+  popolo: Boggart
+  nazione: Focolare
+  breve: Leader degli studenti in protesta a Chesterfield.
+  luoghi: [chesterfield]
+  profilo: |
+    Boggart di 26 anni, biondissima, con occhi verdi come Pinewood e l'animo ardente del Camino. Con i suoi aveva occupato l'ala della Posateria di Guerra del museo cittadino, minacciando di insorgere.
+
+- id: peyton-reed
+  nome: Peyton Reed
+  gruppo: Figure della nostra Saga
+  popolo: Boggart
+  nazione: Focolare
+  breve: Investigatore della Gendarmeria di Chesterfield.
+  luoghi: [chesterfield]
+  profilo: |
+    Veterano e uomo di legge da lungo tempo, mal sopportava gli ordini di [[sandon-blacksoot]], ma era troppo ligio all'uniforme per disobbedire a un Cavaliere.
+
+- id: morgana-astralta
+  nome: Morgana Astralta
+  gruppo: Figure della nostra Saga
+  popolo: Fae
+  nazione: Giardino
+  breve: Generale delle Fate Selvagge, al comando delle Furie.
+  luoghi: [faeriyev, domini-esterni]
+  profilo: |
+    Generale della V Legione Ribelle Nova Scorpio della Corte dei Seelie. Le sue Furie, guerriere armate di falci d'osso, guidarono l'assalto al Belvedere di Faeriyev.
+
+- id: oberon-astralta
+  nome: Oberon Astralta
+  gruppo: Figure della nostra Saga
+  popolo: Fae
+  nazione: Giardino
+  breve: Schiena Dorata dei Fae, fratello di Morgana.
+  luoghi: [faeriyev, domini-esterni]
+  profilo: |
+    Occhi scuri, capelli color rame, un'uniforme impeccabile verde e viola e grandi ali rosso scuro, come sangue denso. Durante la Caduta di Faeriyev aveva un unico obiettivo: catturare il Duca [[alexei-puckevich]].
+
+- id: damien
+  nome: Damien Lunemberg-Flaschestein
+  gruppo: Figure della nostra Saga
+  popolo: Fata
+  breve: Capo dei guerriglieri Tristellati di Faeriyev.
+  luoghi: [faeriyev]
+  profilo: |
+    Cugino di [[ezra]] e [[philippe]], ha lavorato nell'ombra per anni aspettando il suo momento. Durante la Caduta di Faeriyev guidò la cellula tristellata della città.
+
+- id: theodore-kaczinsky
+  nome: Theodore "Una" Kaczinsky
+  gruppo: Figure della nostra Saga
+  popolo: Sprigo (Soladino)
+  breve: Dinamitardo tristemente famoso, evaso da Pozzoprofondo.
+  luoghi: [faeriyev, penjara]
+  profilo: |
+    Noto in tutta la Casa per svariati attentati con esplosivi, fuggì da Pozzoprofondo durante la Grande Evasione. A Faeriyev guidò il sabotaggio degli ascensori.
 
 # ── FIGURE DELLA CASA ──────────────────────────────────────
 
@@ -327,7 +445,7 @@
   breve: Lo Sprigo della Polvere, fondatore dei Liberi Domini.
   luoghi: [liberi-domini, beddingham, clockminster]
   profilo: |
-    Guidò gli Sprighi nella conquista del Primo Piano e fondò l'Università di Clockminster. Nella Battaglia della Grande Scala si accordò con Oberon e tradì [[big-ben]]: per i Boggart è il responsabile del Grande Tradimento. Le sue invenzioni illuminano ancora Beddingham.
+    Guidò gli Sprighi nella conquista del Primo Piano e fondò l'Università di Clockminster. Nella Battaglia della Grande Scala si accordò con Oberon e tradì [[big-ben]]: per i Boggart è il responsabile del Grande Tradimento. Siede nell'Alto Consiglio come Portavoce dei Liberi Domini.
 
 - id: oberon
   nome: Oberon Trismegisto
@@ -356,7 +474,7 @@
   breve: La Stella d'Argento, Gran Generale e Duca di Sottoluce.
   luoghi: [astraviya]
   profilo: |
-    La Fata più vecchia della Casa, Capitano delle Schiene Dorate e Gran Generale del Grande Esercito Imperiale. Rifiutò la corona dopo la morte di Oberon. Dopo l'attentato al Gran Ballo di Yule dichiara lo stato d'emergenza.
+    La Fata più vecchia della Casa, Capitano delle Schiene Dorate e Gran Generale del Grande Esercito Imperiale. Rifiutò la corona dopo la morte di Oberon.
 
 - id: tristan-des-larmes
   nome: Tristan des Larmes
@@ -364,9 +482,20 @@
   popolo: Fata
   nazione: Reame
   breve: La Fata Nera, Marchese di Tournoire.
-  luoghi: [tournoire]
+  luoghi: [tournoire, faeriyev]
   profilo: |
-    Da giovane sconfisse i Tristellati che avevano occupato il Pianoforte. Vive nel Castello d'Ebano, lasciato volutamente segnato dalla battaglia. Ogni anno ospita il Gran Ballo di Yule, dove nel IX A.C. sopravvive per miracolo a un attentato.
+    Da giovane sconfisse i Tristellati che avevano occupato il Pianoforte. Vive nel Castello d'Ebano, lasciato volutamente segnato dalla battaglia, e ogni anno ospita il Gran Ballo di Yule. Combatté con la sua guardia scelta nella difesa di Faeriyev.
+
+- id: alexei-puckevich
+  nome: Alexei Puckevich
+  nome_completo: Alexei Puckevich Stakan-Eudoxia
+  gruppo: Figure della Casa
+  popolo: Fata
+  nazione: Reame
+  breve: Duca della Finestra, comandante in capo dell'esercito del Reame.
+  luoghi: [faeriyev]
+  profilo: |
+    Signore di Faeriyev, Capitano delle Schiene Dorate e uno dei migliori duellanti della Casa. Durante la Caduta della città il suo palazzo fu assediato dalle Fate Selvagge.
 
 - id: rodomonte
   nome: Capitano Rodomonte
@@ -376,7 +505,7 @@
   breve: Khan dell'Orda, mise fine alla Prima Guerra Domiciliare.
   luoghi: [orda]
   profilo: |
-    Scacciò il Cigno e portò ad Arcadia la testa del presunto assassino di Oberon, chiudendo la guerra. Il suo regno sull'Orda ha lasciato poco spazio alle grandi battaglie di un tempo.
+    Scacciò il Cigno e portò ad Arcadia la testa del presunto assassino di Oberon, chiudendo la guerra. Siede nell'Alto Consiglio come rappresentante degli Sluagh.
 
 - id: william-hearthworth
   nome: William Benjamin Hearthworth
@@ -397,46 +526,7 @@
   breve: Giovane Governatore e Guardiano del Focolare.
   luoghi: [wallford, focolare]
   profilo: |
-    Governa il Focolare durante la Fragile Pace. Molti lo considerano troppo accondiscendente verso il Reame: l'Unione lo contesta a Chesterfield, e quando concede alle Schiene Dorate di presidiare il Salone, molti boggart si sentono traditi.
-
-- id: kirkland
-  nome: Norten Kirkland
-  gruppo: Figure della Casa
-  popolo: Sprigo (Ondino)
-  nazione: Liberi Domini
-  breve: Comandante dei Liberissimi, terroristi per l'indipendenza del Primo Piano.
-  luoghi: [liberi-domini, grande-scala]
-  profilo: |
-    Un tempo grande condottiero dell'Esercito di Porcellana, non ha mai accettato il Trattato di Astraviya. I suoi Liberissimi fanno precipitare la Carovana del Corrimano e tramano in tutta la Casa. Nel Capitolo V si scopre che a Unter agiva un impostore con il suo nome.
-
-- id: protopopolov
-  nome: Oleg Protopopolov
-  gruppo: Figure della Casa
-  popolo: Fata
-  nazione: Reame
-  breve: Visconte, filantropo e zoologo eccentrico.
-  luoghi: [astraviya]
-  profilo: |
-    Ha creato il Giardino Zoologico di Astraviya e tratta i suoi animali come figli pieni di zampe e veleno. Il suo viaggio in Cantina in cerca di specie rare attraversa tutta la Saga, lasciando disastri ovunque. Nessuno riesce a dirgli di no.
-
-- id: argo
-  nome: Argo
-  nome_completo: Il Burocrate Argo
-  gruppo: Figure della Casa
-  breve: Studioso leggendario dei Contratti e del loro potere.
-  luoghi: [clockminster, grande-scala]
-  profilo: |
-    Dedicò la vita a studiare i Contratti per comprenderne e usarne il potere. Dopo la sua morte prematura si diffuse la voce che le sue scoperte fossero custodite in un diario. Le pagine, coperte di cera e scritte in codice, sono disperse per la Casa e cercate da studiosi, Tristellati e Medjay. Il suo studio segreto custodisce il Contratto di Dominio.
-
-- id: flanagan
-  nome: Noam Flanagan
-  gruppo: Figure della Casa
-  popolo: Sprigo (Soladino)
-  nazione: Focolare
-  breve: Professore e sindaco di Chesterfield by-the-fire.
-  luoghi: [chesterfield]
-  profilo: |
-    Amico del defunto professor Teampall, aiuta di tanto in tanto [[gwen]] nella sua ricerca e la mette in contatto con chi possiede pezzi della mappa di Argo.
+    Governatore e Gran Generale del Focolare, siede nell'Alto Consiglio come Guardiano del Focolare. Molti lo considerano troppo accondiscendente verso il Reame. Nel X A.C., per non cedere del tutto ad Astraviya, aprì le porte di Cinderhall e chiamò i Cavalieri Cinerei a Chesterfield.
 
 - id: edward-ashworth
   nome: Edward Ashworth
@@ -446,89 +536,13 @@
   breve: Il Tristo Cavaliere, Gran Maestro dei Cavalieri Cinerei.
   luoghi: [cinderhall]
   profilo: |
-    Salì i Gradini del Camino e ne uscì avvolto dalla prima armatura cinerea, simbolo della rinascita dei Boggart. Da Cinderhall guida l'Ordine Cinereo. Nel Capitolo V apre i cancelli per difendere la dignità del Focolare dalle Schiene Dorate.
+    Salì i Gradini del Camino e ne uscì avvolto dalla prima armatura cinerea, simbolo della rinascita dei Boggart. Da Cinderhall guida l'Ordine Cinereo.
 
-- id: ferguson-fole
-  nome: Ferguson Fole
+- id: argo
+  nome: Argo
+  nome_completo: Il Burocrate Argo
   gruppo: Figure della Casa
-  popolo: Sprigo (Silfide)
-  nazione: Focolare
-  breve: Genio del crimine di Wallford. "Io sono ovunque."
-  luoghi: [wallford, rosevault]
+  breve: Studioso leggendario dei Contratti e del loro potere.
+  luoghi: [clockminster, grande-scala]
   profilo: |
-    Silfide calvo e allampanato, capo nascosto della criminalità organizzata di Wallford. Ha ideato il Colpo del Secolo alla Banca di Rosevault, con l'idea di tradire i suoi complici. Per lui nessuno è amico: solo strumenti o bersagli.
-
-- id: laio
-  nome: Laio il Bello
-  gruppo: Figure della Casa
-  popolo: Sluagh
-  nazione: Orda
-  breve: Califfo di Al Sehir, signore di Samaracna e amante dei ragni.
-  luoghi: [al-sehir, samaracna]
-  profilo: |
-    Governa la capitale dell'Orda e custodisce i suoi amati aracnidi nella città capovolta. Ha concesso a [[malaika]] di studiare a Vascherdam e ha convinto lo Sceicco Ören a lasciar studiare [[zehra]].
-
-- id: duncan-rox
-  nome: Duncan Rox
-  gruppo: Figure della Casa
-  popolo: Fata
-  breve: Fuorilegge rude ma elegante delle praterie del Tappeto.
-  luoghi: [salone, pinewood]
-  profilo: |
-    Disertore della Prima Guerra Domiciliare, ha riunito banditi di ogni Popolo per assaltare mercanti e cacciatori tra il Tappeto e Pinewood. Solo i più fidati conoscono l'ideale che si nasconde dietro le sue scorribande.
-
-- id: cesar-de-la-cuve
-  nome: Cesàr de la Cuve
-  gruppo: Figure della Casa
-  popolo: Sluagh
-  nazione: Liberi Domini
-  breve: Maresciallo della Capitaneria di Porto di Vascherdam.
-  luoghi: [vascherdam]
-  profilo: |
-    Alto, smunto e perennemente annoiato, finge un malore ogni volta che c'è un impegno da scaricare su [[ira]]. Nel caso del Mostro di Vascherdam finisce lui stesso accusato.
-
-- id: dall-soffer
-  nome: Dall Soffer
-  gruppo: Figure della Casa
-  popolo: Sprigo (Silfide)
-  breve: Armaiolo geniale, costretto a lavorare per i Tristellati.
-  luoghi: [clockminster, beddingham]
-  profilo: |
-    Goffo e sempre spettinato, è un genio delle armi da fuoco. Costretto dai Tristellati a fabbricare le loro armi, dopo la guerra fu condannato come traditore. Evaso da Pozzoprofondo, si rifugia nei Liberi Domini, dove progetta le prime armi a doppia canna. È l'unico che sa sciogliere la cera del Diario di Argo.
-
-- id: verana
-  nome: Verana di Vilezia
-  gruppo: Figure della Casa
-  popolo: Sluagh
-  nazione: Orda
-  breve: La Calcamorte, "Zarina di Sotto".
-  luoghi: [vilezia]
-  profilo: |
-    Signora di Vilezia. Durante il torneo di Ostara del X A.C. un sicario tenta di ucciderla; dietro l'attentato c'è il maestro Bassanio di Belmonte.
-
-- id: xerxes
-  nome: Xerxes
-  gruppo: Figure della Casa
-  breve: Il Diavolo del Tramonto, ragno cacciatore del Kashab.
-  luoghi: [deserto-kashab]
-  profilo: |
-    Enorme ragno cacciatore che vive accanto al cancello della Fornace e difende il Falso Fuoco. Custodiva la copertina del Diario di Argo e metà delle sue pagine.
-
-- id: alexei-puckevich
-  nome: Alexei Puckevich
-  gruppo: Figure della Casa
-  popolo: Fata
-  nazione: Reame
-  breve: Duca della Finestra, tra i migliori duellanti della Casa.
-  luoghi: [faeriyev]
-  profilo: |
-    Signore di Faeriyev. Durante la Caduta della città viene sconfitto e fatto prigioniero dalle Fate Selvagge, che minacciano di ucciderlo se il Reame attaccherà.
-
-- id: orion-astralta
-  nome: Orion Astralta
-  gruppo: Figure della Casa
-  popolo: Fata
-  breve: Generale di stirpe imperiale alla testa delle Fate Selvagge.
-  luoghi: [faeriyev, domini-esterni]
-  profilo: |
-    Sembra guidare l'invasione di Faeriyev, ma alla fine si rivela solo una pedina in un disegno molto più grande.
+    Dedicò la vita a studiare i Contratti per comprenderne e usarne il potere. Dopo la sua morte prematura si diffuse la voce che le sue scoperte fossero custodite in un diario. Le pagine, coperte di cera e scritte in codice, erano disperse per la Casa e cercate da studiosi e Tristellati. Il suo laboratorio segreto, nelle Intercapedini della Grande Scala, custodiva il Contratto di Dominio.

@@ -12,8 +12,9 @@ vendor/           libreria per leggere i file YAML
 dati/
   sito.yaml         titolo, sottotitolo, evento iniziale, link al repository
   cronologia.yaml   gli eventi della linea del tempo e le avventure di ogni periodo
-  personaggi.yaml   le personalità (24 Personaggi degni di Nota + figure della Casa)
-  luoghi.yaml       nazioni, città e territori
+  personaggi.yaml   le personalità: i protagonisti, le figure della nostra Saga, le figure della Casa
+  luoghi.yaml       nazioni, città e territori della Casa e del Giardino
+  mondo.yaml        le pagine "La Casa" e "Il Giardino": Popoli, Nazioni e Fazioni
 ```
 
 **Per aggiornare la cronologia si modificano solo i file nella cartella `dati/`.**
@@ -31,7 +32,7 @@ Regole da ricordare:
 
 ### Annotare cosa è successo al vostro tavolo
 
-Ogni evento, avventura, personaggio e luogo accetta un campo `campagna:`. Il testo compare in un riquadro "Nella nostra Saga", separato dal riassunto ufficiale:
+Ogni evento, avventura, personaggio e luogo accetta un campo `campagna:`. Il testo compare in un riquadro "Nella nostra Saga", separato dal riassunto. Le righe che iniziano con `#` sono promemoria e non vengono mostrate: sotto ogni avventura giocata ce n'è già una, basta scrivere il testo subito sotto, con lo stesso rientro.
 
 ```yaml
       - titolo: Il Diario di Argo
@@ -41,6 +42,7 @@ Ogni evento, avventura, personaggio e luogo accetta un campo `campagna:`. Il tes
         riassunto: |
           …
         campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
           Al nostro tavolo Sienna ha venduto la pagina del diario a un ricettatore
           e Gwen l'ha dovuta ricomprare a Chesterfield.
 ```
@@ -60,6 +62,10 @@ Puoi anche riscrivere direttamente i `riassunto`, spostare avventure, cambiare p
     personaggi: [pierre, gunther]
     luoghi: [astraviya]
 ```
+
+### Le pagine "La Casa" e "Il Giardino"
+
+Stanno in `mondo.yaml`. Ogni sezione diventa una linguetta in alto; dentro ci sono gruppi (I Popoli, Le Nazioni…) e voci. Ogni voce ha `nome`, `motto`, `breve` (la riga mostrata nella pagina), `dati` (coppie "Etichetta: valore"), `descrizione` e `collegamenti` (id di personaggi, luoghi o altre voci). Con `luoghi_della_nazione: Reame` la scheda elenca da sola tutti i luoghi di quella nazione.
 
 ### Aggiungere un personaggio o un luogo
 

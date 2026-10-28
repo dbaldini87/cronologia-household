@@ -14,7 +14,7 @@
   nome: Il Reame
   tipo: Nazione
   nazione: Reame
-  dove: Sala da Pranzo, Credenza, Pianoforte
+  dove: Sala da Pranzo, Cucina, Credenza, Pianoforte
   descrizione: |
     La nazione delle Fate, fondata da [[oberon]] dopo la caduta di Déndronaos. Città di vetro e cristallo, ricchezza, ordine e il motto "Proteggere e Conquistare". Governato dalla Zarina [[arcadia]], difeso dal Grande Esercito Imperiale e dalle Schiene Dorate.
 
@@ -30,7 +30,7 @@
   nome: I Liberi Domini
   tipo: Nazione
   nazione: Liberi Domini
-  dove: Primo Piano
+  dove: Primo Piano (Camera Padronale, Bagno, Piccola Camera)
   descrizione: |
     La nazione degli Sprighi, costruita sul Primo Piano da [[paracelso]]. Università, commerci, banche e un Simposio che governa. Le sue leggi non prevedono l'estradizione, perciò molti fuggitivi vi trovano rifugio.
 
@@ -38,15 +38,15 @@
   nome: L'Orda
   tipo: Nazione
   nazione: Orda
-  dove: Cantina
+  dove: Scala Tremante e Cantina
   descrizione: |
     La nazione degli Sluagh, giunti da Oltrelontano attraverso le Tubature nel giorno di Samhain. Regna sulla Cantina con Califfi, Emiri e Sceicchi, i Giannizzeri e la Milizia.
 
 - id: domini-esterni
-  nome: I Domini Esterni
+  nome: Il Giardino (Domini Esterni)
   tipo: Fuori dalla Casa
-  nazione: Fuori dalla Casa
-  dove: Il Giardino, oltre le mura
+  nazione: Giardino
+  dove: Tutto attorno alla Casa
   descrizione: |
     Il mondo fuori dalla Casa. Qui sorgeva Déndronaos, l'albero delle Fate, qui furono esiliati i Boggart, e qui vivono da quasi cent'anni le Fate Selvagge che nel X A.C. invadono Faeriyev.
 
@@ -58,7 +58,7 @@
   nazione: Focolare
   dove: Pianterreno
   descrizione: |
-    La terra natia dei Boggart: le praterie del Tappeto, l'Albero di Yule, il Camino. Pericolosa di notte e infestata dai briganti di [[duncan-rox]].
+    La terra natia dei Boggart: le praterie del Tappeto, l'Albero di Yule, il Camino. Pericolosa di notte e infestata dai briganti di Duncan Rox.
 
 - id: wallford
   nome: Wallford
@@ -150,7 +150,7 @@
   nazione: Reame
   dove: Tavolo e Lampadario, Sala da Pranzo
   descrizione: |
-    La Città di Cristallo, capitale del Reame. Sottoluce si estende sul Tavolo, ricca e pulitissima; Altaluce è il Lampadario, dove ha sede la corte della Zarina e si sale solo in bolla di sapone. Qui sorge il Giardino Zoologico di [[protopopolov]].
+    La Città di Cristallo, capitale del Reame. Sottoluce si estende sul Tavolo, ricca e pulitissima; Altaluce è il Lampadario, dove ha sede la corte della Zarina e si sale solo in bolla di sapone. Qui sorge il Giardino Zoologico del Visconte Protopopolov.
 
 - id: faeriyev
   nome: Faeriyev
@@ -232,7 +232,7 @@
   nazione: Liberi Domini
   dove: Bordo della Vasca, Primo Piano
   descrizione: |
-    La Città sul Bordo, il porto più indaffarato della Casa: casette colorate, università di medicina, tresche e gendarmi. Qui lavorano [[ira]] e [[cesar-de-la-cuve]].
+    La Città sul Bordo, il porto più indaffarato della Casa: casette colorate, università di medicina, tresche e gendarmi. Qui sorgeva la Grande Biblioteca, distrutta da un incendio nel maggio VIII A.C.
 
 # ── ORDA ───────────────────────────────────────────────────
 
@@ -258,7 +258,7 @@
   nazione: Orda
   dove: Golfo della Mirandola, Cantina
   descrizione: |
-    La Splendidissima, un'oasi intorno a una pozza d'acqua. Sede della più antica Accademia di Scherma dell'Orda e governata dalla Calcamorte [[verana]].
+    La Splendidissima, un'oasi intorno a una pozza d'acqua. Sede della più antica Accademia di Scherma dell'Orda e governata dalla Calcamorte Verana.
 
 - id: al-sehir
   nome: Al Sehir
@@ -266,7 +266,7 @@
   nazione: Orda
   dove: Sul Banco, Cantina
   descrizione: |
-    La Città di Ruggine, capitale dell'Orda e insediamento più popoloso della Casa: folla, spezie, bazar. Governata dal Califfo [[laio]].
+    La Città di Ruggine, capitale dell'Orda e insediamento più popoloso della Casa: folla, spezie, bazar. Governata dal Califfo Laio il Bello.
 
 - id: samaracna
   nome: Samaracna
@@ -290,7 +290,7 @@
   nazione: Orda
   dove: Davanti alla Fornace, Cantina
   descrizione: |
-    Dune di segatura arse dal Falso Fuoco, infestate da lucertole, ragni e scolopendre. Patria dei nomadi e di [[qamar]]. Al Tramonto vive [[xerxes]].
+    Dune di segatura arse dal Falso Fuoco, infestate da lucertole, ragni e scolopendre. Patria dei nomadi cavalcatori di lucertole. Al Tramonto vive Xerxes, il Diavolo del Tramonto.
 
 - id: penjara
   nome: Penjara e Pozzoprofondo
@@ -299,3 +299,61 @@
   dove: Cantina
   descrizione: |
     Città di allevatori di bombi costruita attorno alla montagna di ferro di Pozzoprofondo, la prigione più temuta della Casa, divisa in anelli sempre più stretti.
+
+# ── IL GIARDINO ────────────────────────────────────────────
+
+- id: strada-madre
+  nome: La Strada Madre
+  tipo: Territorio
+  nazione: Giardino
+  dove: Giardino Davanti
+  descrizione: |
+    L'ultimo tratto di un viottolo di pietra bianca calpestato dal Padrone, che parte dal Portico. Più la si percorre, più ci si lascia alle spalle la Casa e si entra in territori selvaggi.
+
+- id: citta-di-rovi
+  nome: La Città di Rovi
+  tipo: Città
+  nazione: Giardino
+  dove: Giardino Davanti, all'angolo estremo della Casa
+  descrizione: |
+    Un groviglio di rovi neri e minacciosi che William "Vecchia Noce" Hearthworth scelse come rifugio per i Boggart esiliati. Oggi è la casa dei Barghest e del misterioso Cavaliere di Spine. Per il Trattato di Astraviya appartiene al Focolare, ma molti dei suoi abitanti non riconoscono l'autorità di [[furiospino]].
+
+- id: dendronaos
+  nome: Il Ceppo di Déndronaos
+  tipo: Albero
+  nazione: Giardino
+  dove: Giardino Davanti, tra gli alberi a destra della Strada Madre
+  descrizione: |
+    L'Albero del Tempio, antica dimora delle Fate, abbattuto da un fulmine nel 20 s.P. Nel suo ceppo sono rimasti i Fae della Corte dei Seelie, che vi hanno piantato un nuovo seme.
+
+- id: cittadella
+  nome: La Cittadella
+  tipo: Città sotterranea
+  nazione: Giardino
+  dove: Sotto il Giardino Davanti
+  descrizione: |
+    Una città sotterranea immensa, fatta di cerchi concentrici e tunnel labirintici, con decine di ingressi nascosti sotto l'erba. Rifugio dei Genomini da quando la Casa era in costruzione, è una nazione neutrale riconosciuta dal Trattato di Astraviya.
+
+- id: fontana
+  nome: La Fontana
+  tipo: Territorio
+  nazione: Giardino
+  dove: Giardino Davanti, dove finisce la Strada Madre
+  descrizione: |
+    Un anello di pietra durissima che contiene abbastanza acqua da riempire Vascherdam cento volte. Qui si combatté la battaglia di Acquapenna. D'inverno diventa uno specchio di ghiaccio.
+
+- id: canneto
+  nome: Il Canneto e la Pagoda di Terracotta
+  tipo: Territorio
+  nazione: Giardino
+  dove: Giardino sul Retro
+  descrizione: |
+    Dietro la Casa il terreno è pieno d'acqua stagnante e di fili d'erba altissimi: il Canneto, sede delle cinque Province dello Shogunato della Lama d'Argento. Al centro torreggia la Pagoda di Terracotta, costruita con le tegole cadute dal Tetto, palazzo della Shogun Yōkai Jorōgumo.
+
+- id: lontano
+  nome: Lontano
+  tipo: Territorio
+  nazione: Giardino
+  dove: Oltre la Staccionata
+  descrizione: |
+    Oltre la Fontana, la Cittadella e un anello di alberi colossali e nodosi finisce il Giardino. Al di là c'è Lontano, la terra di bestie che farebbero accapponare la pelle anche a una poiana.

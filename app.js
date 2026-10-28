@@ -11,6 +11,7 @@
     sito: {}, eventi: [], epoche: [],
     ev: new Map(), pers: new Map(), luo: new Map(),
     sel: null, scheda: null, mancanti: new Map(),
+    mondo: [], voci: new Map(), vista: 'linea',
   };
 
   const $ = (sel, el = document) => el.querySelector(sel);
@@ -34,10 +35,19 @@
 
   async function avvia() {
     try {
-      const [sito, crono, pers, luoghi] = await Promise.all([
+      const [sito, crono, pers, luoghi, mondo] = await Promise.all([
         caricaYaml('sito.yaml').catch(() => ({})),
         caricaYaml('cronologia.yaml'), caricaYaml('personaggi.yaml'), caricaYaml('luoghi.yaml'),
+        caricaYaml('mondo.yaml').catch((e) => (/errore/.test(e.message) ? Promise.reject(e) : {})),
       ]);
+      S.mondo = ((mondo && mondo.sezioni) || []).filter((s) => s && s.id);
+      for (const sez of S.mondo) {
+        sez.gruppi = (sez.gruppi || []).filter(Boolean);
+        for (const g of sez.gruppi) {
+          g.voci = (g.voci || []).filter((v) => v && v.id);
+          g.voci.forEach((v) => S.voci.set(String(v.id), { v, sez }));
+        }
+      }
       S.sito = sito || {};
       S.eventi = (crono.eventi || []).filter((e) => e && e.id);
       S.epoche = crono.epoche || [];
@@ -56,12 +66,15 @@
     }
     controlla();
     disegnaLinea();
+    costruisciNav();
     collegaEventi();
     const h = leggiHash();
     const iniziale = S.ev.has(h.e) ? h.e : S.ev.has(String(S.sito.evento_iniziale)) ? String(S.sito.evento_iniziale) : S.eventi[0] && S.eventi[0].id;
     if (iniziale) seleziona(iniziale, { scorri: 'centro', istantaneo: true });
+    if (h.v && S.mondo.some((s) => s.id === h.v)) mostraVista(h.v, { istantaneo: true });
     if (h.p && S.pers.has(h.p)) apriScheda('p', h.p);
     else if (h.l && S.luo.has(h.l)) apriScheda('l', h.l);
+    else if (h.m && S.voci.has(h.m)) apriScheda('m', h.m);
   }
 
   /* ── Controllo dei riferimenti ─────────────────────────── */
@@ -71,7 +84,7 @@
   }
   function controllaTesto(testo, dove) {
     String(testo || '').replace(/\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g, (_, id) => {
-      id = id.trim(); if (!S.pers.has(id) && !S.luo.has(id)) segnalaMancante(id, dove); return '';
+      id = id.trim(); if (!S.pers.has(id) && !S.luo.has(id) && !S.voci.has(id)) segnalaMancante(id, dove); return '';
     });
   }
   function controlla() {
@@ -89,6 +102,14 @@
     }
     for (const p of S.pers.values()) { lista(p.luoghi).forEach((id) => S.luo.has(id) || segnalaMancante(id, p.nome || p.id)); controllaTesto(p.profilo, p.nome || p.id); }
     for (const l of S.luo.values()) controllaTesto(l.descrizione, l.nome || l.id);
+    for (const sez of S.mondo) {
+      controllaTesto(sez.introduzione, sez.titolo || sez.id);
+      for (const g of sez.gruppi) for (const v of g.voci) {
+        const dove = v.nome || v.id;
+        controllaTesto(v.descrizione, dove);
+        lista(v.collegamenti).forEach((id) => S.pers.has(id) || S.luo.has(id) || S.voci.has(id) || segnalaMancante(id, dove));
+      }
+    }
     for (const ep of S.epoche) [ep.da, ep.a].forEach((id) => id && !S.ev.has(String(id)) && segnalaMancante(String(id), `epoca ${ep.nome}`));
     if (!S.mancanti.size) return;
     const righe = [...S.mancanti].map(([id, dove]) => `<li><strong>${esc(id)}</strong> (in: ${esc([...dove].join(', '))})</li>`).join('');
@@ -101,13 +122,14 @@
   function nomeDi(id) {
     if (S.pers.has(id)) return S.pers.get(id).nome || id;
     if (S.luo.has(id)) return S.luo.get(id).nome || id;
+    if (S.voci.has(id)) return S.voci.get(id).v.nome || id;
     return id;
   }
   function inline(t) {
     return esc(t)
       .replace(/\[\[([^\]|]+)(?:\|([^\]]*))?\]\]/g, (_, id, et) => {
         id = id.trim();
-        const tipo = S.pers.has(id) ? 'p' : S.luo.has(id) ? 'l' : null;
+        const tipo = S.pers.has(id) ? 'p' : S.luo.has(id) ? 'l' : S.voci.has(id) ? 'm' : null;
         const testo = et ? et : esc(nomeDi(id));
         if (!tipo) return `<span class="rif mancante" title="Id sconosciuto: ${esc(id)}">${testo}</span>`;
         return `<button type="button" class="rif" data-${tipo}="${esc(id)}">${testo}</button>`;
@@ -120,7 +142,9 @@
     return String(t).trim().split(/\n\s*\n/).map((p) => `<p>${inline(p.trim().replace(/\n/g, ' '))}</p>`).join('');
   }
   function boxCampagna(t) {
-    if (!t || !String(t).trim()) return '';
+    // le righe che iniziano con # sono promemoria per chi scrive, non si mostrano
+    t = String(t || '').split('\n').filter((r) => !r.trim().startsWith('#')).join('\n');
+    if (!t.trim()) return '';
     return `<div class="campagna"><h4>Nella nostra Saga</h4>${testo(t)}</div>`;
   }
 
@@ -365,9 +389,76 @@
       ${[...perNaz].map(([n, ids]) => `<div class="indice-gruppo"><h3>${esc(n)}</h3><div class="elenco">${ids.map(gettoneLuogo).join(' ')}</div></div>`).join('')}`;
   }
 
+  /* ── Pagine del mondo (Casa, Giardino…) ────────────────── */
+  function costruisciNav() {
+    const nav = $('#viste');
+    if (!S.mondo.length) { nav.hidden = true; return; }
+    nav.innerHTML = [{ id: 'linea', titolo: 'Linea del tempo' }, ...S.mondo]
+      .map((s) => `<button type="button" class="vista" data-vista="${esc(s.id)}" aria-pressed="${s.id === S.vista}">${esc(s.titolo || s.id)}</button>`).join('');
+  }
+
+  function mostraVista(id, opz = {}) {
+    S.vista = id;
+    const linea = id === 'linea';
+    $('.linea').hidden = !linea;
+    $('#dettaglio').hidden = !linea;
+    $('#mondo').hidden = linea;
+    document.querySelectorAll('.vista').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.vista === id)));
+    if (!linea) disegnaMondo(S.mondo.find((s) => s.id === id));
+    else if (S.sel) seleziona(S.sel.id, { scorri: true, istantaneo: true });
+    scriviHash();
+    if (!opz.istantaneo) window.scrollTo({ top: 0 });
+  }
+
+  function disegnaMondo(sez) {
+    if (!sez) return;
+    const gruppi = sez.gruppi.map((g) => `
+      <section class="mondo-gruppo">
+        <h3>${esc(g.titolo || '')}</h3>
+        <div class="voci">
+          ${g.voci.map((v) => `<button type="button" class="voce" data-m="${esc(v.id)}">
+            <span class="voce-nome">${esc(v.nome || v.id)}</span>
+            ${v.motto ? `<span class="voce-motto">${esc(v.motto)}</span>` : ''}
+            ${v.breve ? `<span class="voce-breve">${esc(v.breve)}</span>` : ''}
+          </button>`).join('')}
+          ${g.luoghi_della_nazione ? [...S.luo.values()].filter((l) => slug(l.nazione) === slug(g.luoghi_della_nazione)).map((l) => `<button type="button" class="voce" data-l="${esc(l.id)}">
+            <span class="voce-nome">${esc(l.nome || l.id)}</span>
+            ${l.dove ? `<span class="voce-motto">${esc(l.dove)}</span>` : ''}
+          </button>`).join('') : ''}
+        </div>
+      </section>`).join('');
+    $('#mondo').innerHTML = `
+      <header class="mondo-testata">
+        <h2>${esc(sez.titolo || '')}</h2>
+        ${sez.sottotitolo ? `<p class="mondo-sottotitolo">${esc(sez.sottotitolo)}</p>` : ''}
+      </header>
+      <div class="testo mondo-intro">${testo(sez.introduzione)}</div>
+      ${gruppi}`;
+  }
+
+  function schedaVoce(id) {
+    const { v, sez } = S.voci.get(id);
+    const dati = v.dati && typeof v.dati === 'object'
+      ? Object.entries(v.dati).map(([k, val]) => riga(k, String(val))).join('') : '';
+    const coll = lista(v.collegamenti);
+    const gettoni = coll.map((c) => (S.pers.has(c) ? gettonePers(c) : S.luo.has(c) ? gettoneLuogo(c)
+      : S.voci.has(c) ? `<button type="button" class="gettone" data-m="${esc(c)}"><span class="punto"></span>${esc(nomeDi(c))}</button>` : gettonePers(c))).join(' ');
+    const luoghiNaz = v.luoghi_della_nazione
+      ? [...S.luo.values()].filter((l) => slug(l.nazione) === slug(v.luoghi_della_nazione)).map((l) => gettoneLuogo(String(l.id))).join(' ') : '';
+    return `
+      <p class="scheda-tipo">${esc(sez.titolo || '')}</p>
+      <h2 id="cassetto-titolo">${esc(v.nome || id)}</h2>
+      ${v.motto ? `<p class="scheda-nome-completo">${esc(v.motto)}</p>` : ''}
+      ${v.breve ? `<p class="scheda-breve">${inline(v.breve)}</p>` : ''}
+      ${dati ? `<dl class="scheda-dati">${dati}</dl>` : ''}
+      <div class="testo">${testo(v.descrizione)}</div>
+      ${luoghiNaz ? `<h3>Luoghi</h3><div class="elenco">${luoghiNaz}</div>` : ''}
+      ${coll.length ? `<h3>Vedi anche</h3><div class="elenco">${gettoni}</div>` : ''}`;
+  }
+
   let fuocoPrima = null;
   function apriScheda(tipo, id) {
-    const html = tipo === 'p' ? schedaPersonaggio(id) : tipo === 'l' ? schedaLuogo(id) : schedaIndice(id);
+    const html = tipo === 'p' ? schedaPersonaggio(id) : tipo === 'l' ? schedaLuogo(id) : tipo === 'm' ? schedaVoce(id) : schedaIndice(id);
     const c = $('#cassetto');
     if (!c.classList.contains('aperto')) fuocoPrima = document.activeElement;
     $('#cassetto-contenuto').innerHTML = html;
@@ -391,11 +482,12 @@
   /* ── Indirizzo (per condividere un link a un evento) ───── */
   function leggiHash() {
     const p = new URLSearchParams(location.hash.slice(1));
-    return { e: p.get('e'), p: p.get('p'), l: p.get('l') };
+    return { e: p.get('e'), p: p.get('p'), l: p.get('l'), m: p.get('m'), v: p.get('v') };
   }
   function scriviHash() {
     const p = new URLSearchParams();
-    if (S.sel) p.set('e', S.sel.id);
+    if (S.vista !== 'linea') p.set('v', S.vista);
+    else if (S.sel) p.set('e', S.sel.id);
     if (S.scheda) p.set(S.scheda.tipo, S.scheda.id);
     try { history.replaceState(null, '', `#${p.toString()}`); } catch (e) { /* anteprime senza history */ }
   }
@@ -406,15 +498,18 @@
     const interno = $('#linea-interno');
 
     document.addEventListener('click', (ev) => {
-      const t = ev.target.closest('[data-e],[data-p],[data-l],[data-vai],[data-indice],[data-chiudi]');
+      const t = ev.target.closest('[data-e],[data-p],[data-l],[data-m],[data-vai],[data-indice],[data-chiudi],[data-vista]');
       if (!t) return;
       if (t.hasAttribute('data-chiudi')) return chiudiScheda();
+      if (t.dataset.vista) return mostraVista(t.dataset.vista);
+      if (t.dataset.m) return apriScheda('m', t.dataset.m);
       if (t.dataset.indice) return apriScheda('i', t.dataset.indice);
       if (t.dataset.p) return apriScheda('p', t.dataset.p);
       if (t.dataset.l) return apriScheda('l', t.dataset.l);
       if (t.dataset.e) { if (box.dataset.trascinato === '1') return; return seleziona(t.dataset.e, { scorri: true }); }
       if (t.dataset.vai) {
         chiudiScheda();
+        mostraVista('linea', { istantaneo: true });
         seleziona(t.dataset.vai, { scorri: true });
         const i = t.dataset.avv;
         const bersaglio = i !== '' ? $(`#avv-${i}`) : $('#dettaglio');

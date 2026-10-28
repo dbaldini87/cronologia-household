@@ -157,60 +157,10 @@ eventi:
     personaggi: [arcadia]
     luoghi: [reame, focolare, liberi-domini, orda]
 
-  # ── LA SAGA DELLA FRAGILE PACE ────────────────────────────
-
-  - id: cap-1
-    data: Set–Dic VI A.C.
-    capitolo: Capitolo I
-    titolo: Avventure introduttive
-    rilievo: maggiore
-    riassunto: |
-      Le frontiere sono appena state aperte e la Casa si riempie di viaggiatori. I ventiquattro protagonisti della Saga si mettono in cammino, ognuno per i fatti propri: una bibliotecaria eredita una pagina del leggendario diario del Burocrate [[argo]], una dottoressa dell'Orda si ferma a curare un'epidemia, le guardie della Zarina cercano un bombo rapito, un giovane investigatore risolve il suo primo caso a Vascherdam.
-    personaggi: [gwen, humphrey, earnest, sienna, malaika, zehra, qamar, santiago, yuliya, dimitri, hannah, jocelyne, aidan, siobhan, ira, micah, pierre, gunther, pryscilla, icarus, jemma, floyd, litha, tubo]
-    luoghi: [wallford, al-sehir, astraviya, vascherdam, la-ruelle, sottoscala]
-    avventure:
-      - titolo: Il Diario di Argo
-        quando: Settembre VI A.C.
-        luogo: wallford
-        protagonisti: [gwen, humphrey, earnest, sienna]
-        altri: [jemma, floyd]
-        riassunto: |
-          Alla morte del professor Teampall, suo corrispondente, [[gwen]] riceve in eredità una pagina del Diario di [[argo]] ricoperta di cera e scritta in una lingua incomprensibile. Ingaggia il cacciatore [[humphrey]] per scortarla fino a [[chesterfield]], dove la aspetta il professor [[flanagan]]. Si uniscono al viaggio [[earnest]] e l'amica [[sienna]], che ha buoni motivi per lasciare Wallford in fretta.
-      - titolo: L'Epidemia
-        quando: Ottobre VI A.C.
-        luogo: al-sehir
-        protagonisti: [malaika, zehra, qamar, santiago]
-        altri: [jemma]
-        riassunto: |
-          [[malaika]] e la sorella acquisita [[zehra]] stanno per lasciare la Città di Ruggine, con la guida [[qamar]] e il duellante [[santiago]]. Ai cancelli una madre disperata chiede aiuto: nei quartieri poveri si è diffuso il Sangue Blu, e l'unico che ha la medicina la vende a prezzi impossibili. Malaika rimanda la partenza per fermare il contagio.
-      - titolo: Il Caso del Bombo Scomparso
-        quando: Novembre VI A.C.
-        luogo: astraviya
-        protagonisti: [yuliya, dimitri, hannah, jocelyne]
-        altri: [pierre, gunther, icarus, pryscilla]
-        riassunto: |
-          Per Samhain la Zarina organizza un concorso di bellezza per bombi. La notte prima, durante una rissa al Grand Hotel di Sottoluce, viene rapito Joya, il bombo favorito della dama sluagh Luciana Morena. Il Sergente [[yuliya]], la guardia d'onore [[dimitri]] e la giovane allevatrice [[hannah]] devono ritrovarlo prima della gara, con l'aiuto interessato della "testimone" [[jocelyne]].
-      - titolo: Il Carico Rubato
-        quando: Novembre VI A.C.
-        luogo: vascherdam
-        protagonisti: [aidan, siobhan, ira, micah]
-        altri: [pierre, gunther]
-        riassunto: |
-          Dalla stiva di una nave mercantile al porto di Vascherdam sparisce un timbro con il sigillo del Marchese [[tristan-des-larmes]]. Il Rettore del Simposio affida il caso al giovane investigatore forense [[aidan]] e alla sua guardia del corpo [[siobhan]], affiancati controvoglia dal gendarme [[ira]]. Anche [[micah]] si mette a indagare: la sua tresca voleva quel timbro e qualcuno l'ha battuta sul tempo.
-      - titolo: Trappola di Cera
-        quando: Dicembre VI A.C.
-        luogo: la-ruelle
-        protagonisti: [pierre, gunther, pryscilla, icarus]
-        altri: [yuliya, hannah]
-        riassunto: |
-          Durante le vacanze di Yule il giovane Gaston Lemiel, allievo di [[pierre]], scompare dopo una notte nei bassifondi dove l'aveva lasciato [[pryscilla]]. Il tutore, il segretario [[gunther]] e la sentinella [[icarus]], requisita come scorta, seguono le sue tracce fino alla Culla di Cera, la pericolosa riserva di caccia del Reame.
-      - titolo: Il Ratto Blu
-        quando: Dicembre VI A.C.
-        luogo: sottoscala
-        protagonisti: [jemma, floyd, litha, tubo]
-        altri: [earnest, sienna]
-        riassunto: |
-          Un soldato del Focolare vola dentro la Taverna del Ratto Blu attraverso una finestra: l'Esercito dell'Orda vuole requisire il locale del vecchio Abbott. [[jemma]], [[floyd]], [[litha]] e [[tubo]] non intendono permetterlo e scoprono che dietro la lite c'è un tenente del Grande Esercito Imperiale prepotente e fannullone.
+  # ── LA NOSTRA SAGA DELLA FRAGILE PACE ─────────────────────
+  #  Qui ci sono solo le avventure giocate al nostro tavolo.
+  #  Sotto ogni avventura trovi "campagna: |": scrivi lì sotto,
+  #  rientrato di due spazi in più, come è andata a finire.
 
   - id: cap-2-1
     data: Gen–Mar VII A.C.
@@ -218,513 +168,171 @@ eventi:
     titolo: Il Disastro del Corrimano
     rilievo: minore
     riassunto: |
-      A gennaio la lussuosa Carovana del Corrimano precipita sui Gradini: è un attentato dei **Liberissimi** del Comandante [[kirkland]], veterani che lottano per l'indipendenza del Primo Piano. La Carovana resta chiusa per tutto il Capitolo e chi vuole salire o scendere deve affrontare la Grande Scala a piedi. L'attentato riaccende il fuoco della rivolta in tutta la Casa.
-    personaggi: [kirkland, aidan, dimitri, ira, siobhan, gwen, humphrey, pryscilla, santiago, icarus, sienna, micah, floyd, gunther, litha, pierre, tubo, jemma, malaika, qamar, zehra, earnest, hannah, jocelyne, yuliya, protopopolov]
-    luoghi: [grande-scala, chesterfield, sottoscala, el-paso-de-umbral, astraviya]
-    avventure:
-      - titolo: Il Disastro del Corrimano
-        quando: Gennaio VII A.C.
-        luogo: grande-scala
-        protagonisti: [aidan, dimitri, ira, siobhan]
-        altri: [micah, icarus]
-        riassunto: |
-          Premiati per il caso di Vascherdam, [[aidan]], [[siobhan]] e [[ira]] viaggiano verso Astraviya scortati da [[dimitri]]. Tra i passeggeri della Carovana si nascondono agenti dei Liberissimi che fanno crollare il Corrimano e danno la caccia ai superstiti. Tocca a loro portare in salvo i passeggeri fino a Sottogradino.
-      - titolo: Sulle Tracce di Argo
-        quando: Febbraio VII A.C.
-        luogo: chesterfield
-        protagonisti: [gwen, humphrey, pryscilla, santiago]
-        altri: [sienna, earnest]
-        riassunto: |
-          [[santiago]] e [[pryscilla]] possiedono mezza mappa del tesoro; l'altra metà è in mano a uno sluagh della banda di [[duncan-rox]]. Il professor [[flanagan]] li mette in contatto con [[gwen]] e [[humphrey]]: la mappa porta al presunto luogo di sepoltura del Burocrate [[argo]].
-      - titolo: Con le Mani nel Sacco
-        quando: Febbraio VII A.C.
-        luogo: sottoscala
-        protagonisti: [icarus, sienna, micah, floyd]
-        altri: [litha, tubo]
-        riassunto: |
-          [[sienna]] e [[micah]] tentano di rubare le armi custodite in una stalla di [[floyd]] requisita dall'Esercito Imperiale, ma vengono colti sul fatto da Floyd e dalla sentinella [[icarus]]. Le casse però sono già vuote: qualcuno è arrivato prima. I quattro indagano insieme sul contrabbando.
-      - titolo: La Grande Scalata
-        quando: Febbraio VII A.C.
-        luogo: grande-scala
-        protagonisti: [gunther, litha, pierre, tubo]
-        altri: [floyd, ira]
-        riassunto: |
-          Nominato Ambasciatore del Reame, [[pierre]] deve raggiungere Beddingham, ma il Corrimano è distrutto. Decide di salire la Grande Scala a piedi con il segretario [[gunther]], tre set di valigie e due guide esperte, [[litha]] e [[tubo]].
-      - titolo: La Frontiera di Umbral
-        quando: Marzo VII A.C.
-        luogo: el-paso-de-umbral
-        protagonisti: [jemma, malaika, qamar, zehra]
-        altri: [micah, sienna]
-        riassunto: |
-          [[malaika]], [[zehra]] e [[qamar]], scortate dalla mercenaria [[jemma]], trovano la frontiera bloccata: tre soldati del Reame sono stati uccisi e il colonnello Hans Nadel non lascia uscire nessuno finché i colpevoli non saranno consegnati.
-      - titolo: In Viaggio con Protopopolov, parte I
-        quando: Marzo VII A.C.
-        luogo: astraviya
-        protagonisti: [earnest, hannah, jocelyne, yuliya]
-        altri: [dimitri]
-        riassunto: |
-          L'eccentrico Visconte [[protopopolov]] parte per la Cantina a caccia di animali rari, con [[yuliya]] come guardia d'onore, l'allevatrice [[hannah]], la scorta [[earnest]] e la bella [[jocelyne]]. Invece della strada sicura pretende di attraversare le Intercapedini.
+      A gennaio la lussuosa Carovana del Corrimano precipita sui Gradini della Grande Scala. L'attentato è rivendicato dai **Liberissimi**, veterani dell'Esercito di Porcellana che non hanno mai accettato il Trattato di Astraviya e combattono per l'indipendenza del Primo Piano. La Carovana resta chiusa per mesi: chi vuole cambiare Piano deve affrontare la Grande Scala a piedi. In tutta la Casa si moltiplicano moti studenteschi, attacchi al potere e ribellioni, e anche i **Tristellati** tornano a farsi sentire.
+    luoghi: [grande-scala, liberi-domini]
 
   - id: cap-2-2
     data: Apr VII – Mar VIII A.C.
     capitolo: Capitolo II · Paragrafo II
-    titolo: Moti e cospirazioni
+    titolo: Sulle tracce di Argo
     rilievo: minore
     riassunto: |
-      Dopo l'attentato al Corrimano la Casa è attraversata da moti studenteschi, attacchi al potere e ribellioni. Un diplomatico dei Liberi Domini muore ad Altaluce, a Beddingham una prima teatrale finisce in disastro, a Chesterfield nasce il movimento dell'**Unione** contro il Governatore [[furiospino]]. Intanto i Tristellati si interessano in modo sospetto alle ricerche di [[argo]].
-    personaggi: [icarus, jemma, malaika, zehra, yuliya, hannah, litha, tubo, gwen, humphrey, pryscilla, santiago, aidan, dimitri, jocelyne, siobhan, pierre, gunther, ira, floyd, qamar, earnest, sienna, micah, protopopolov, kirkland, furiospino]
-    luoghi: [lungo-corridoio, sottogradino, pinewood, astraviya, beddingham, chesterfield]
+      Dopo il rocambolesco recupero della **Pagina Sigillata** del Diario del Burocrate [[argo]], [[gwen]] e [[humphrey]] seguono una vecchia mappa nella foresta di Pinewood, scoprendo che i Tristellati sono molto interessati alle stesse ricerche. A Beddingham, intanto, la prima di un'opera che allude alla Zarina finisce nel caos. Alla fine del periodo metà del gruppo è in prigione.
     avventure:
-      - titolo: Il Lungo Corridoio
-        quando: Aprile VII A.C.
-        luogo: lungo-corridoio
-        protagonisti: [icarus, jemma, malaika, zehra]
-        altri: [qamar]
-        riassunto: |
-          Lungo la traversata il gruppo trova [[icarus]] ferito, unico superstite della sua guarnigione attaccata da sluagh misteriosi. Gli aggressori tornano all'attacco. Forse è qui che Icarus e [[jemma]] vengono catturati e portati a Pozzoprofondo.
-      - titolo: In Viaggio con Protopopolov, parte II
-        quando: Aprile VII A.C.
-        luogo: sottogradino
-        protagonisti: [yuliya, hannah, litha, tubo]
-        altri: [jocelyne, floyd]
-        riassunto: |
-          A Sottogradino [[protopopolov]] ingaggia [[litha]] e [[tubo]] per arrivare in Cantina, ma vuole anche raccogliere un rarissimo fungo corallo. Forse durante questo viaggio [[yuliya]] e Tubo finiscono prigionieri a Pozzoprofondo.
       - titolo: La Tomba di Argo
         quando: Maggio VII A.C.
         luogo: pinewood
-        protagonisti: [gwen, humphrey, pryscilla, santiago]
-        altri: [earnest, sienna]
+        protagonisti: [gwen, humphrey, yuliya, icarus]
+        altri: [flanagan]
         riassunto: |
-          La mappa conduce a una caverna nelle Intercapedini sotto l'Albero di Yule. Non è la tomba di [[argo]] ma quella di una sua assistente, morta cercandolo quarant'anni prima. Una lettera in codice rivela che una pagina del Diario è nascosta nel libro "A lume di candela". I Tristellati sono anche qui. Poco dopo [[gwen]] scioglie [[humphrey]] dalla sua promessa.
-      - titolo: Un Boccone Amaro
-        quando: Giugno VII A.C.
-        luogo: astraviya
-        protagonisti: [aidan, dimitri, jocelyne, siobhan]
-        altri: [pierre, gunther]
-        riassunto: |
-          Il compositore Vitaly Gitara, unica Fata del Simposio, muore ad Altaluce mentre tratta con la Zarina. [[jocelyne]] è l'unica testimone e anche la colpevole: doveva solo addormentarlo, ma lui era allergico, e chi l'ha pagata lavora per i Liberissimi.
+          Il professor [[flanagan]] possiede una mappa che conduce a un luogo legato ad [[argo]] nella foresta di Pinewood. Visto l'interesse dei Tristellati per la pagina, il Reame manda a indagare anche [[yuliya]] e [[icarus]], che Flanagan mette in contatto con [[gwen]] e [[humphrey]]. Sotto una grande sfera di vetro bianca e rossa si apre una caverna piena di trappole: la tomba di una soladina che aveva custodito una pagina del Diario, con un ultimo messaggio: *cerca A Lume di Candela*. Sulla via del ritorno i Tristellati tendono un'imboscata.
+
+          Tornati a Chesterfield, un infiltrato dei Tristellati fa arrestare Yuliya, Icarus e Humphrey con il pretesto della caccia di frodo, presentandosi con trenta soldati. Flanagan fa fuggire Gwen in segreto e la prega di continuare l'indagine.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
       - titolo: La Regina e il Boggart
         quando: Giugno VII A.C.
         luogo: beddingham
-        protagonisti: [pierre, gunther, ira, floyd]
-        altri: [pryscilla, gwen]
+        protagonisti: [jocelyne, pierre, earnest, sienna]
+        altri: [korina, bardon, lestrade]
         riassunto: |
-          Al Teatro Reale debutta un'opera scandalosa che allude a un amore tra la Zarina e [[furiospino]]. Nel pubblico ci sono [[pierre]], [[gunther]] e [[ira]], dietro le quinte [[floyd]] con i topi ballerini. La serata finisce in un disastro, e forse qualcuno voleva eliminare l'attore protagonista.
-      - titolo: La Vendetta di Qamar, parte I
-        quando: Marzo VIII A.C.
-        luogo: chesterfield
-        protagonisti: [qamar, earnest, sienna, micah]
-        altri: [humphrey, santiago]
-        riassunto: |
-          Il veterano Eston Northcott aizza i giovani dell'Unione contro Furiospino. [[qamar]] lo crede l'assassino dei suoi genitori; [[earnest]] è pagato per fermarlo; [[sienna]] e [[micah]] devono riscuotere un suo debito. Northcott si rivela un omino amaro e interessato solo a sé.
+          [[pierre]] e [[jocelyne]], ormai visti di buon occhio dalla corte di Altaluce, sono mandati alla prima di *La Regina e il Boggart* per assicurarsi che gli autori dei Liberi Domini non infanghino l'onore della Zarina. [[sienna]] ha trascinato [[earnest]] a Beddingham per un lavoro da tuttofare nella compagnia teatrale: lui è diventato la controfigura del protagonista [[bardon]], lei ha "supervisionato" le gemme destinate alla corona di scena della prima attrice [[korina]].
+
+          La sera della prima scoppia una rissa in sala e qualcuno prova a rapire Korina. Arriva l'ispettore [[lestrade]] con i rinforzi, e tutti i presenti finiscono in Gendarmeria. Alla fine [[pierre]] viene arrestato e mandato a Pozzoprofondo.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: cap-3-1
     data: Apr–Lug VIII A.C.
     capitolo: Capitolo III · Paragrafo I
-    titolo: La Fuga da Pozzoprofondo
+    titolo: La Grande Evasione
     rilievo: maggiore
     riassunto: |
-      Ad aprile i detenuti dell'anello più basso di Pozzoprofondo aprono due varchi e la maggior parte dei prigionieri fugge. Molti salgono nei Liberi Domini, dove non c'è estradizione; la criminalità esplode in tutta la Casa. A maggio la Biblioteca dell'Università di Vascherdam va a fuoco.
-    personaggi: [yuliya, jemma, tubo, icarus, gwen, malaika, ira, pryscilla, pierre, gunther, hannah, litha, aidan, siobhan, micah, sienna, dimitri, earnest, jocelyne, zehra, floyd, humphrey, qamar, santiago, protopopolov, dall-soffer]
-    luoghi: [penjara, vascherdam, el-paso-de-umbral, bookshire, astraviya, pinewood]
+      Ad aprile un gruppo di prigionieri sabota il Grande Coperchio di Pozzoprofondo e quasi tutti i detenuti fuggono: è la **Grande Evasione**. Molti evasi salgono nei Liberi Domini, dove non esiste l'estradizione, e la criminalità cresce in tutta la Casa. A maggio la Grande Biblioteca di Vascherdam viene distrutta da un incendio.
+    luoghi: [penjara, vascherdam]
     avventure:
       - titolo: Fuga da Pozzoprofondo
         quando: Aprile VIII A.C.
         luogo: penjara
-        protagonisti: [yuliya, jemma, tubo, icarus]
+        protagonisti: [yuliya, pierre, icarus, humphrey]
+        altri: [alisa-keeley, dall-soffer, desmond-colepot, paquita-ladrillo, betris-creel]
         riassunto: |
-          Dopo quasi un anno di prigionia [[tubo]] è costretto a combattere negli scontri clandestini delle guardie, protetto come può da [[yuliya]]. Quando [[jemma]] deve affrontarlo in un incontro, i quattro prigionieri si ritrovano e preparano la fuga insieme a [[icarus]].
+          Finiti a Pozzoprofondo per le trame dei Tristellati, [[yuliya]], [[pierre]], [[icarus]] e [[humphrey]] sopravvivono come possono negli anelli della prigione. L'acrobata [[alisa-keeley]] li contatta per organizzare una fuga, ma per aprire il Grande Coperchio serve il genio di [[dall-soffer]], prigioniero della banda di [[betris-creel]]. Per armarsi, trovare una strada nascosta e un modo di uscire dal deserto si rivolgono ad altri detenuti, come [[paquita-ladrillo]] e [[desmond-colepot]].
+
+          Il gruppo riesce a fuggire. Con il Grande Coperchio sabotato, anche gran parte dei detenuti scappa con loro.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
       - titolo: A Lume di Candela
         quando: Maggio VIII A.C.
         luogo: vascherdam
-        protagonisti: [gwen, malaika, ira, pryscilla]
-        altri: [aidan, siobhan]
+        protagonisti: [gwen, jocelyne, sienna, earnest]
         riassunto: |
-          [[gwen]] e [[malaika]] cercano lo stesso libro nella grande Biblioteca dell'Università: una contiene una pagina del Diario di [[argo]], l'altra una riflessione sul Contratto Ereditario degli Sprighi. Un incendio distrugge l'edificio. Incidente, o un'opera di Tristellati e Liberissimi?
-      - titolo: In Viaggio con Protopopolov, parte III
-        quando: Maggio VIII A.C.
-        luogo: el-paso-de-umbral
-        protagonisti: [pierre, gunther, hannah, litha]
-        altri: [floyd]
-        riassunto: |
-          Ospite da mesi di Don Julio Escalante, [[protopopolov]] viene rapito di notte. Il Don, seguace della Setta del Ragno alleata dei Tristellati, fa ricadere la colpa sui poveri di Umbral per scatenare una repressione dell'Esercito Imperiale.
-      - titolo: Assassinio a Bookshire
-        quando: Giugno VIII A.C.
-        luogo: bookshire
-        protagonisti: [aidan, siobhan, micah, sienna]
-        altri: [earnest, qamar]
-        riassunto: |
-          [[micah]] si è ritirato a raccogliere funghi a Bookshire, ma in città arrivano [[aidan]] e [[siobhan]] per l'omicidio di una Schiena Dorata in pensione, e [[sienna]] con l'incarico di rubargli vecchie mappe delle Intercapedini. Nel nascondiglio della vittima: custodie vuote e una divisa da Tristellato.
-      - titolo: Il Giardino Zoologico
-        quando: Giugno VIII A.C.
-        luogo: astraviya
-        protagonisti: [dimitri, earnest, jocelyne, zehra]
-        altri: [sienna, aidan, siobhan]
-        riassunto: |
-          Nella settimana di Litha il Giardino Zoologico di [[protopopolov]] apre al pubblico. Alcuni animali fuggono e seminano il panico: il più pericoloso è Louis, una tarantola a cui il Visconte è affezionatissimo.
-      - titolo: Caccia ad Agoverde
-        quando: Luglio VIII A.C.
-        luogo: pinewood
-        protagonisti: [floyd, humphrey, qamar, santiago]
-        altri: [earnest, sienna]
-        riassunto: |
-          Scolopendre calcarate attaccano chi attraversa l'Albero di Yule. Sono enormi marchingegni manovrati da un soladino della banda di [[duncan-rox]], che con un richiamo meccanico finisce per attirare anche le bestie vere.
+          Fuggita da Chesterfield, [[gwen]] arriva nei Liberi Domini e, grazie agli amici di [[sienna]], si riunisce con lei, [[earnest]] e [[jocelyne]], che dopo l'arresto di Pierre cercano di tenersi lontani dalle autorità. Insieme cercano il libro *A Lume di Candela* nella sterminata Grande Biblioteca di Vascherdam, seguiti da qualcuno. La biblioteca va a fuoco, ma i quattro sopravvivono all'incendio e recuperano la pagina del Diario nascosta nel volume, scritta in un codice complicatissimo.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: cap-3-2
     data: Ago VIII – Gen IX A.C.
     capitolo: Capitolo III · Paragrafo II
-    titolo: Evasi, banditi e sicari
+    titolo: Il Codice di Argo
     rilievo: minore
     riassunto: |
-      Gli evasi di Pozzoprofondo sono braccati in tutta la Casa. La banda di [[duncan-rox]] viene sciolta, il genio [[dall-soffer]] è conteso tra Reame e Tristellati, a Vascherdam qualcuno mette una taglia sul gendarme [[ira]]. Le pagine del Diario di [[argo]], liberate dalla cera, si rivelano scritte in un codice indecifrabile.
-    personaggi: [floyd, humphrey, santiago, sienna, aidan, gwen, yuliya, siobhan, zehra, jemma, litha, tubo, gunther, pierre, earnest, hannah, ira, micah, malaika, pryscilla, qamar, dimitri, icarus, jocelyne, duncan-rox, dall-soffer, protopopolov, laio]
-    luoghi: [salone, clockminster, cantina, samaracna, vascherdam, glasburg]
+      Gli evasi di Pozzoprofondo cercano di rifarsi una vita, braccati dalle autorità e da chi li vuole zitti. Tra loro c'è [[dall-soffer]], tornato a Clockminster: un genio che ha aiutato, suo malgrado, la rivolta dei Tristellati, e che ora i Tristellati stessi vogliono eliminare.
+    luoghi: [clockminster]
     avventure:
-      - titolo: La Banda di Duncan Rox
-        quando: Agosto VIII A.C.
-        luogo: salone
-        protagonisti: [floyd, humphrey, santiago, sienna]
-        altri: [qamar]
-        riassunto: |
-          [[santiago]] vuole la fama che verrebbe dalla cattura di [[duncan-rox]] e trascina con sé [[floyd]] e [[humphrey]]. [[sienna]], grande ammiratrice del fuorilegge, si unisce a loro per conoscerlo. Dietro le razzie della banda c'è un ideale che Rox condivide con pochi.
       - titolo: Il Codice di Argo
         quando: Settembre VIII A.C.
         luogo: clockminster
-        protagonisti: [aidan, gwen, yuliya, siobhan]
-        altri: [ira, pryscilla]
+        protagonisti: [gwen, jocelyne, sienna, earnest]
+        altri: [dall-soffer, claus-corden]
         riassunto: |
-          [[yuliya]] deve riportare nel Reame l'evaso [[dall-soffer]], armaiolo dei Tristellati. [[gwen]] lo cerca perché solo lui sa sciogliere la cera del Diario. Con [[aidan]], che ha un debole per lei, lo trovano, ma le pagine liberate sono scritte in un codice impenetrabile.
-      - titolo: Ricercati!
-        quando: Settembre VIII A.C.
-        luogo: cantina
-        protagonisti: [zehra, jemma, litha, tubo]
-        altri: [earnest]
-        riassunto: |
-          I Giannizzeri danno la caccia agli evasi [[jemma]] e [[tubo]]. [[litha]] lascia il Visconte per ritrovarli e [[zehra]] li aiuta a raggiungere la frontiera. Per proteggere Tubo, schiavo fuggitivo, Zehra lo prende come suo Mamelucco, e lui deve dire addio a Litha.
-      - titolo: In Viaggio con Protopopolov, epilogo
-        quando: Ottobre VIII A.C.
-        luogo: samaracna
-        protagonisti: [gunther, pierre, earnest, hannah]
-        altri: [zehra]
-        riassunto: |
-          Ospite del Califfo [[laio]] nella città capovolta, [[protopopolov]] vuole a tutti i costi vedere Wassim, un raro ragno lupo albino, e finisce per liberarlo. Il Contratto di Benvenuto a Testa all'Ingiù vieta di fargli del male.
-      - titolo: Ira Poole deve Morire
-        quando: Novembre VIII A.C.
-        luogo: vascherdam
-        protagonisti: [ira, micah, malaika, pryscilla]
-        altri: [aidan, siobhan]
-        riassunto: |
-          Appena promosso Vicebrigadiere, [[ira]] scampa all'avvelenamento solo grazie a [[malaika]]. [[micah]] risale da Bookshire per avvisarlo: c'è una taglia enorme sulla sua testa. È solo il primo di una lunga serie di attentati.
-      - titolo: La Vendetta di Qamar, parte II
-        quando: Gennaio IX A.C.
-        luogo: glasburg
-        protagonisti: [qamar, dimitri, icarus, jocelyne]
-        altri: [yuliya]
-        riassunto: |
-          [[qamar]] segue la pista del Generale Kevin Winterson, che ha un uncino al posto della mano. Alla sua festa di compleanno lei e [[jocelyne]] si trovano con [[dimitri]] e [[icarus]], inviato a indagare. Winterson non è l'assassino, ma recluta per i Tristellati e la Setta del Ragno.
+          La pagina trovata a Vascherdam è cifrata e solo un genio potrebbe leggerla. I contatti di [[sienna]] e i salotti frequentati da [[earnest]] e [[jocelyne]] portano a [[dall-soffer]], stanco e deciso a non immischiarsi più in nulla. Mentre si tratta con lui, arrivano i Liberissimi di [[claus-corden]] con una granata ticchettante, "con i ringraziamenti dei Tristellati".
+
+          Soffer rivela che le pagine sono fatte per essere lette con un sistema di lenti colorate detto **gli Occhi della Mosca**, in possesso del famoso ingegnere [[paul-paquette]].
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: cap-4-1
     data: Feb–Giu IX A.C.
     capitolo: Capitolo IIII · Paragrafo I
-    titolo: La Festa dei Cent'anni
-    rilievo: maggiore
-    riassunto: |
-      L'anno IX A.C. corrisponde al centesimo anno dalla Scomparsa del Padrone. Da Imbolc a Imbolc il Focolare celebra la **Festa dei Cent'anni**, e il resto della Casa si unisce con fiere e spettacoli. Intanto ad Al Sehir spariscono ambasciatori stranieri e la Setta del Ragno esce allo scoperto. Arrivano sul mercato le prime armi a doppia canna.
-    personaggi: [floyd, humphrey, litha, earnest, gunther, hannah, pryscilla, santiago, malaika, jocelyne, icarus, ira, yuliya, jemma, dimitri, qamar, aidan, pierre, tubo, zehra, gwen, micah, sienna, siobhan, edward-ashworth, laio, ferguson-fole]
-    luoghi: [cinderhall, vilezia, clockminster, astraviya, al-sehir, rosevault]
-    avventure:
-      - titolo: La Festa dei Cent'anni
-        quando: Febbraio IX A.C.
-        luogo: cinderhall
-        protagonisti: [floyd, humphrey, litha, earnest]
-        riassunto: |
-          I boggart arrivano da ogni parte della Casa per portare offerte a Cinderhall, trasformata in una grande fiera. [[litha]] e [[humphrey]] si rivedono dopo anni, e il gruppo è ricevuto dal Tristo Cavaliere [[edward-ashworth]].
-      - titolo: L'ultimo Duello di Santiago Vilar
-        quando: Marzo IX A.C.
-        luogo: vilezia
-        protagonisti: [gunther, hannah, pryscilla, santiago]
-        altri: [zehra, tubo]
-        riassunto: |
-          Al torneo di Ostara [[santiago]] umilia il giovane Maximilian Eisengabel, che per vendetta uccide sua madre Maria. Santiago giura vendetta contro Eisengabel e contro tutte le Fate della Casa. [[hannah]], [[gunther]] e [[pryscilla]] lo seguono in una spirale di follia.
-      - titolo: Incidente Diplomatico
-        quando: Aprile IX A.C.
-        luogo: clockminster
-        protagonisti: [malaika, jocelyne, icarus, ira]
-        altri: [sienna, micah]
-        riassunto: |
-          Un'ambasciatrice del Reame e il suo ospite vengono avvelenati durante un tè. Le prove accusano la sua guardia [[icarus]] e la damigella [[jocelyne]], che hanno 48 ore per dimostrarsi innocenti sotto la sorveglianza di [[ira]] e [[malaika]]. Dietro c'è una rete di Liberissimi.
-      - titolo: La Condanna di Jemma
-        quando: Aprile IX A.C.
-        luogo: astraviya
-        protagonisti: [yuliya, jemma, dimitri, qamar]
-        altri: [earnest]
-        riassunto: |
-          Tradita dai mercenari che la ospitavano, [[jemma]] è condannata a morte per l'evasione e per un'antica diserzione. [[yuliya]] chiede aiuto a [[dimitri]] e alla spia [[qamar]] per farla evadere di notte.
-      - titolo: La Setta del Ragno, parte I
-        quando: Maggio IX A.C.
-        luogo: al-sehir
-        protagonisti: [aidan, pierre, tubo, zehra]
-        altri: [gunther]
-        riassunto: |
-          Morto lo Sceicco Ören, [[zehra]] diventa Sheika. Quando qualcuno attenta alla vita di [[pierre]] in casa sua, scopre la Setta del Ragno, che vuole cacciare gli stranieri dall'Orda. Con [[aidan]], chiamato dalla Zarina, smaschera la più grande cospirazione della storia dell'Orda.
-      - titolo: Il Colpo del Secolo, parte I
-        quando: Maggio IX A.C.
-        luogo: rosevault
-        protagonisti: [gwen, micah, sienna, siobhan]
-        altri: [pryscilla]
-        riassunto: |
-          [[ferguson-fole]] prepara la rapina alla Banca Centrale Domestica e recluta [[sienna]], che coinvolge [[micah]]. Serve la planimetria di casa dell'ingegner Paquette, dove [[gwen]] cerca un marchingegno a lenti appartenuto all'assistente di Argo. Lo strumento rivela che le pagine del Diario compongono una mappa.
-
-  - id: cap-4-2
-    data: Lug–Set IX A.C.
-    capitolo: Capitolo IIII · Paragrafo II
     titolo: Il Colpo del Secolo
     rilievo: maggiore
     riassunto: |
-      In estate un gruppo di criminali guidato da un genio di Wallford svaligia la Zecca di Rosevault e sparisce con oltre un milione di crì. La rapina provoca un **tracollo finanziario**: molti omini si ritrovano con il conto dimezzato. Ad Al Sehir la Setta del Ragno scatena una rivolta, nel deserto i Medjay inseguono le pagine del Diario, a Vascherdam colpisce un assassino seriale.
-    personaggi: [yuliya, dimitri, zehra, tubo, pierre, gunther, jocelyne, hannah, sienna, micah, earnest, pryscilla, gwen, icarus, jemma, litha, floyd, humphrey, qamar, santiago, aidan, siobhan, malaika, ira, ferguson-fole, protopopolov, cesar-de-la-cuve]
-    luoghi: [al-sehir, astraviya, rosevault, cantina, deserto-kashab, vascherdam, utu-bathur]
+      L'anno IX A.C. è il centesimo dalla Scomparsa del Padrone: da Imbolc a Imbolc il Focolare celebra la **Festa dei Cent'anni** e tutta la Casa si unisce con fiere e spettacoli. A maggio una banda di criminali penetra nella Banca Centrale Domestica di Rosevault e sparisce con una fortuna in crì: è il **Colpo del Secolo**. Molti si ritrovano con i risparmi dimezzati, poste e trasporti rincarano e la Casa precipita in un tracollo finanziario. Arrivano sul mercato le prime armi a doppia canna.
+    luoghi: [rosevault, cinderhall]
     avventure:
-      - titolo: La Setta del Ragno, parte II
-        quando: Luglio IX A.C.
-        luogo: al-sehir
-        protagonisti: [yuliya, dimitri, zehra, tubo]
-        altri: [aidan]
-        riassunto: |
-          Smascherati i capi, i seguaci della Setta del Ragno scendono in strada e attaccano gli stranieri. [[yuliya]] e [[dimitri]] devono portare in salvo [[zehra]], ma con lei e [[tubo]] finiscono per sconfiggere la Setta. Solo l'arrivo del Grande Esercito Imperiale evita il massacro.
-      - titolo: Sensualità a Corte
-        quando: Luglio IX A.C.
-        luogo: astraviya
-        protagonisti: [pierre, gunther, jocelyne, hannah]
-        altri: [earnest]
-        riassunto: |
-          La Marchesa Bismilla, madre di [[protopopolov]], revoca i terreni del Giardino Zoologico: quattro settimane per smantellarlo. [[hannah]], con [[jocelyne]] come consigliera e l'aiuto di [[pierre]] e [[gunther]], deve convincere la scontrosa signora a ripensarci.
-      - titolo: Il Colpo del Secolo, parte II
-        quando: Agosto IX A.C.
+      - titolo: Il Colpo del Secolo
+        quando: Maggio IX A.C.
         luogo: rosevault
-        protagonisti: [sienna, micah, earnest, pryscilla]
+        protagonisti: [yuliya, sienna, gwen, humphrey]
+        altri: [ferguson-fole, oksana-diakovna, paul-paquette]
         riassunto: |
-          [[sienna]], [[micah]] e [[pryscilla]] entrano nella Banca. Sienna convince [[earnest]] che Fole l'ha costretta, e così il duellante distrae la Marescialla Oksana Diakovna. Una fortuna, perché [[ferguson-fole]] non ha alcuna intenzione di dividere il bottino.
-      - titolo: La Via della Ruggine
-        quando: Agosto IX A.C.
-        luogo: cantina
-        protagonisti: [gwen, icarus, jemma, litha]
-        riassunto: |
-          Due pagine del Diario spariscono in un assalto vicino al Bathur. [[gwen]] parte per Utu Bathur con [[litha]], [[jemma]] e [[icarus]], e durante il viaggio viene attaccata più volte dai sicari dell'Ordine dei Medjay.
-      - titolo: L'Ordine dei Medjay
-        quando: Settembre IX A.C.
-        luogo: deserto-kashab
-        protagonisti: [floyd, humphrey, qamar, santiago]
-        altri: [gwen, jemma]
-        riassunto: |
-          Su richiesta di [[edward-ashworth]], [[humphrey]] e [[floyd]] partono con [[qamar]] alla ricerca di [[xerxes]], il Diavolo del Tramonto. Nel deserto ritrovano [[santiago]], ferito e cambiato. I Medjay, servi del Falso Fuoco, raccolgono le pagine del Diario per renderlo più potente. Forse qui Qamar scopre che l'uomo che cercava era il fratello di Floyd, morto da anni.
-      - titolo: Il Mostro di Vascherdam, parte I
-        quando: Settembre IX A.C.
-        luogo: vascherdam
-        protagonisti: [aidan, siobhan, malaika, ira]
-        riassunto: |
-          Al porto vengono uccisi uno dopo l'altro diversi sluagh. [[cesar-de-la-cuve]] affida l'indagine ad [[aidan]], [[siobhan]] e [[ira]], che chiama l'esperta [[malaika]]. Catturano solo un imitatore: il vero Mostro aggiunge alla sua lista Cesàr e Malaika.
+          Gli Occhi della Mosca sono nella cassetta di sicurezza di [[paul-paquette]], dentro la Banca Centrale Domestica di Rosevault, un luogo considerato inespugnabile. [[sienna]] chiama in aiuto un vecchio socio di Wallford, [[ferguson-fole]], che arriva con una decina di uomini e l'intenzione di arraffare tutti i crì possibili. [[gwen]] ha passato mesi a studiare la pianta della Banca, [[humphrey]] le Intercapedini attorno alla Specchiera per una via di fuga; a [[yuliya]] tocca trattare con la Marescialla [[oksana-diakovna]].
 
-  - id: cap-4-3
-    data: Ott–Nov IX A.C.
-    capitolo: Capitolo IIII · Paragrafo III
-    titolo: Il tracollo
-    rilievo: minore
-    riassunto: |
-      La crisi economica colpisce tutti: poste e trasporti costano di più, molti nobili restano senza un soldo. Nel Kashab viene sconfitto il Diavolo del Tramonto e recuperata metà del Diario di [[argo]]. A Wallford [[ferguson-fole]] viene finalmente consegnato alla giustizia.
-    personaggi: [humphrey, gwen, floyd, santiago, aidan, siobhan, malaika, ira, qamar, yuliya, icarus, litha, pierre, jocelyne, hannah, pryscilla, earnest, sienna, jemma, micah, zehra, tubo, gunther, dimitri, xerxes, cesar-de-la-cuve, ferguson-fole, laio]
-    luoghi: [deserto-kashab, vascherdam, utu-bathur, unter, wallford, al-sehir]
-    avventure:
-      - titolo: Il Diavolo del Tramonto
-        quando: Ottobre IX A.C.
-        luogo: deserto-kashab
-        protagonisti: [humphrey, gwen, floyd, santiago]
-        altri: [qamar]
-        riassunto: |
-          Accanto al cancello della Fornace vive [[xerxes]], il ragno cacciatore che custodisce la copertina del Diario e metà delle sue pagine. [[gwen]] e [[humphrey]] si ritrovano; [[floyd]] combatte per il Focolare, [[santiago]] per sete di sangue. Forse qui Santiago ottiene il Contratto Camminamuri e si allontana per sempre dagli amici.
-      - titolo: Il Mostro di Vascherdam, parte II
-        quando: Ottobre IX A.C.
-        luogo: vascherdam
-        protagonisti: [aidan, siobhan, malaika, ira]
-        riassunto: |
-          [[cesar-de-la-cuve]] si offre come esca, ma il Mostro lo incastra su una scena del crimine costruita ad arte. Gli investigatori devono scegliere se consegnare il Maresciallo o aiutarlo a indagare di nascosto.
-      - titolo: La Tomba del Serpente
-        quando: Ottobre IX A.C.
-        luogo: utu-bathur
-        protagonisti: [qamar, yuliya, icarus, litha]
-        altri: [santiago]
-        riassunto: |
-          Il Sultano apre un'antica tomba sluagh con il Sigillo del Khan, ma il drappello di Fate del Sergente Ludwig Teelöffel non torna. Teelöffel è come un padre per [[icarus]], che disobbedisce agli ordini ed entra con [[yuliya]], [[litha]] e [[qamar]].
-      - titolo: Caduti in Basso
-        quando: Novembre IX A.C.
-        luogo: unter
-        protagonisti: [pierre, jocelyne, hannah, pryscilla]
-        altri: [icarus]
-        riassunto: |
-          Rovinato dalla crisi e dalla "gestione" di Gunther, [[pierre]] si nasconde nei bassifondi di Unter e lavora come fattorino con [[jocelyne]] e [[pryscilla]], senza sapere che il loro capo è il criminale Kolter Klinge. [[hannah]], ora assistente di Protopopolov, li incontra di passaggio.
-      - titolo: Fare la Cosa Giusta
-        quando: Novembre IX A.C.
-        luogo: wallford
-        protagonisti: [earnest, sienna, jemma, micah]
-        altri: [floyd]
-        riassunto: |
-          [[jemma]] è pagata per consegnare [[sienna]] alla giustizia come mente della rapina. [[earnest]] calma le acque e convince Sienna e [[micah]] a restituire il bottino e a consegnare [[ferguson-fole]], che si scopre essere il mandante. Per una volta, fanno la cosa giusta.
-      - titolo: Le Scarpe del Califfo
-        quando: Novembre IX A.C.
-        luogo: al-sehir
-        protagonisti: [zehra, tubo, gunther, dimitri]
-        altri: [yuliya]
-        riassunto: |
-          Arricchito dalla crisi, [[gunther]] si trasferisce ad Al Sehir di fronte alla villa di [[zehra]]. Ricattato da un servitore, deve rubare le scarpe ingioiellate del Califfo [[laio]]: bara a una scommessa e lascia a Zehra il compito.
+          La banda si divide tra chi entra dal salone principale e chi passa dalle Intercapedini, fino al Caveau e alle sue guardie meccaniche. Gli Occhi della Mosca rivelano che le pagine del Diario formano una mappa per il rifugio di [[argo]], nelle Intercapedini della Grande Scala.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: cap-5-1
     data: Dic IX – Feb X A.C.
     capitolo: Capitolo V · Paragrafo I
-    titolo: L'attentato al Gran Ballo di Yule
+    titolo: Il Gran Ballo di Yule
     rilievo: maggiore
     riassunto: |
-      A mezzanotte del Gran Ballo di Yule, a Tournoire, un invitato spara al Marchese [[tristan-des-larmes]] gridando "Ce n'est pas mon frère!". L'attentato fallisce, ma i Tristellati assaltano il palazzo e vengono respinti a fatica. Il Granduca [[ludmillen]] dichiara lo **stato d'emergenza** e dispiega le Schiene Dorate in tutto il Reame; i controlli diventano severissimi.
-    personaggi: [santiago, gunther, pierre, malaika, earnest, icarus, hannah, yuliya, floyd, jemma, litha, sienna, gwen, aidan, humphrey, siobhan, zehra, tubo, qamar, micah, dimitri, ira, jocelyne, pryscilla, tristan-des-larmes, ludmillen, kirkland]
-    luoghi: [tournoire, sala-da-pranzo, sottoscala, wallford, utu-bathur, unter]
+      Come ogni anno il Marchese [[tristan-des-larmes]], la Fata Nera, apre il suo castello di Tournoire per il Gran Ballo di Yule, l'evento più esclusivo della Casa. Quest'anno i Tristellati sfruttano la festa per colpire. Dopo il Ballo il Reame dichiara lo **stato d'emergenza** e manda le Schiene Dorate a caccia di Tristellati in ogni angolo della Casa; i controlli diventano severissimi.
+    luoghi: [tournoire]
     avventure:
       - titolo: Il Gran Ballo di Yule
-        quando: Dicembre IX A.C.
+        quando: Yule IX A.C.
         luogo: tournoire
-        protagonisti: [santiago, gunther, pierre, malaika]
-        altri: [zehra, tubo, yuliya]
+        protagonisti: [jocelyne, pierre, earnest, icarus]
+        altri: [tristan-des-larmes, ezra, amandine-roquefort, rashad-al-shakush, ashling-redgrave, abraham-mayweather, fifi]
         riassunto: |
-          Al ballo ci sono [[gunther]], arricchito, il povero [[pierre]] con la marsina rattoppata, [[malaika]] con il maestro Fabergè e [[santiago]], ormai temuto come "Lo Scorpione Bianco". A mezzanotte qualcuno spara a [[tristan-des-larmes]], e molti soldati della guardia si rivelano Tristellati.
-      - titolo: Caccia ai Tristellati
-        quando: Gennaio X A.C.
-        luogo: sala-da-pranzo
-        protagonisti: [earnest, icarus, hannah, yuliya]
-        altri: [santiago]
-        riassunto: |
-          [[hannah]], arruolata come Caporale addestratrice di bombi, aiuta il Capitano [[yuliya]] e il Sergente [[icarus]] a inseguire gli attentatori tra gli alveari della Culla di Cera. [[protopopolov]] le affianca [[earnest]] come scorta personale.
-      - titolo: Il Rodeo dei Cent'anni
-        quando: Febbraio X A.C.
-        luogo: sottoscala
-        protagonisti: [floyd, jemma, litha, sienna]
-        altri: [earnest, pryscilla]
-        riassunto: |
-          Per chiudere i festeggiamenti il Focolare organizza un grande rodeo. [[floyd]], ormai un eroe, gareggia con il tifo di [[jemma]], [[litha]] e [[sienna]], ma alcuni concorrenti sono disposti a tutto pur di vincere.
-      - titolo: Le Pagine Rubate
-        quando: Febbraio X A.C.
-        luogo: wallford
-        protagonisti: [gwen, aidan, humphrey, siobhan]
-        altri: [sienna]
-        riassunto: |
-          Le pagine del Diario vengono rubate da casa di [[gwen]]. [[aidan]] e [[siobhan]] scoprono che il ladro ha siglato i Contratti Sottovoce e Camminamuri, e che anche i Tristellati lo inseguono. Alla fine Gwen riesce a ricomporre il Diario intero.
-      - titolo: Il Matrimonio di Zehra
-        quando: Febbraio X A.C.
-        luogo: utu-bathur
-        protagonisti: [zehra, tubo, qamar, micah]
-        riassunto: |
-          Il dono che la madre di [[zehra]] le fa consegnare all'Emiro Masuda Al Majdoub è in realtà una proposta di matrimonio. Zehra ha quattro giorni per evitare le nozze senza offendere l'Emiro, con l'aiuto di [[qamar]], [[micah]] e [[tubo]].
-      - titolo: Sotto Copertura
-        quando: Febbraio X A.C.
-        luogo: unter
-        protagonisti: [dimitri, ira, jocelyne, pryscilla]
-        altri: [pierre, icarus]
-        riassunto: |
-          [[dimitri]] e [[ira]], arrivato in città dentro una cassa, sono sotto copertura per catturare [[kirkland]]. Con [[jocelyne]] e [[pryscilla]] scoprono che a Unter c'è solo un impostore: l'attore fallito Luuk de Vries, mandato dalla Tresca di Linch.
+          Su informazione di [[pierre]], le autorità imperiali pensano che il Ballo sia l'occasione giusta per scovare i collaboratori dei Tristellati nascosti tra i nobili, e incaricano lui e [[jocelyne]] di indagare. Li raggiungono [[earnest]], con il suo fascino innegabile, e [[icarus]], con una determinazione fuori dal comune e qualche trucco nuovo. Tra gli invitati ci sono la Generale [[amandine-roquefort]], lo Sceicco [[rashad-al-shakush]], la stilista [[ashling-redgrave]], il veterano [[abraham-mayweather]], il giovane barone [[ezra]] e l'attore [[fifi]].
+
+          Il gruppo può muoversi tra gli ospiti o tra la servitù, mentre durante la serata i Tristellati tentano di colpire diversi invitati illustri.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: cap-5-2
     data: Mar–Set X A.C.
     capitolo: Capitolo V · Paragrafo II
-    titolo: Lo stato d'emergenza
+    titolo: Il Contratto di Dominio
     rilievo: minore
     riassunto: |
-      Le Schiene Dorate inseguono i Tristellati ovunque, anche dentro l'esercito. Le transazioni tra banche sono sospese e i patrimoni sospetti confiscati. Tournoire insorge per paura di una nuova strage. Intanto [[gwen]] decifra il Diario di [[argo]] e trova la strada per il suo studio segreto.
-    personaggi: [yuliya, dimitri, santiago, icarus, siobhan, aidan, micah, qamar, ira, malaika, zehra, tubo, floyd, earnest, hannah, sienna, gunther, pryscilla, pierre, jocelyne, gwen, humphrey, jemma, litha, verana, argo]
-    luoghi: [glasburg, vilezia, tournoire, sottoscala, unter, grande-scala]
+      Lo stato d'emergenza continua: le Schiene Dorate inseguono i Tristellati ovunque, anche tra le file dell'esercito. Dopo mesi di preparazione, il gruppo di Gwen raggiunge il laboratorio segreto del Burocrate [[argo]] sulla Grande Scala e scopre cosa custodiva.
+    luoghi: [grande-scala]
     avventure:
-      - titolo: Proteggere e Conquistare
-        quando: Marzo X A.C.
-        luogo: glasburg
-        protagonisti: [yuliya, dimitri, santiago, icarus]
-        altri: [hannah]
-        riassunto: |
-          [[yuliya]], [[icarus]] e [[dimitri]] cadono in un'imboscata dei loro stessi commilitoni, fedeli al Generale Jürgen Grau, pezzo grosso dei Tristellati. [[santiago]] li salva perché vuole Grau morto; loro lo vogliono in catene. Devono collaborare.
-      - titolo: Il Torneo di Vilezia
-        quando: Marzo X A.C.
-        luogo: vilezia
-        protagonisti: [siobhan, aidan, micah, qamar]
-        riassunto: |
-          [[siobhan]] torna a duellare al Carnevale di Ostara, sostenuta da [[aidan]], [[micah]] e [[qamar]]. Tra i concorrenti si nasconde un sicario che vuole vincere per avvicinarsi alla Calcamorte [[verana]] e ucciderla.
-      - titolo: La Rivolta di Tournoire
-        quando: Aprile X A.C.
-        luogo: tournoire
-        protagonisti: [ira, malaika, zehra, tubo]
-        altri: [yuliya, dimitri]
-        riassunto: |
-          Dopo l'attentato, sluagh, sprighi e boggart del Pianoforte temono una nuova strage e la città esplode. [[zehra]], ambasciatrice dell'Orda, ritrova [[malaika]]: le due sorelle sono cambiate e non la pensano più allo stesso modo, ma devono lavorare insieme con [[tubo]] e [[ira]].
-      - titolo: Trappola per Topi
-        quando: Maggio X A.C.
-        luogo: sottoscala
-        protagonisti: [floyd, earnest, hannah, sienna]
-        altri: [jemma, litha]
-        riassunto: |
-          [[hannah]] deve requisire per l'Esercito Imperiale dei topi già venduti all'Esercito del Focolare. [[floyd]], [[earnest]] e [[sienna]], ora stalliera onesta, la accompagnano fino a La Ruelle, verso una trappola.
-      - titolo: La Dura Vita del Criminale
-        quando: Agosto X A.C.
-        luogo: unter
-        protagonisti: [gunther, pryscilla, pierre, jocelyne]
-        riassunto: |
-          I beni illeciti di [[gunther]] vengono confiscati. Ritrovato [[pierre]], i due si rimettono in società a ruoli invertiti e, con [[jocelyne]] e [[pryscilla]], chiedono a Kolter Klinge un vero colpo: 100 Monete in due giorni.
       - titolo: Le Intercapedini Maledette
         quando: Settembre X A.C.
         luogo: grande-scala
-        protagonisti: [gwen, humphrey, jemma, litha]
+        protagonisti: [gwen, humphrey, jocelyne, icarus]
+        altri: [philippe, rosa]
         riassunto: |
-          Decifrato il Diario, [[gwen]] scopre che lo studio di [[argo]] è in un'Intercapedine all'altezza del Settimo Gradino. Con [[humphrey]], [[litha]] e [[jemma]] affronta un portone-enigma e un tempio pieno di trappole, custodito da due scolopendre color ametista.
+          Dopo due settimane di cammino nelle Intercapedini, [[gwen]], [[humphrey]], [[jocelyne]] e [[icarus]] raggiungono l'ingresso del laboratorio di [[argo]]: una sala circolare con dieci porte, ognuna una prova legata ai Contratti, dal Distillatore dell'Ideale al Salone degli Applausi. Risolte le prove, il pavimento di resina si apre e rivela un grosso libro: **Il Contratto di Dominio**, un formulario che in teoria permette di controllare la Casa stessa. Sul retro della copertina: "Tu hai chiesto, la Casa risponde".
+
+          All'uscita li aspettano quindici Tristellati guidati dal Capitano [[philippe]], che pretende il Contratto e il Diario in cambio della vita. Tra quei soldati si nasconde [[rosa]], una Medjay di Umbral. Philippe rivela che i suoi alleati sono pronti a infrangere la Finestra di Zucchero e invadere il Reame.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: cap-5-3
     data: Ottobre X A.C.
     capitolo: Capitolo V · Paragrafo III
-    titolo: Cenere alla cenere
+    titolo: Cenere alla Cenere
     rilievo: minore
     riassunto: |
-      Alcuni capi dei Tristellati si nascondono nel Focolare e la Zarina ottiene da [[furiospino]] che le Schiene Dorate presidino il Salone. Il malcontento spinge [[edward-ashworth]] ad aprire i cancelli di Cinderhall. Con le truppe del Reame disperse ovunque, il cuore della Sala da Pranzo resta sguarnito: i Tristellati attaccano il Tavolo. Nello studio di Argo, Gwen trova il **Contratto di Dominio**.
-    personaggi: [gunther, jocelyne, pierre, pryscilla, hannah, malaika, ira, icarus, aidan, siobhan, micah, qamar, floyd, earnest, sienna, santiago, gwen, humphrey, jemma, litha, yuliya, dimitri, tubo, zehra, furiospino, edward-ashworth, argo]
-    luoghi: [unter, mont-guignol, vilezia, chesterfield, grande-scala, sala-da-pranzo, astraviya]
+      Dopo le intromissioni dei Tristellati al Gran Ballo, il Reame manda le Schiene Dorate a Chesterfield. La popolazione mal sopporta i soldati stranieri, e [[furiospino]], per non cedere del tutto ad Astraviya, apre le porte di Cinderhall e chiede l'aiuto dei Cavalieri Cinerei. La città diventa una polveriera.
+    luoghi: [chesterfield, cinderhall]
     avventure:
-      - titolo: Chi non Risica...
-        quando: Ottobre X A.C.
-        luogo: unter
-        protagonisti: [gunther, jocelyne, pierre, pryscilla]
-        riassunto: |
-          [[pierre]] escogita un piano per far arrestare i tre signori del crimine di Unter, Kolter Klinge, Jo Röte e Hugo Pilz, non prima di essersi preso parte dei loro averi. Forse è così che ripulisce il suo nome e torna in società.
-      - titolo: Ali di Pietra
-        quando: Ottobre X A.C.
-        luogo: mont-guignol
-        protagonisti: [hannah, malaika, ira, icarus]
-        riassunto: |
-          Una malattia sconosciuta pietrifica le ali delle Fate del Pianoforte e poi le uccide. Quando anche il maestro Fabergè si ammala, [[malaika]] cerca una cura con [[ira]], [[icarus]] e [[hannah]], e scopre che l'epidemia è stata scatenata di proposito.
-      - titolo: Tempo di Morire
-        quando: Ottobre X A.C.
-        luogo: vilezia
-        protagonisti: [aidan, siobhan, micah, qamar]
-        riassunto: |
-          Ospiti d'onore di [[verana]], [[aidan]] nota sull'elsa di un maestro d'armi lo stesso simbolo a scolopendra visto sul sicario del torneo. Deve entrare nell'Accademia del Golfo della Mirandola per incastrare il celebre Bassanio di Belmonte.
       - titolo: Cenere alla Cenere
         quando: Ottobre X A.C.
         luogo: chesterfield
-        protagonisti: [floyd, earnest, sienna, santiago]
+        protagonisti: [sienna, earnest, yuliya, pierre]
+        altri: [athelstan-whitefyre, sandon-blacksoot, gilford-grey, mary-alyanna-sighsmith, peyton-reed]
         riassunto: |
-          A Chesterfield gli studenti dell'Unione si scontrano con l'Esercito Imperiale, e intervengono tre Cavalieri Cinerei che in segreto collaborano con l'Unione e con i Tristellati. Forse qui [[santiago]] ed [[earnest]] scoprono che i Tristellati stanno per attaccare Faeriyev.
-      - titolo: Il Contratto di Dominio
-        quando: Ottobre X A.C.
-        luogo: grande-scala
-        protagonisti: [gwen, humphrey, jemma, litha]
-        riassunto: |
-          Nello studio di [[argo]], risolto l'enigma di un grande astrolabio, emerge un libro: **Il Contratto di Dominio**, formule che in teoria permettono di controllare la Casa stessa. Dentro, un biglietto: "Tu hai chiesto. La Casa risponde".
-      - titolo: Attacco al Tavolo
-        quando: Ottobre X A.C.
-        luogo: sala-da-pranzo
-        protagonisti: [yuliya, dimitri, tubo, zehra]
-        riassunto: |
-          Il convoglio di [[zehra]] e [[tubo]], scortato da [[yuliya]] e [[dimitri]], viene distrutto sotto le Gambe del Tavolo. Tristellati e Liberissimi combattono per un giorno e una notte sotto il palazzo della Zarina. Era solo un diversivo per lasciare sguarnito il Reame.
+          La Zarina teme che la mossa sia troppo pesante e manda [[sienna]], [[earnest]], [[yuliya]] e [[pierre]] a Chesterfield per assicurarsi che non ci siano forze oscure all'opera. In città ci sono i tre Cavalieri Cinerei [[athelstan-whitefyre]], [[sandon-blacksoot]] e [[gilford-grey]]; gli studenti guidati da [[mary-alyanna-sighsmith]] hanno occupato il museo cittadino armati di vecchie posate da guerra; l'investigatore [[peyton-reed]] è costretto a prendere ordini da un Cavaliere. Il gruppo ha due giorni per disinnescare la polveriera, poi deve correre a Faeriyev.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
 
   - id: caduta-faeriyev
     data: 21 Ottobre X A.C.
@@ -732,19 +340,17 @@ eventi:
     titolo: La Caduta di Faeriyev
     rilievo: maggiore
     riassunto: |
-      Le Vetrate della Grande Finestra si infrangono e le **Fate Selvagge** dei Domini Esterni, rimaste per quasi cent'anni nel ceppo di Déndronaos, invadono Faeriyev con l'aiuto dei Tristellati. Il Duca [[alexei-puckevich]] è fatto prigioniero e il Reame non può attaccare senza condannarlo. Dopo tre giorni, un gruppo di omini rimasti sconosciuti si infiltra in città e lo riporta in salvo. Il comandante degli invasori si rivela un'antica Fata imperiale che tutti credevano morta.
-    personaggi: [yuliya, dimitri, tubo, jemma, humphrey, earnest, santiago, icarus, alexei-puckevich, orion-astralta, arcadia]
+      Il 21 ottobre X A.C. le **Fate Selvagge** dei Domini Esterni sfondano con gli arieti le Vetrate di Zucchero della Grande Finestra e invadono Faeriyev, la Città delle Stelle, con l'aiuto dei Tristellati rimasti nella città. Seguono tre giorni e tre notti di combattimenti che mettono in ginocchio il Reame. A guidare l'assalto sono la Generale [[morgana-astralta]] e suo fratello [[oberon-astralta]].
     luoghi: [faeriyev, domini-esterni]
     avventure:
-      - titolo: Gruppo I · Salvare il Duca
-        quando: 21 Ottobre X A.C.
+      - titolo: Faeriyev, la Caduta
+        quando: 21–23 Ottobre X A.C.
         luogo: faeriyev
-        protagonisti: [yuliya, dimitri, tubo, jemma]
+        protagonisti: [gwen, humphrey, yuliya, icarus, jocelyne, pierre, earnest, sienna]
+        altri: [tristan-des-larmes, rosa, alexei-puckevich, morgana-astralta, oberon-astralta, damien, theodore-kaczinsky]
         riassunto: |
-          [[yuliya]] e [[dimitri]], cresciuti tra quelle strade, resistono un giorno e una notte con [[tubo]]. Raggiunti da [[jemma]], attraversano il belvedere della Città delle Stelle per entrare nel palazzo e liberare [[alexei-puckevich]], affrontando il Generale [[orion-astralta]].
-      - titolo: Gruppo II · Il Diversivo
-        quando: 21 Ottobre X A.C.
-        luogo: faeriyev
-        protagonisti: [humphrey, earnest, santiago, icarus]
-        riassunto: |
-          [[humphrey]], [[earnest]], [[santiago]] e [[icarus]] si addentrano nel quartiere nobile per eliminare sentinelle e Fate Selvagge e attirare su di sé il nemico, mentre l'altro gruppo raggiunge il Duca. La città è piena di trappole e barricate.
+          Grazie ai loro sforzi, tutti e otto arrivano a Faeriyev il pomeriggio prima dell'attacco, con il tempo di preparare qualche difesa insieme alle Schiene Dorate, a [[tristan-des-larmes]] con la sua guardia scelta e alla Medjay [[rosa]]. C'è da tenere il Belvedere, proteggere gli ascensori per evacuare la popolazione e difendere il Palazzo Ducale, dove il Duca [[alexei-puckevich]] deve resistere fino a potersi ricongiungere con l'esercito.
+
+          Contro di loro: le Furie di [[morgana-astralta]], [[oberon-astralta]] deciso a catturare il Duca, i guerriglieri Tristellati di [[damien]], il 13° Battaglione Calabronato e il dinamitardo [[theodore-kaczinsky]], evaso da Pozzoprofondo.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
