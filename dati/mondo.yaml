@@ -307,10 +307,10 @@ sezioni:
             nome: La Corte dei Seelie
             breve: I Fae che difendono il Ceppo di Déndronaos e si oppongono ad Arcadia.
             descrizione: |
-              Detta anche "la Corte" o "il Seelie", non è riconosciuta come Nazione dalla Casa, e fino alla Caduta di Faeriyev pochissimi ne conoscevano l'esistenza. Rinacque circa quattordici anni dopo la caduta di Déndronaos, quando la druida [[nemeth]] radunò i Fae rimasti nel Giardino nel Cerchio Eterno e fondò la città nascosta di [[caer-siddi]]. Il suo esercito, l'Armata del Seelie, è diviso in Legioni: la V Legione Ribelle Nova Scorpio è comandata dalla Generale [[morgana-astralta]].
+              Detta anche "la Corte" o "il Seelie", non è riconosciuta come Nazione dalla Casa, e fino alla Caduta di Faeriyev pochissimi ne conoscevano l'esistenza. La sua fortezza, [[caer-siddi]], è introvabile. Il suo esercito, l'Armata del Seelie, è diviso in Legioni: la V Legione Ribelle Nova Scorpio è comandata dalla Generale [[morgana-astralta]].
 
               Con la Caduta di Faeriyev si è saputo chi la guida: [[titania]], moglie di Oberon e madre di Arcadia, che tutti credevano morta con l'Albero. Era sopravvissuta, chiusa in una goccia di resina, e i Fae l'hanno liberata. Per lei Oberon era un usurpatore, e le Fate domestiche dovrebbero tornare al Ceppo.
-            collegamenti: [titania, nemeth, morgana-astralta, caer-siddi, dendronaos, arcadia]
+            collegamenti: [titania, morgana-astralta, caer-siddi, dendronaos, arcadia]
 
           - id: cittadella-voce
             nome: La Cittadella

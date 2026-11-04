@@ -67,9 +67,7 @@ eventi:
     rilievo: minore
     riassunto: |
       Un fulmine colpisce Déndronaos, l'albero millenario dove vivevano le Fate, e le costringe a migrare. Guidate dallo Zar [[oberon]] raggiungono la Grande Finestra della Sala da Pranzo e lì fondano il loro nuovo Reame.
-
-      Solo un secolo dopo, con la Caduta di Faeriyev, si scoprirà il resto della storia. A regnare sui Fae, nella città di Arcadia dentro l'Albero, era [[titania]], moglie di Oberon. Nella **Notte Senza Stelle** lei scomparve tra le fiamme, e [[ludmillen]] la cercò invano. Oberon, salvata la piccola [[arcadia]], si alzò in volo e prese il posto di sua moglie senza chiederlo, guidando il Popolo oltre la Finestra senza voltarsi indietro. Molti Fae rimasero nel Giardino.
-    personaggi: [oberon, titania, arcadia, ludmillen]
+    personaggi: [oberon]
     luoghi: [domini-esterni, faeriyev, reame]
 
   - id: grande-scala
@@ -89,15 +87,6 @@ eventi:
       I Boggart che non rinunciano alla loro causa vengono cacciati nei Domini Esterni. Alcune famiglie scelgono invece di inginocchiarsi e restare, lontano dal Salone. Ha inizio l'Impero di [[oberon]] detto Trismegisto.
     personaggi: [oberon]
     luoghi: [domini-esterni, salone]
-
-  - id: cerchio-eterno
-    data: circa 34 s.P.
-    titolo: Il Cerchio Eterno
-    rilievo: minore
-    riassunto: |
-      Circa quattordici anni dopo la caduta di Déndronaos, la giovane druida [[nemeth]], nata proprio nella Notte Senza Stelle, raduna i Fae rimasti nel Giardino in una congrega, il **Cerchio Eterno**. Traccia il cerchio di funghi più grande mai visto e al suo interno i Fae costruiscono la città nascosta di [[caer-siddi]]. È la rinascita della **Corte dei Seelie**, che per decenni resterà invisibile agli occhi della Casa.
-    personaggi: [nemeth]
-    luoghi: [caer-siddi, dendronaos]
 
   - id: samhain
     data: 51 s.P.
@@ -455,8 +444,13 @@ eventi:
     titolo: Inverno nel Canneto
     rilievo: maggiore
     riassunto: |
-      Due anni dopo la Caduta di Faeriyev la Casa è ancora divisa, e la Zarina affronta la minaccia del Seelie senza il sostegno dell'Alto Consiglio. Le legioni imperiali e l'Armata del Seelie si fronteggiano nel Giardino, e sempre più "tappi" si avventurano fuori dalla Casa. È qui che ricomincia la nostra storia, nel Giardino sul Retro, in pieno Inverno.
-    luoghi: [canneto]
+      Due anni dopo la Caduta di Faeriyev la Casa è ancora divisa, e la Zarina affronta la minaccia del Seelie senza il sostegno dell'Alto Consiglio. Le legioni imperiali e l'Armata del Seelie si fronteggiano nel Giardino.
+
+      Il giorno di **Yule**, quando si celebrano l'arrivo dell'Inverno e una storica tregua, [[arcadia]] sconvolge nobili e popolo: manda regali e rifornimenti ai soldati del Seelie che assediano Faeriyev, e proclama l'**Editto Imperiale "Benvenuti!"**. Da oggi i Fae e tutti gli altri abitanti dei Domini Esterni possono entrare liberamente in Casa, non come ospiti ma come cittadini dell'Impero Domestico. Mentre [[titania]] cerca di portare le Fate fuori dalla Casa, Arcadia offre a chiunque lo voglia un futuro lontano dalle intemperie. Alla frontiera della Prima Soglia si formano code interminabili di fuorestieri in cerca di documenti, e molti tappi approfittano della nuova apertura per visitare il Giardino.
+
+      *"Che tutti siano liberi di entrare e di uscire. Che tutti siano là dove il cuore gli domanda di essere. Che tutti siano i benvenuti. Ovunque."*
+    personaggi: [arcadia, titania]
+    luoghi: [canneto, domini-esterni]
     avventure:
       - titolo: Brutte Brutte Cose
         quando: Dicembre XII A.C.
@@ -464,7 +458,7 @@ eventi:
         protagonisti: [gwen, santiago, gunther, icarus]
         altri: [soya, tomo, flanagan, ayane, hiroshi, kimi]
         riassunto: |
-          [[gwen]] ha trovato un disegno shinigami del grande Serpente della Luna, [[occhi-di-pietra]], con la stessa frase lasciata nello studio di Argo: "Tu hai chiesto. La Casa risponde". Decisa a trovarlo, chiede consiglio al professor [[flanagan]], che la manda da [[tomo]], mercante e massimo esperto del Serpente, e scrive al samurai [[soya]], figlio di un suo vecchio amico, perché la ospiti a [[komorebi]]. Il clan Tentomushi è caduto in disgrazia: a Soya restano la vecchia Baba e due servitori stranieri, [[gunther]] e [[santiago]]. Con loro c'è anche [[icarus]].
+          [[gwen]] ha trovato un disegno shinigami del grande Serpente della Luna, [[occhi-di-pietra]], con la stessa frase lasciata nello studio di Argo: "Tu hai chiesto. La Casa risponde". Decisa a trovarlo, chiede consiglio al professor [[flanagan]], che la manda da [[tomo]], mercante e massimo esperto del Serpente, e scrive al samurai [[soya]], figlio di un suo vecchio amico, perché la ospiti a [[komorebi]]. Il clan Tentomushi è caduto in disgrazia: a Soya restano la vecchia Baba e due servitori stranieri, [[gunther]] e [[santiago]]. Ad accompagnare Gwen come aiuto c'è [[icarus]], che dopo la Caduta di Faeriyev si è unito all'Ordine dei Medjay.
 
           Appena arrivati, il gruppo salva Tomo dalla bocca di una rana impazzita. Il mercante è perseguitato dalle **Brutte Brutte Cose**: in passato non ha ripagato un Debito di Vita, e la sfortuna non lo lascerà finché non avrà rimediato. I protagonisti lo accompagnano da chi lo ha aiutato senza mai ricevere nulla: la samurai [[ayane]] del clan Kitsune, il vecchio amico [[hiroshi]], e infine sua madre [[kimi]], che lui aveva lasciato nella miseria.
 

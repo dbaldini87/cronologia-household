@@ -71,6 +71,7 @@
     Cresciuto povero a Unter, da bambino faceva mille lavori per pagare le cure della sorellina Thalia, morta il giorno in cui finì la guerra. Con quei risparmi i genitori gli hanno pagato l'Accademia Militare di Glasburg, dove il Sergente Ludwig Teelöffel è stato per lui un secondo padre. Ora è di stanza a La Ruelle, in attesa di partire per il Lungo Corridoio.
   campagna: |
     # Scrivi qui come è cambiato Icarus nella vostra Saga.
+    Dopo la Caduta di Faeriyev si è unito all'Ordine dei Medjay.
 
 - id: jocelyne
   nome: Jocelyne Bonheur
@@ -424,7 +425,7 @@
   breve: Generale delle Fate Selvagge, al comando delle Furie.
   luoghi: [faeriyev, domini-esterni]
   profilo: |
-    Fata di stirpe imperiale, figlia del celebre Nuadha, si ribellò a Oberon e lasciò la Casa per aiutare la druida Nemeth a ricostruire la Corte dei Seelie. Fu lei a volare fino in fondo al cavo di Déndronaos e a trovare [[titania]] chiusa nella resina. Comandante della V Legione Ribelle Nova Scorpio, guidò l'assalto a Faeriyev con le sue Furie armate di falci d'osso. Dopo la Caduta rimase sul Davanzale a tenere la città.
+    Fata di stirpe imperiale che si ribellò a Oberon e lasciò la Casa molti anni fa. Si dice che sia stata lei a liberare [[titania]]. Comandante della V Legione Ribelle Nova Scorpio, guidò l'assalto a Faeriyev con le sue Furie armate di falci d'osso. Dopo la Caduta rimase sul Davanzale a tenere la città.
 
 - id: oberon-astralta
   nome: Oberon Astralta
@@ -632,19 +633,9 @@
   popolo: Fae
   nazione: Giardino
   breve: Santa Imperatrice dei Fae, Signora della Corte dei Seelie, madre di Arcadia.
-  luoghi: [dendronaos, caer-siddi, faeriyev]
+  luoghi: [dendronaos, faeriyev]
   profilo: |
-    Figlia della Prima Signora Urania, che strinse il Contratto dei Fae con le Stelle, regnava sul suo Popolo nella città di Arcadia dentro Déndronaos. Nella Notte Senza Stelle, mentre l'Albero cadeva, rimase chiusa in una goccia di resina stringendo l'ultimo seme di Déndronaos; suo marito [[oberon]] prese il suo posto e guidò le Fate nella Casa. Liberata decenni dopo da [[morgana-astralta]], è tornata alla guida dei Seelie. Dopo la Caduta di Faeriyev chiede alle Fate domestiche di tornare in Giardino, e chiama *Unseelie* chi rifiuta.
-
-- id: nemeth
-  nome: Nemeth
-  gruppo: Figure del Giardino
-  popolo: Fae
-  nazione: Giardino
-  breve: Druida, fondatrice del Cerchio Eterno e della città di Caer Siddi.
-  luoghi: [caer-siddi, dendronaos]
-  profilo: |
-    Nata proprio nella Notte Senza Stelle, non appartiene alla stirpe imperiale, ma è saggia e risoluta. Radunò i Fae rimasti nel Giardino e fece rinascere la Corte dei Seelie. Fu lei a sognare il seme di Déndronaos chiuso nella resina, e con il Cerchio Eterno lo piantò nel Ceppo. Ormai molto anziana, rallenta il tempo con i suoi Contratti e Composti Naturali.
+    Moglie di [[oberon]] e madre di [[arcadia]], tutti la credevano morta da quasi un secolo, scomparsa con la caduta di Déndronaos. Dopo la Caduta di Faeriyev è arrivata sul Davanzale con ali scarlatte di farfalla, alla guida della Corte dei Seelie. Si dice che sia sopravvissuta chiusa in una goccia di resina e che [[morgana-astralta]] l'abbia liberata. Chiede alle Fate domestiche di tornare in Giardino, e chiama *Unseelie* chi rifiuta.
 
 - id: valentine-du-lampe
   nome: Valentine Du Lampe
