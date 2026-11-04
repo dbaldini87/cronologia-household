@@ -144,6 +144,7 @@
     Cresciuto povero a Umbral con la madre Maria, che gli ripeteva che era figlio del grande duellante Don Ramiro Vilar. Il testamento di Don Ramiro lasciava tutto a chi si fosse diplomato con il massimo dei voti all'Accademia di Scherma del Golfo della Mirandola: Santiago ci è riuscito per primo nella storia, ma l'eredità era già stata confiscata dalle Fate e la villa di famiglia trasformata in un'ambasciata. Gli è rimasta solo la lancetta nera del padre. Nel Lungo Inverno è al servizio del samurai [[soya]], a Komorebi.
   campagna: |
     # Scrivi qui come è cambiato Santiago nella vostra Saga.
+    Nel dicembre XII A.C., a Komorebi, ha sfidato Hiroshi a una gara di bevute per convincerlo a perdonare Tomo. Poi ha lasciato il servizio di Soya per mettersi in viaggio.
 
 - id: gunther
   nome: Gunther Lichtmann
@@ -157,6 +158,7 @@
     Ultimo nato di una famiglia di truffatori di Unter, sognava di diventare un notaio onesto. Ci è riuscito, ma l'onestà non pagava: ha cominciato a ritoccare contratti e firme ed è diventato ricco, finché i controlli dell'Alto Consiglio non gli hanno tolto la licenza. Allora è diventato il segretario del più facile da abbindolare di tutti, [[pierre]] Delacroyance. Nel Lungo Inverno, dopo aver vinto e perso più fortune al gioco, è finito senza un soldo nel Canneto, dove fa il servitore del samurai [[soya]].
   campagna: |
     # Scrivi qui come è cambiato Gunther nella vostra Saga.
+    Nel dicembre XII A.C., dopo l'avventura con Himawari Tomo, ha lasciato il servizio di Soya per mettersi in viaggio.
 
 # ── FIGURE DELLA NOSTRA SAGA ───────────────────────────────
 #  Personaggi incontrati nelle nostre avventure.
@@ -596,6 +598,8 @@
   luoghi: [komorebi]
   profilo: |
     Collezionista di cimeli antichi e uno dei massimi esperti di [[occhi-di-pietra]]. Avido, ingrato e altezzoso, era perseguitato dalle Brutte Brutte Cose per non aver mai ripagato i suoi Debiti di Vita. Possiede un frammento della Tavoletta della Luna.
+  campagna: |
+    Grazie ai protagonisti ha fatto pace con il suo passato ed è stato liberato dalle Brutte Brutte Cose. Ha dato a Gwen il suo frammento della Tavoletta della Luna.
 
 - id: ayane
   nome: Kitsune Ayane
@@ -606,6 +610,8 @@
   luoghi: [komorebi]
   profilo: |
     Bellissima, dai capelli bianchi e rossi e dal kimono color fuoco. Da giovane amava [[tomo]] e mandò a monte il suo matrimonio per salvarlo dalla rovina; lui, una volta ricco, la abbandonò senza nemmeno ringraziarla.
+  campagna: |
+    Ha perdonato Tomo, che le ha regalato due biglietti per il Torneo Estivo di Scherma di Tournoire.
 
 - id: hiroshi
   nome: Hiroshi
@@ -616,6 +622,8 @@
   luoghi: [komorebi]
   profilo: |
     Un tempo mercante mingherlino e dolce come il miele, ipotecò la casa di famiglia per pagare i debiti di [[tomo]], che non gli restituì mai i soldi. Ha perso tutto e passa le giornate in un'izakaya della periferia di Komorebi.
+  campagna: |
+    Ha perdonato Tomo dopo una gara di bevute con Santiago, che lo ha lasciato soddisfatto.
 
 - id: kimi
   nome: Himawari Kimi
@@ -626,6 +634,8 @@
   luoghi: [komorebi]
   profilo: |
     Una vecchina che viveva in miseria nei bassifondi di Komorebi, dimenticata dal figlio diventato ricchissimo. Non gliene ha mai voluto.
+  campagna: |
+    Ora vive con il figlio nella sua lussuosa residenza.
 
 - id: titania
   nome: Titania Biancaluce
