@@ -357,3 +357,28 @@
   dove: Oltre la Staccionata
   descrizione: |
     Oltre la Fontana, la Cittadella e un anello di alberi colossali e nodosi finisce il Giardino. Al di là c'è Lontano, la terra di bestie che farebbero accapponare la pelle anche a una poiana.
+
+- id: komorebi
+  nome: Komorebi
+  tipo: Città
+  nazione: Giardino
+  dove: Prefettura dell'Erba, nel Canneto (Giardino sul Retro)
+  descrizione: |
+    Cittadina dello Shogunato della Lama d'Argento, con una grande piazza quadrata circondata da una tettoia verde. Qui vivono il clan Kitsune, il più importante della città, il ricco mercante Himawari Tomo e, in una tenuta modesta e malridotta, il samurai [[soya]].
+
+- id: caer-siddi
+  nome: Caer Siddi
+  tipo: Città nascosta
+  nazione: Giardino
+  dove: Introvabile, protetta da un cerchio di funghi
+  descrizione: |
+    La città dei Fae costruita dalla druida [[nemeth]] dentro il cerchio di funghi più grande mai visto, che la nasconde agli occhi di tutti. È la fortezza della Corte dei Seelie, che le legioni del Reame cercano invano durante il Lungo Inverno.
+
+- id: linea-verde
+  nome: La Linea Verde
+  tipo: Territorio
+  nazione: Giardino
+  dove: Tra il Davanzale, il Sottobosco e il Canneto
+  descrizione: |
+    I territori contesi tra l'Armata del Seelie e il Grande Esercito Imperiale durante il Lungo Inverno, resi ancora più pericolosi dai serpenti scatenati dalla Shogun Jorōgumo.
+

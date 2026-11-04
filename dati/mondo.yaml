@@ -300,31 +300,31 @@ sezioni:
             nome: I Ribelli dei Rovi
             breve: I Barghest che non riconoscono l'autorità di Furiospino.
             descrizione: |
-              Probabilmente la maggioranza degli abitanti della Città di Rovi. Per il Trattato di Astraviya la città appartiene al Focolare, ma i ribelli sono apertamente ostili ai Boggart che si sono inginocchiati a Oberon pur di tornare in Casa. Seguono il misterioso **Cavaliere di Spine** e non smetteranno finché [[furiospino]] non disconoscerà la Zarina.
-            collegamenti: [citta-di-rovi, furiospino]
+              Probabilmente la maggioranza degli abitanti della Città di Rovi. Per il Trattato di Astraviya la città appartiene al Focolare, ma i ribelli sono apertamente ostili ai Boggart che si sono inginocchiati a Oberon pur di tornare in Casa. Si sentono traditi due volte dagli Hearthworth: prima quando B.W. Hearthworth accettò il Patto di Restaurazione, poi quando [[furiospino]] fece pace con la Zarina e il Trattato di Astraviya assegnò i loro territori, da Grassgow a Valfronda, al Focolare. Guidati dal misterioso [[cavaliere-di-spine]] e da guerrieri come Beitris Towe, combattono per l'indipendenza dei Rovi contro l'Esercito del Focolare e lo Sceriffo di Rovingham.
+            collegamenti: [citta-di-rovi, cavaliere-di-spine, furiospino]
 
           - id: seelie
             nome: La Corte dei Seelie
             breve: I Fae che difendono il Ceppo di Déndronaos e si oppongono ad Arcadia.
             descrizione: |
-              Detta anche "la Corte" o "il Seelie", non è riconosciuta come Nazione dalla Casa, e fino alla Caduta di Faeriyev pochissimi ne conoscevano l'esistenza. Il suo esercito è diviso in Legioni: la V Legione Ribelle Nova Scorpio è comandata dalla Generale [[morgana-astralta]].
+              Detta anche "la Corte" o "il Seelie", non è riconosciuta come Nazione dalla Casa, e fino alla Caduta di Faeriyev pochissimi ne conoscevano l'esistenza. Rinacque circa quattordici anni dopo la caduta di Déndronaos, quando la druida [[nemeth]] radunò i Fae rimasti nel Giardino nel Cerchio Eterno e fondò la città nascosta di [[caer-siddi]]. Il suo esercito, l'Armata del Seelie, è diviso in Legioni: la V Legione Ribelle Nova Scorpio è comandata dalla Generale [[morgana-astralta]].
 
-              Con la Caduta di Faeriyev si è saputo chi la guida: **Titania Biancaluce**, moglie di Oberon e madre di Arcadia, che tutti credevano morta con l'Albero. Era sopravvissuta, chiusa in una goccia di resina, e i Fae l'hanno liberata. Per lei Oberon era un usurpatore, e le Fate domestiche dovrebbero tornare al Ceppo.
-            collegamenti: [dendronaos, morgana-astralta, arcadia]
+              Con la Caduta di Faeriyev si è saputo chi la guida: [[titania]], moglie di Oberon e madre di Arcadia, che tutti credevano morta con l'Albero. Era sopravvissuta, chiusa in una goccia di resina, e i Fae l'hanno liberata. Per lei Oberon era un usurpatore, e le Fate domestiche dovrebbero tornare al Ceppo.
+            collegamenti: [titania, nemeth, morgana-astralta, caer-siddi, dendronaos, arcadia]
 
           - id: cittadella-voce
             nome: La Cittadella
             breve: La città sotterranea e neutrale dei Genomini.
             descrizione: |
-              Fin da quando la Casa era in costruzione, i Genomini si rifugiano in questa città fatta di cerchi concentrici e tunnel labirintici. È diventata una Nazione autosufficiente, riconosciuta dal Trattato di Astraviya, che non è mai entrata in conflitto con nessuno. Accoglie chiunque abbia bisogno di un rifugio.
-            collegamenti: [cittadella]
+              Fin da quando la Casa era in costruzione, i Genomini si rifugiano in questa città fatta di cerchi concentrici e tunnel labirintici. È diventata una Nazione autosufficiente, riconosciuta dal Trattato di Astraviya. Solo una volta ha dovuto armarsi: durante la Guerra Domiciliare [[cagliostro]] creò i Berretti Rossi per resistere alle mire di Oberon, e li sciolse con onore dopo Acquapenna. All'inizio del Lungo Inverno ha fatto uscire i soldati imperiali e ha ribadito che la Cittadella è un rifugio per chiunque, di qualunque Popolo.
+            collegamenti: [cittadella, cagliostro]
 
           - id: shogunato
             nome: Lo Shogunato della Lama d'Argento
             breve: Lo Stato degli Shinigami sul Retro, formalmente parte dell'Orda.
             descrizione: |
-              Fondato da Yōkai Akuma nel Canneto, prima ancora che Kubalai Khan unificasse l'Orda. In seguito sua figlia Yōkai Jorōgumo, diventata una dei primi Calcamorte al fianco di Kubalai Khan, tornò nel Giardino per deporre il padre e diventare Shogun. Sulla carta lo Shogunato è una provincia dell'Orda, ma da sempre agisce in totale indipendenza e non si immischia negli affari della Casa.
-            collegamenti: [canneto, orda]
+              Fondato da Yōkai Akuma nel Canneto, prima ancora che Kubalai Khan unificasse l'Orda. In seguito sua figlia Yōkai Jorōgumo, diventata una dei primi Calcamorte al fianco di Kubalai Khan, tornò nel Giardino per deporre il padre e diventare Shogun. Sulla carta lo Shogunato è una provincia dell'Orda, ma da sempre agisce in totale indipendenza e non si immischia negli affari della Casa. Durante il Lungo Inverno la Shogun ha stretto con il Califfo Laio il Patto delle Due Lame, ma aspetta di vedere chi vincerà prima di schierarsi.
+            collegamenti: [canneto, komorebi, jorogumo, akuma, occhi-di-pietra, laio]
 
       - titolo: Luoghi del Giardino
         # mostra in automatico i luoghi di luoghi.yaml con nazione: Giardino

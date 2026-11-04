@@ -130,6 +130,33 @@
   campagna: |
     # Scrivi qui come è cambiata Sienna nella vostra Saga.
 
+- id: santiago
+  nome: Santiago Vilar
+  nome_completo: Santiago Garcia Vilfredo Eduardo Ramirez Vilar
+  gruppo: I Protagonisti
+  popolo: Sluagh
+  nazione: Orda
+  mestiere: Duellante
+  breve: Erede mancato di Don Ramiro Vilar, duellante di Vilezia.
+  luoghi: [el-paso-de-umbral, vilezia, komorebi]
+  profilo: |
+    Cresciuto povero a Umbral con la madre Maria, che gli ripeteva che era figlio del grande duellante Don Ramiro Vilar. Il testamento di Don Ramiro lasciava tutto a chi si fosse diplomato con il massimo dei voti all'Accademia di Scherma del Golfo della Mirandola: Santiago ci è riuscito per primo nella storia, ma l'eredità era già stata confiscata dalle Fate e la villa di famiglia trasformata in un'ambasciata. Gli è rimasta solo la lancetta nera del padre. Nel Lungo Inverno è al servizio del samurai [[soya]], a Komorebi.
+  campagna: |
+    # Scrivi qui come è cambiato Santiago nella vostra Saga.
+
+- id: gunther
+  nome: Gunther Lichtmann
+  gruppo: I Protagonisti
+  popolo: Sprigo (Silfide)
+  nazione: Reame
+  mestiere: Criminale
+  breve: Ex notaio di Unter, imbroglione e giocatore incallito.
+  luoghi: [unter, glasburg, komorebi]
+  profilo: |
+    Ultimo nato di una famiglia di truffatori di Unter, sognava di diventare un notaio onesto. Ci è riuscito, ma l'onestà non pagava: ha cominciato a ritoccare contratti e firme ed è diventato ricco, finché i controlli dell'Alto Consiglio non gli hanno tolto la licenza. Allora è diventato il segretario del più facile da abbindolare di tutti, [[pierre]] Delacroyance. Nel Lungo Inverno, dopo aver vinto e perso più fortune al gioco, è finito senza un soldo nel Canneto, dove fa il servitore del samurai [[soya]].
+  campagna: |
+    # Scrivi qui come è cambiato Gunther nella vostra Saga.
+
 # ── FIGURE DELLA NOSTRA SAGA ───────────────────────────────
 #  Personaggi incontrati nelle nostre avventure.
 #  Ho scritto solo ciò che i protagonisti sapevano all'inizio:
@@ -397,7 +424,7 @@
   breve: Generale delle Fate Selvagge, al comando delle Furie.
   luoghi: [faeriyev, domini-esterni]
   profilo: |
-    Generale della V Legione Ribelle Nova Scorpio della Corte dei Seelie. Le sue Furie, guerriere armate di falci d'osso, guidarono l'assalto al Belvedere di Faeriyev.
+    Fata di stirpe imperiale, figlia del celebre Nuadha, si ribellò a Oberon e lasciò la Casa per aiutare la druida Nemeth a ricostruire la Corte dei Seelie. Fu lei a volare fino in fondo al cavo di Déndronaos e a trovare [[titania]] chiusa nella resina. Comandante della V Legione Ribelle Nova Scorpio, guidò l'assalto a Faeriyev con le sue Furie armate di falci d'osso. Dopo la Caduta rimase sul Davanzale a tenere la città.
 
 - id: oberon-astralta
   nome: Oberon Astralta
@@ -546,3 +573,176 @@
   luoghi: [clockminster, grande-scala]
   profilo: |
     Dedicò la vita a studiare i Contratti per comprenderne e usarne il potere. Dopo la sua morte prematura si diffuse la voce che le sue scoperte fossero custodite in un diario. Le pagine, coperte di cera e scritte in codice, erano disperse per la Casa e cercate da studiosi e Tristellati. Il suo laboratorio segreto, nelle Intercapedini della Grande Scala, custodiva il Contratto di Dominio.
+
+# ── FIGURE DEL LUNGO INVERNO ───────────────────────────────
+
+- id: soya
+  nome: Tentomushi Soya
+  gruppo: Figure della nostra Saga
+  popolo: Shinigami (Sluagh)
+  nazione: Shogunato
+  breve: Samurai onorevolissimo, ultimo del clan caduto in disgrazia dei Tentomushi.
+  luoghi: [komorebi, canneto]
+  profilo: |
+    Altissimo e possente, segue alla lettera il bushido. Suo padre Daisuke fu un grande generale dello Shogunato, ma fu giustiziato con l'accusa di aver tentato di avvelenare il suo signore. Soya vive in una piccola tenuta a [[komorebi]], senza un soldo, sotto gli sguardi giudicanti della gente del posto, con la vecchia servitrice Baba e due servitori stranieri. Non ha perso l'onore, né la speranza di riportare il nome dei Tentomushi all'antico splendore. Il professor [[flanagan]] era un vecchio amico di suo padre.
+
+- id: tomo
+  nome: Himawari Tomo
+  gruppo: Figure della nostra Saga
+  popolo: Shinigami (Sluagh)
+  nazione: Shogunato
+  breve: Il mercante più ricco della Prefettura dell'Erba, esperto del Serpente della Luna.
+  luoghi: [komorebi]
+  profilo: |
+    Collezionista di cimeli antichi e uno dei massimi esperti di [[occhi-di-pietra]]. Avido, ingrato e altezzoso, era perseguitato dalle Brutte Brutte Cose per non aver mai ripagato i suoi Debiti di Vita. Possiede un frammento della Tavoletta della Luna.
+
+- id: ayane
+  nome: Kitsune Ayane
+  gruppo: Figure della nostra Saga
+  popolo: Shinigami (Sluagh)
+  nazione: Shogunato
+  breve: Samurai del clan Kitsune, il più importante di Komorebi.
+  luoghi: [komorebi]
+  profilo: |
+    Bellissima, dai capelli bianchi e rossi e dal kimono color fuoco. Da giovane amava [[tomo]] e mandò a monte il suo matrimonio per salvarlo dalla rovina; lui, una volta ricco, la abbandonò senza nemmeno ringraziarla.
+
+- id: hiroshi
+  nome: Hiroshi
+  gruppo: Figure della nostra Saga
+  popolo: Shinigami (Sluagh)
+  nazione: Shogunato
+  breve: Vecchio amico di Tomo, rovinato per averlo aiutato.
+  luoghi: [komorebi]
+  profilo: |
+    Un tempo mercante mingherlino e dolce come il miele, ipotecò la casa di famiglia per pagare i debiti di [[tomo]], che non gli restituì mai i soldi. Ha perso tutto e passa le giornate in un'izakaya della periferia di Komorebi.
+
+- id: kimi
+  nome: Himawari Kimi
+  gruppo: Figure della nostra Saga
+  popolo: Shinigami (Sluagh)
+  nazione: Shogunato
+  breve: L'amabile madre di Tomo.
+  luoghi: [komorebi]
+  profilo: |
+    Una vecchina che viveva in miseria nei bassifondi di Komorebi, dimenticata dal figlio diventato ricchissimo. Non gliene ha mai voluto.
+
+- id: titania
+  nome: Titania Biancaluce
+  gruppo: Figure del Giardino
+  popolo: Fae
+  nazione: Giardino
+  breve: Santa Imperatrice dei Fae, Signora della Corte dei Seelie, madre di Arcadia.
+  luoghi: [dendronaos, caer-siddi, faeriyev]
+  profilo: |
+    Figlia della Prima Signora Urania, che strinse il Contratto dei Fae con le Stelle, regnava sul suo Popolo nella città di Arcadia dentro Déndronaos. Nella Notte Senza Stelle, mentre l'Albero cadeva, rimase chiusa in una goccia di resina stringendo l'ultimo seme di Déndronaos; suo marito [[oberon]] prese il suo posto e guidò le Fate nella Casa. Liberata decenni dopo da [[morgana-astralta]], è tornata alla guida dei Seelie. Dopo la Caduta di Faeriyev chiede alle Fate domestiche di tornare in Giardino, e chiama *Unseelie* chi rifiuta.
+
+- id: nemeth
+  nome: Nemeth
+  gruppo: Figure del Giardino
+  popolo: Fae
+  nazione: Giardino
+  breve: Druida, fondatrice del Cerchio Eterno e della città di Caer Siddi.
+  luoghi: [caer-siddi, dendronaos]
+  profilo: |
+    Nata proprio nella Notte Senza Stelle, non appartiene alla stirpe imperiale, ma è saggia e risoluta. Radunò i Fae rimasti nel Giardino e fece rinascere la Corte dei Seelie. Fu lei a sognare il seme di Déndronaos chiuso nella resina, e con il Cerchio Eterno lo piantò nel Ceppo. Ormai molto anziana, rallenta il tempo con i suoi Contratti e Composti Naturali.
+
+- id: valentine-du-lampe
+  nome: Valentine Du Lampe
+  gruppo: Figure della Casa
+  popolo: Fata
+  nazione: Reame
+  breve: Il "Generale di Cristallo", Gran Capitano delle Schiene Dorate.
+  luoghi: [astraviya, domini-esterni]
+  profilo: |
+    Prima donna a diventare Capitano delle Schiene Dorate: severa, gelida e tagliente come il cristallo del Lampadario. Il suo vecchio spillo da duello è stato donato a [[yuliya]]. Nel Lungo Inverno la Zarina la nomina Gran Capitano e le affida tre legioni per combattere i Seelie nel Giardino.
+
+- id: victor-von-glasburg
+  nome: Victor Von Glasburg
+  nome_completo: Victor Kuchenschrank Von Glasburg
+  gruppo: Figure della Casa
+  popolo: Fata
+  nazione: Reame
+  breve: Duca della Credenza, pretendente al Trono di Cristallo.
+  luoghi: [glasburg]
+  profilo: |
+    Capitano delle Schiene Dorate e membro della stirpe imperiale, attempato e già sposato, comanda gran parte delle forze militari della Sala da Pranzo. È uno dei pochi che potrebbero aspirare al trono di [[arcadia]].
+
+- id: robin-fleurblanche
+  nome: Robin Fleurblanche
+  nome_completo: Robin Guillaume Fleurblanche
+  gruppo: Figure della Casa
+  popolo: Fata
+  nazione: Reame
+  breve: Giovane Duca di Nerolucido, pretendente al Trono di Cristallo.
+  luoghi: [tournoire]
+  profilo: |
+    Capitano delle Schiene Dorate e membro della stirpe imperiale, controlla l'unica frontiera del Reame ed è protetto dal Marchese [[tristan-des-larmes]]. Come il Duca Von Glasburg, ha tutto da guadagnare da una caduta della Zarina.
+
+- id: martha-winter
+  nome: Martha Winter
+  gruppo: Figure della Casa
+  popolo: Boggart
+  nazione: Focolare
+  breve: La Lady di Ghisa, Cancelliera del Focolare.
+  luoghi: [wallford]
+  profilo: |
+    Mentre [[furiospino]] è lontano a combattere i ribelli dei Rovi, la Cancelliera di Wallford infiamma il popolo con la promessa di un Focolare libero e indipendente dal Reame.
+
+- id: laio
+  nome: Laio il Bello
+  gruppo: Figure della Casa
+  popolo: Sluagh
+  nazione: Orda
+  breve: Califfo di Al Sehir, governa l'Orda in assenza di Rodomonte.
+  luoghi: [al-sehir, samaracna, canneto]
+  profilo: |
+    Calcamorte e signore della capitale dell'Orda, ama i ragni che custodisce nella città capovolta di Samaracna. Respinto dall'Alto Consiglio dopo la Caduta di Faeriyev, ha attraversato il Giardino per stringere con la Shogun [[jorogumo]] il Patto delle Due Lame.
+
+- id: cavaliere-di-spine
+  nome: Il Cavaliere di Spine
+  gruppo: Figure del Giardino
+  popolo: Barghest (Boggart)
+  nazione: Giardino
+  breve: Il misterioso condottiero dei ribelli dei Rovi.
+  luoghi: [citta-di-rovi]
+  profilo: |
+    Nessuno conosce la sua identità. Un giorno è arrivato nella Città di Rovi, ha radunato la vecchia Guardia di Spine e i migliori guerrieri, e si è guadagnato la stima di tutti, perfino dell'indomita Beitris Towe, la cui famiglia combatte dai tempi di Vecchia Noce. Sotto la sua guida i Barghest sono diventati un avversario temibile, e lottano per l'indipendenza dei Rovi dal Focolare.
+
+- id: cagliostro
+  nome: Il Saggio Cagliostro
+  gruppo: Figure del Giardino
+  popolo: Genomino (Sprigo)
+  nazione: Giardino
+  breve: Il saggio della Cittadella, più vecchio perfino di Mastro Paracelso.
+  luoghi: [cittadella]
+  profilo: |
+    Talmente vecchio da aver vissuto nel Giardino prima dell'arrivo del Padrone, e da aver stipulato lui stesso il Contratto Ereditario dei Genomini nei Sei Giorni della Pietra. Si dice che avesse avvertito il Burocrate [[argo]] dei rischi di giocare con le Forze. Durante la guerra creò i Berretti Rossi; all'inizio del Lungo Inverno ha proclamato la Cittadella un rifugio neutrale per tutti.
+
+- id: jorogumo
+  nome: Yōkai Jorōgumo
+  gruppo: Figure del Giardino
+  popolo: Shinigami (Sluagh)
+  nazione: Shogunato
+  breve: Shogun della Lama d'Argento e Calcamorte dell'Orda.
+  luoghi: [canneto]
+  profilo: |
+    Figlia di [[akuma]], fu una dei primi Calcamorte di Kubalai Khan. Mandata a convincere il padre a unirsi all'Orda, lo eliminò e divenne Shogun. Governa dalla Pagoda di Terracotta, riconosce l'Orda solo sulla carta e nel Lungo Inverno aspetta di capire chi vincerà la guerra prima di scegliere da che parte stare.
+
+- id: akuma
+  nome: Yōkai Akuma
+  gruppo: Figure del Giardino
+  popolo: Shinigami (Sluagh)
+  breve: Il primo Shogun del Canneto.
+  luoghi: [canneto]
+  profilo: |
+    Leggendario samurai del ventottesimo clan arrivato con la Caccia Selvaggia, più basso di una fata e con la testa grande quanto il resto del corpo. Guidò gli Shinigami nel Giardino sul Retro, strinse un Contratto con [[occhi-di-pietra]] e fondò lo Shogunato. Fu deposto e ucciso dalla figlia [[jorogumo]].
+
+- id: occhi-di-pietra
+  nome: Occhi-di-Pietra
+  gruppo: Figure del Giardino
+  nazione: Giardino
+  breve: Il Serpente della Luna, gigantesco serpente albino del Canneto.
+  luoghi: [canneto]
+  profilo: |
+    Un serpente bianco grande come una montagna, dagli occhi ciechi. Strinse un misterioso Contratto con [[akuma]] e con una capocciata al Vecchio Rubinetto fece crescere il Canneto. [[gwen]] ha trovato un suo disegno con le parole lasciate nello studio di Argo: "Tu hai chiesto. La Casa risponde". Per trovare la sua tana serve la Tavoletta della Luna.
+

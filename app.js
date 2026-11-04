@@ -301,7 +301,7 @@
 
   function legenda() {
     const naz = unici([...S.luo.values(), ...S.pers.values()].map((x) => x.nazione).filter(Boolean));
-    const ordine = ['Reame', 'Focolare', 'Liberi Domini', 'Orda', 'Domini Comuni', 'Fuori dalla Casa'];
+    const ordine = ['Reame', 'Focolare', 'Liberi Domini', 'Orda', 'Domini Comuni', 'Giardino', 'Shogunato', 'Fuori dalla Casa'];
     naz.sort((a, b) => (ordine.indexOf(a) + 99) % 99 - (ordine.indexOf(b) + 99) % 99);
     return `<div class="legenda" aria-label="Colori delle nazioni">${naz.map((n) => `<span><i class="punto" data-nazione="${slug(n)}"></i>${esc(n)}</span>`).join('')}</div>`;
   }

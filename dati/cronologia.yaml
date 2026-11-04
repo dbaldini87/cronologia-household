@@ -26,6 +26,9 @@ epoche:
   - nome: Fragile Pace
     da: apertura-frontiere
     a: caduta-faeriyev
+  - nome: Il Lungo Inverno
+    da: lungo-inverno
+    a: cap-6-1
 
 eventi:
 
@@ -64,7 +67,9 @@ eventi:
     rilievo: minore
     riassunto: |
       Un fulmine colpisce Déndronaos, l'albero millenario dove vivevano le Fate, e le costringe a migrare. Guidate dallo Zar [[oberon]] raggiungono la Grande Finestra della Sala da Pranzo e lì fondano il loro nuovo Reame.
-    personaggi: [oberon]
+
+      Solo un secolo dopo, con la Caduta di Faeriyev, si scoprirà il resto della storia. A regnare sui Fae, nella città di Arcadia dentro l'Albero, era [[titania]], moglie di Oberon. Nella **Notte Senza Stelle** lei scomparve tra le fiamme, e [[ludmillen]] la cercò invano. Oberon, salvata la piccola [[arcadia]], si alzò in volo e prese il posto di sua moglie senza chiederlo, guidando il Popolo oltre la Finestra senza voltarsi indietro. Molti Fae rimasero nel Giardino.
+    personaggi: [oberon, titania, arcadia, ludmillen]
     luoghi: [domini-esterni, faeriyev, reame]
 
   - id: grande-scala
@@ -85,6 +90,15 @@ eventi:
     personaggi: [oberon]
     luoghi: [domini-esterni, salone]
 
+  - id: cerchio-eterno
+    data: circa 34 s.P.
+    titolo: Il Cerchio Eterno
+    rilievo: minore
+    riassunto: |
+      Circa quattordici anni dopo la caduta di Déndronaos, la giovane druida [[nemeth]], nata proprio nella Notte Senza Stelle, raduna i Fae rimasti nel Giardino in una congrega, il **Cerchio Eterno**. Traccia il cerchio di funghi più grande mai visto e al suo interno i Fae costruiscono la città nascosta di [[caer-siddi]]. È la rinascita della **Corte dei Seelie**, che per decenni resterà invisibile agli occhi della Casa.
+    personaggi: [nemeth]
+    luoghi: [caer-siddi, dendronaos]
+
   - id: samhain
     data: 51 s.P.
     titolo: Il Giorno di Samhain
@@ -94,14 +108,34 @@ eventi:
     personaggi: [oberon]
     luoghi: [cantina, orda]
 
+  - id: lama-d-argento
+    data: dopo il 51 s.P.
+    titolo: Lo Shogunato della Lama d'Argento
+    rilievo: minore
+    riassunto: |
+      Con la Caccia Selvaggia era arrivato in Casa anche un ventottesimo clan, interamente di Shinigami, guidato dal samurai [[akuma]]. La Casa sembra loro cupa e angusta: dopo la Battaglia delle Idi di Novembre partono per il Giardino sul Retro. Lì Akuma stringe un Contratto leggendario con il serpente albino [[occhi-di-pietra]], il Serpente della Luna, che colpisce il Vecchio Rubinetto e fa crescere il Canneto. Akuma vi fonda lo Shogunato della Lama d'Argento.
+    personaggi: [akuma, occhi-di-pietra]
+    luoghi: [canneto]
+
+  - id: orda-grande-lama
+    data: circa 71 s.P.
+    titolo: L'Orda della Grande Lama
+    rilievo: minore
+    riassunto: |
+      Quasi vent'anni dopo la fondazione dello Shogunato, Kubalai Khan riunisce le tribù degli Sluagh e fonda l'**Orda della Grande Lama**. Tra i suoi primi Calcamorte c'è [[jorogumo]], figlia di Akuma, mandata a convincere il padre a unirsi all'Orda. Akuma rifiuta di inchinarsi, e Jorōgumo lo elimina e diventa Shogun: da allora lo Shogunato è, almeno sulla carta, una provincia dell'Orda.
+    personaggi: [jorogumo, akuma]
+    luoghi: [orda, canneto]
+
   - id: patto-restaurazione
     data: 74 s.P.
     titolo: Il Patto di Restaurazione
     rilievo: maggiore
     riassunto: |
-      In difficoltà contro gli Sluagh, [[oberon]] offre ai Boggart un nuovo accordo: se li aiuteranno, al ritorno del Padrone le Fate riporteranno la Casa allo stato originale e se ne andranno per sempre. I Boggart rientrano al Focolare guidati da [[william-hearthworth]], nipote di Big Ben. Comincia la Prima Guerra Domiciliare.
+      In difficoltà contro gli Sluagh, [[oberon]] offre ai Boggart un nuovo accordo: se li aiuteranno, al ritorno del Padrone le Fate riporteranno la Casa allo stato originale e se ne andranno per sempre. I Boggart rientrano al Focolare guidati da [[william-hearthworth]], nipote di Big Ben e figlio di William "Vecchia Noce" Hearthworth, che li aveva guidati nell'esilio. Comincia la Prima Guerra Domiciliare.
+
+      Non tutti però lo seguono. Molti esuli si rifiutano di accettare la pietà delle Fate e restano nella [[citta-di-rovi]]: sono i **Barghest**, che da allora considerano gli Hearthworth dei traditori.
     personaggi: [oberon, william-hearthworth]
-    luoghi: [focolare, salone]
+    luoghi: [focolare, salone, citta-di-rovi]
 
   - id: assassinio-oberon
     data: 83 s.P.
@@ -135,16 +169,16 @@ eventi:
     titolo: La Battaglia di Acquapenna
     rilievo: minore
     riassunto: |
-      Un Cigno colossale si impadronisce dei Domini Esterni e minaccia la Casa. [[arcadia]] chiede e ottiene una tregua: per la prima volta tutti i Popoli combattono in un unico esercito contro un nemico comune.
-    personaggi: [arcadia]
-    luoghi: [domini-esterni]
+      Un Cigno colossale si impadronisce dei Domini Esterni e minaccia la Casa. [[arcadia]] chiede e ottiene una tregua: per la prima volta tutti i Popoli combattono in un unico esercito contro un nemico comune. Con loro ci sono anche i **Berretti Rossi**, l'esercito che i Genomini della Cittadella avevano formato in fretta e furia per difendersi dalle mire di Oberon; finita la guerra vengono sciolti con onore.
+    personaggi: [arcadia, cagliostro]
+    luoghi: [domini-esterni, fontana, cittadella]
 
   - id: alto-consiglio
     data: 91 s.P. / 0 A.C.
     titolo: L'Alto Consiglio
     rilievo: minore
     riassunto: |
-      Il Capitano [[rodomonte]] scaccia il Cigno e consegna ad Arcadia la testa del presunto assassino di suo padre: la Prima Guerra Domiciliare finisce. [[arcadia]] abdica e istituisce un Alto Consiglio con rappresentanti di ogni Popolo, che la nomina Imperatrice Reggente della Casa. Da qui si contano gli anni "dell'Alto Consiglio" (A.C.).
+      [[rodomonte]] scaccia il Cigno e consegna ad Arcadia la testa del presunto assassino di suo padre: la Prima Guerra Domiciliare finisce. [[arcadia]] abdica e istituisce un Alto Consiglio con rappresentanti di ogni Popolo, che la nomina Imperatrice Reggente della Casa. Da qui si contano gli anni "dell'Alto Consiglio" (A.C.).
     personaggi: [rodomonte, arcadia]
     luoghi: [astraviya]
 
@@ -354,3 +388,87 @@ eventi:
           Contro di loro: le Furie di [[morgana-astralta]], [[oberon-astralta]] deciso a catturare il Duca, i guerriglieri Tristellati di [[damien]], il 13° Battaglione Calabronato e il dinamitardo [[theodore-kaczinsky]], evaso da Pozzoprofondo.
         campagna: |
           # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
+
+  # ── DALLA CADUTA DI FAERIYEV AL LUNGO INVERNO ────────────
+  #  Dal Volume II, Sezione V "Storia".
+
+  - id: crepa-nel-trono
+    data: Fine ottobre X A.C.
+    titolo: Una Crepa nel Trono
+    rilievo: maggiore
+    riassunto: |
+      Dopo tre giorni di battaglia Faeriyev è conquistata dall'Armata del Seelie e il Duca [[alexei-puckevich]] fugge verso Astraviya; da allora lo chiamano il "Duca Defenestrato". Quando ancora non si sono posate le ceneri arriva in volo, con ali scarlatte di farfalla, [[titania]], la madre della Zarina che tutti credevano morta. Era rimasta per un secolo chiusa in una goccia di resina, finché [[morgana-astralta]] non l'ha liberata. Titania chiede alle Fate di tornare in Giardino: chi resta nella Casa sarà per lei un *Unseelie*, un popolo malvagio.
+
+      In Casa si sparge la voce che [[oberon]] fosse un usurpatore, e per la prima volta amici e nemici mettono in dubbio la legittimità di [[arcadia]]. La Zarina richiama le truppe al Tavolo e lascia Faeriyev al suo destino. L'Alto Consiglio si riunisce ad Altaluce, ma [[rodomonte]] non si presenta e al Califfo [[laio]], venuto al suo posto, viene negato il seggio. [[paracelso]] osserva che i Seelie hanno attaccato solo il Reame; [[furiospino]] decide che toccherà al Reame affrontarli, offre l'aiuto del Focolare e parte per combattere i ribelli dei Rovi. Anche i Duchi [[victor-von-glasburg]] e [[robin-fleurblanche]], gli altri pretendenti al Trono di Cristallo, hanno tutto da guadagnare dalla caduta di Arcadia.
+    personaggi: [titania, morgana-astralta, arcadia, alexei-puckevich, ludmillen, paracelso, furiospino, rodomonte, laio, victor-von-glasburg, robin-fleurblanche]
+    luoghi: [faeriyev, astraviya]
+
+  - id: lungo-inverno
+    data: Inverno X–XI A.C.
+    titolo: Il Lungo Inverno
+    rilievo: maggiore
+    riassunto: |
+      All'arrivo dell'Inverno la Zarina sorprende tutti: dichiara che Faeriyev non è caduta e che **l'assedio continua** finché la Città delle Stelle non sarà liberata. Il Trattato di Astraviya vieta al Reame di schierare più di una legione in Giardino, ma il Circolo d'Oro trova la scappatoia: [[valentine-du-lampe]], il "Generale di Cristallo", viene nominata **Gran Capitano delle Schiene Dorate** e guida fuori dalla Casa tre legioni, la X Europa Bellatrix, la XII Andromeda Maior e la XV Rigel Phoenix. Arcadia promette che chi vuole seguire i Seelie è libero di farlo, e ordina a Morgana Astralta di ritirarsi dal Davanzale.
+
+      Su *Le Papillon* un veterano scrive che la "scaramuccia" sarà risolta entro l'Inverno. La guerra fredda che segue dura quattro anni, e i giornali, con amara ironia, la chiamano **il Lungo Inverno**.
+
+      Intanto [[cagliostro]], turbato dall'improvviso interesse dei "tappi" per il Giardino, ordina ai soldati imperiali di lasciare la Cittadella e la Spianata: la [[cittadella]] resterà un rifugio neutrale, dove soldati del Reame e guerrieri del Seelie devono sedersi fianco a fianco.
+    personaggi: [arcadia, valentine-du-lampe, morgana-astralta, cagliostro]
+    luoghi: [faeriyev, domini-esterni, cittadella]
+
+  - id: due-lame
+    data: X–XI A.C.
+    titolo: Il Patto delle Due Lame
+    rilievo: minore
+    riassunto: |
+      Nei mesi dopo la Caduta, il Califfo [[laio]] attraversa il Giardino fino alla Pagoda di Terracotta per richiamare la Shogun [[jorogumo]] all'obbedienza e usare i suoi samurai contro i Seelie, sperando così di guadagnarsi il seggio di Rodomonte nell'Alto Consiglio. La Shogun riconosce l'Orda solo sulla carta. Alla fine i due stringono il **Patto delle Due Lame**: se Jorōgumo lo aiuterà, Laio concederà allo Shogunato l'indipendenza. In cambio pretende che il nuovo Daimyo Orochi Goryō diventi Calcamorte; il Calcamorte Bravo Fuerte Gonzago, partito con Laio, non torna più.
+
+      Jorōgumo però non ha intenzione di schierarsi: fa suonare i grandi tamburi e una massa di serpenti invade la **Linea Verde**, i territori contesi tra Seelie e Grande Esercito Imperiale. Aspetterà di vedere chi vince.
+    personaggi: [laio, jorogumo]
+    luoghi: [canneto, linea-verde]
+
+  - id: processo-tournoire
+    data: XI A.C.
+    titolo: Il Processo di Tournoire
+    rilievo: minore
+    riassunto: |
+      Nell'anno successivo all'inizio dell'assedio, il Gran Generale [[ludmillen]] scova tutti i Tristellati ancora nascosti nel Reame e impone a tutte le nazioni di estradarli, con grande malcontento dei Liberi Domini. Al **Processo di Tournoire**, alla corte di [[tristan-des-larmes]], i terroristi vengono condannati a decenni di prigione o all'esilio nel Giardino; il loro comandante Solen Boucher muore cercando di fuggire nelle Intercapedini. I Tristellati sono sconfitti una volta per tutte, ma sulle loro ceneri nasce un movimento **antiarcadista** che parla di deporre la Zarina in favore di un Duca, o di una Repubblica delle Fate.
+    personaggi: [ludmillen, tristan-des-larmes]
+    luoghi: [tournoire]
+
+  - id: guerra-fredda
+    data: XI–XII A.C.
+    titolo: Una Guerra Fredda
+    rilievo: minore
+    riassunto: |
+      L'assedio di Faeriyev è più uno stallo politico che una battaglia: in Sala da Pranzo l'Esercito Imperiale si limita a tenere la posizione. In Giardino le legioni di [[valentine-du-lampe]] cercano di guadagnare terreno e di trovare **Caer Siddi**, l'introvabile fortezza dei Fae, mentre l'Armata del Seelie risponde con imboscate e guerriglia dal Sottobosco. Il Giardino Zoologico di Astraviya viene svuotato e trasformato nel Rifugio Protopopolov per gli sfollati di Faeriyev.
+
+      Nel Focolare il malcontento cresce: [[furiospino]] è sempre lontano, impegnato con lo Sceriffo di Rovingham contro la **ribellione dei Rovi**, che i Barghest combattono sotto la guida del misterioso [[cavaliere-di-spine]]. In sua assenza la Cancelliera [[martha-winter]], la Lady di Ghisa, promette un Focolare libero dal Reame. Nei Liberi Domini comincia una rivoluzione industriale che aggira il Trattato di Astraviya. Nell'Orda, con Rodomonte sparito da anni, i Calcamorte si sfidano tra loro e [[laio]] governa a fatica al suo posto.
+    personaggi: [valentine-du-lampe, furiospino, cavaliere-di-spine, martha-winter, laio]
+    luoghi: [caer-siddi, citta-di-rovi, astraviya]
+
+  # ── LA NOSTRA SAGA DEL LUNGO INVERNO ─────────────────────
+
+  - id: cap-6-1
+    data: Dicembre XII A.C.
+    capitolo: Capitolo VI · Paragrafo I · Inverno
+    titolo: Inverno nel Canneto
+    rilievo: maggiore
+    riassunto: |
+      Due anni dopo la Caduta di Faeriyev la Casa è ancora divisa, e la Zarina affronta la minaccia del Seelie senza il sostegno dell'Alto Consiglio. Le legioni imperiali e l'Armata del Seelie si fronteggiano nel Giardino, e sempre più "tappi" si avventurano fuori dalla Casa. È qui che ricomincia la nostra storia, nel Giardino sul Retro, in pieno Inverno.
+    luoghi: [canneto]
+    avventure:
+      - titolo: Brutte Brutte Cose
+        quando: Dicembre XII A.C.
+        luogo: komorebi
+        protagonisti: [gwen, santiago, gunther, icarus]
+        altri: [soya, tomo, flanagan, ayane, hiroshi, kimi]
+        riassunto: |
+          [[gwen]] ha trovato un disegno shinigami del grande Serpente della Luna, [[occhi-di-pietra]], con la stessa frase lasciata nello studio di Argo: "Tu hai chiesto. La Casa risponde". Decisa a trovarlo, chiede consiglio al professor [[flanagan]], che la manda da [[tomo]], mercante e massimo esperto del Serpente, e scrive al samurai [[soya]], figlio di un suo vecchio amico, perché la ospiti a [[komorebi]]. Il clan Tentomushi è caduto in disgrazia: a Soya restano la vecchia Baba e due servitori stranieri, [[gunther]] e [[santiago]]. Con loro c'è anche [[icarus]].
+
+          Appena arrivati, il gruppo salva Tomo dalla bocca di una rana impazzita. Il mercante è perseguitato dalle **Brutte Brutte Cose**: in passato non ha ripagato un Debito di Vita, e la sfortuna non lo lascerà finché non avrà rimediato. I protagonisti lo accompagnano da chi lo ha aiutato senza mai ricevere nulla: la samurai [[ayane]] del clan Kitsune, il vecchio amico [[hiroshi]], e infine sua madre [[kimi]], che lui aveva lasciato nella miseria.
+
+          Alla fine Tomo rivela che le indicazioni per trovare Occhi-di-Pietra sono scritte sulla **Tavoletta della Luna**, spezzata in quattro frammenti. Lui ne possiede solo uno; un altro è a Mizuken, nella Fortezza Ossidata della Daimyo Val Tarnish. Il viaggio di Gwen è appena cominciato.
+        campagna: |
+          # Come è finita? Scrivilo qui sotto, rientrato come questa riga.
+

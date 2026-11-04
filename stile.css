@@ -18,6 +18,7 @@
   --n-orda: #8B5A1F;
   --n-domini-comuni: #6E6878;
   --n-fuori: #4E7A36;
+  --n-shogunato: #A63C5E;
 
   --serif: "Alegreya", Georgia, serif;
   --maiuscoletto: "Alegreya SC", "Alegreya", Georgia, serif;
@@ -31,7 +32,7 @@
     --ottone: #D9B35E; --ottone-chiaro: #E9CD8C;
     --filo: #463B50; --ombra: rgba(0,0,0,.45);
     --n-reame: #7FA8DB; --n-focolare: #E58468; --n-liberi-domini: #6CC2AE;
-    --n-orda: #D49A55; --n-domini-comuni: #A9A2B3; --n-fuori: #92BE76;
+    --n-orda: #D49A55; --n-domini-comuni: #A9A2B3; --n-fuori: #92BE76; --n-shogunato: #E48AA6;
     color-scheme: dark;
   }
 }
@@ -42,7 +43,7 @@
   --ottone: #D9B35E; --ottone-chiaro: #E9CD8C;
   --filo: #463B50; --ombra: rgba(0,0,0,.45);
   --n-reame: #7FA8DB; --n-focolare: #E58468; --n-liberi-domini: #6CC2AE;
-  --n-orda: #D49A55; --n-domini-comuni: #A9A2B3; --n-fuori: #92BE76;
+  --n-orda: #D49A55; --n-domini-comuni: #A9A2B3; --n-fuori: #92BE76; --n-shogunato: #E48AA6;
   color-scheme: dark;
 }
 
@@ -301,6 +302,7 @@ strong { font-weight: 700; }
 [data-nazione="domini-comuni"] .punto, .punto[data-nazione="domini-comuni"] { background: var(--n-domini-comuni); }
 [data-nazione="fuori-dalla-casa"] .punto, .punto[data-nazione="fuori-dalla-casa"],
 [data-nazione="giardino"] .punto, .punto[data-nazione="giardino"] { background: var(--n-fuori); }
+[data-nazione="shogunato"] .punto, .punto[data-nazione="shogunato"] { background: var(--n-shogunato); }
 
 .legenda { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .88rem; color: var(--inchiostro-tenue); }
 .legenda span { display: inline-flex; align-items: center; gap: .35rem; }
